@@ -1,0 +1,144 @@
+win32 {
+    CONFIG(release, debug|release) : CONFIG_DIR = Release
+    else:CONFIG(debug, debug|release) : CONFIG_DIR = Debug
+
+    ### Get ENV variable if not already set
+    isEmpty(ITK_VERSION):ITK_VERSION = $$(ITK_VERSION)
+    isEmpty(ITK_DIR):ITK_DIR = $$(ITK_DIR)
+    isEmpty(ITK_SRC_DIR):ITK_SRC_DIR = $$(ITK_SRC_DIR)
+
+    ### Debug output
+    message(ITK-Configuration:)
+    message(Version: $$ITK_VERSION)
+    message(Source: $$ITK_SRC_DIR)
+    message(Binary: $$ITK_DIR)
+    
+    ### Check if library can be found
+    !exists( $$ITK_DIR/ITKConfig.cmake ):error(ITK in '$$ITK_DIR' not found! Set ITK_DIR variable to the binary/build directory!)
+    !exists( $$ITK_SRC_DIR/CMakeLists.txt ):error(ITK sources in '$$ITK_SRC_DIR' not found! Set ITK_SRC_DIR variable to the source directory!)
+    isEmpty( ITK_VERSION ):error(ITK version not set! Set ITK_VERSION variable to a specific version!)
+	
+    ITK_MODULES += Bridge Core Filtering IO Numerics Registration Segmentation Video
+
+    ### ITK Library
+    for(MODULE, ITK_MODULES) {
+        SUBMODULE_DIRS = $$files($$ITK_SRC_DIR/Modules/$$MODULE/*)
+        for(SUBMODULE_DIR, SUBMODULE_DIRS) {
+            SUBMODULE = $$basename(SUBMODULE_DIR)
+            INCLUDEPATH += $$ITK_SRC_DIR/Modules/$$MODULE/$$SUBMODULE/include
+            INCLUDEPATH += $$ITK_DIR/Modules/$$MODULE/$$SUBMODULE
+        }
+    }
+
+    ### Third Party modules have a different structure, so we need to include them hardcoded
+    INCLUDEPATH += $$ITK_SRC_DIR/Modules/ThirdParty/VNL/src/vxl/vcl
+    INCLUDEPATH += $$ITK_SRC_DIR/Modules/ThirdParty/VNL/src/vxl/vcl/config.win32
+    INCLUDEPATH += $$ITK_SRC_DIR/Modules/ThirdParty/VNL/src/vxl/core
+    INCLUDEPATH += $$ITK_DIR/Modules/ThirdParty/VNL/src/vxl/core
+    INCLUDEPATH += $$ITK_DIR/Modules/ThirdParty/KWSys/src
+    INCLUDEPATH += $$files($$ITK_SRC_DIR/Modules/ThirdParty/GDCM/src/gdcm/Source/*)
+    INCLUDEPATH += $$files($$ITK_DIR/Modules/ThirdParty/GDCM/src/gdcm/Source/*)
+	
+	INCLUDEPATH -= $$ITK_SRC_DIR/Modules/ThirdParty/GDCM/src/gdcm/Source/CMakeLists.txt
+	INCLUDEPATH -= $$ITK_DIR/Modules/ThirdParty/GDCM/src/gdcm/Source/cmake_install.cmake
+	INCLUDEPATH -= $$ITK_DIR/Modules/ThirdParty/GDCM/src/gdcm/Source/Makefile
+
+    DEFINES += _CRT_SECURE_NO_WARNINGS _SCL_SECURE_NO_WARNINGS
+
+    ###
+    win32-msvc*:LIBS += -L$$ITK_DIR/lib/$$CONFIG_DIR
+    win32-g++:LIBS += -L$$ITK_DIR/lib
+    
+    ### For convenience just link all itk libraries found in the lib directory
+    #win32-msvc*:LIBS += $$files($$ITK_DIR/lib/$$CONFIG_DIR/*.lib)
+	#win32-g++:LIBS += $$files($$ITK_DIR/lib/*.a)
+
+	#ignores lib order and cyclic dependencies
+	QMAKE_LFLAGS += -Wl,--start-group
+	
+	LIBS += 
+	LIBS += \
+		-lITKCommon-$$ITK_VERSION \
+		-litksys-$$ITK_VERSION \
+		-litkdouble-conversion-$$ITK_VERSION \
+		-litkNetlibSlatec-$$ITK_VERSION \
+		-lITKStatistics-$$ITK_VERSION \
+		-lITKTransform-$$ITK_VERSION \
+		-lITKLabelMap-$$ITK_VERSION \
+		-lITKMesh-$$ITK_VERSION \
+		-litkzlib-$$ITK_VERSION \
+		-lITKMetaIO-$$ITK_VERSION \
+		-lITKSpatialObjects-$$ITK_VERSION \
+		-lITKPath-$$ITK_VERSION \
+		-lITKQuadEdgeMesh-$$ITK_VERSION \
+		-lITKIOImageBase-$$ITK_VERSION \
+		-lITKOptimizers-$$ITK_VERSION \
+		-lITKPolynomials-$$ITK_VERSION \
+		-lITKBiasCorrection-$$ITK_VERSION \
+		-lITKBioCell-$$ITK_VERSION \
+		-lITKDICOMParser-$$ITK_VERSION \
+		-lITKEXPAT-$$ITK_VERSION \
+		-lITKIOXML-$$ITK_VERSION \
+		-lITKIOSpatialObjects-$$ITK_VERSION \
+		-lITKFEM-$$ITK_VERSION \
+		-litkgdcmCommon-$$ITK_VERSION \
+		-litkgdcmDICT-$$ITK_VERSION \
+		-litkgdcmDSED-$$ITK_VERSION \
+		-litkgdcmIOD-$$ITK_VERSION \
+		-litkgdcmMEXD-$$ITK_VERSION \
+		-litkgdcmMSFF-$$ITK_VERSION \
+		-litkgdcmcharls-$$ITK_VERSION \
+		-litkgdcmjpeg12-$$ITK_VERSION \
+		-litkgdcmjpeg16-$$ITK_VERSION \
+		-litkgdcmjpeg8-$$ITK_VERSION \
+		-litkgdcmopenjpeg-$$ITK_VERSION \
+		-litkgdcmsocketxx-$$ITK_VERSION \
+		-lITKznz-$$ITK_VERSION \
+		-lITKniftiio-$$ITK_VERSION \
+		-lITKgiftiio-$$ITK_VERSION \
+		-litkhdf5-$$ITK_VERSION \
+		-litkhdf5_cpp-$$ITK_VERSION \
+		-lITKIOBMP-$$ITK_VERSION \
+		-lITKIOBioRad-$$ITK_VERSION \
+		-lITKIOCSV-$$ITK_VERSION \
+		-lITKIOGDCM-$$ITK_VERSION \
+		-lITKIOIPL-$$ITK_VERSION \
+		-lITKIOGE-$$ITK_VERSION \
+		-lITKIOGIPL-$$ITK_VERSION \
+		-lITKIOHDF5-$$ITK_VERSION \
+		-litkjpeg-$$ITK_VERSION \
+		-lITKIOJPEG-$$ITK_VERSION \
+		-litktiff-$$ITK_VERSION \
+		-lITKIOTIFF-$$ITK_VERSION \
+		-lITKIOLSM-$$ITK_VERSION \
+		-lITKIOMRC-$$ITK_VERSION \
+		-lITKIOMesh-$$ITK_VERSION \
+		-lITKIOMeta-$$ITK_VERSION \
+		-lITKIONIFTI-$$ITK_VERSION \
+		-lITKNrrdIO-$$ITK_VERSION \
+		-lITKIONRRD-$$ITK_VERSION \
+		-litkpng-$$ITK_VERSION \
+		-lITKIOPNG-$$ITK_VERSION \
+		-lITKIOSiemens-$$ITK_VERSION \
+		-lITKIOStimulate-$$ITK_VERSION \
+		-lITKIOTransformBase-$$ITK_VERSION \
+		-lITKIOTransformHDF5-$$ITK_VERSION \
+		-lITKIOTransformInsightLegacy-$$ITK_VERSION \
+		-lITKIOTransformMatlab-$$ITK_VERSION \
+		-lITKIOVTK-$$ITK_VERSION \
+		-lITKKLMRegionGrowing-$$ITK_VERSION \
+		-lITKOptimizersv4-$$ITK_VERSION \
+		-lITKVTK-$$ITK_VERSION \
+		-lITKVideoCore-$$ITK_VERSION \
+		-lITKVideoIO-$$ITK_VERSION \
+		-lITKWatersheds-$$ITK_VERSION \
+		-litkvnl-$$ITK_VERSION \
+		-litkvnl_algo-$$ITK_VERSION \
+		-litkv3p_netlib-$$ITK_VERSION \
+		-litkv3p_lsqr-$$ITK_VERSION \
+		-litkvcl-$$ITK_VERSION \
+		-lITKVNLInstantiation-$$ITK_VERSION \
+		-litktestlib-$$ITK_VERSION 
+
+	LIBS += -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -lrpcrt4 -lws2_32
+}

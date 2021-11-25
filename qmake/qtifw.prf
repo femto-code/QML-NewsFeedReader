@@ -1,0 +1,39 @@
+win32 {
+    ### Get ENV variable if not already set
+    isEmpty(QTIFW_DIR):QTIFW_DIR = $$(QTIFW_DIR)
+
+    ### Check if library can be found
+    !exists($$QTIFW_DIR/bin/binarycreator.exe):error(QtIFW not found! Set QTIFW_DIR variable to the install directory of the QtIFW!)
+
+	QTIFW_EXECUTABLE = $$QTIFW_DIR/bin/binarycreator
+
+	### standard paths for config and packages
+	isEmpty(PACKAGES_PATH):PACKAGES_PATH = $$_PRO_FILE_PWD_/packages
+	QTIFW_PACKAGES += $$PACKAGES_PATH
+	QTIFW_CONFIG_FILE = $$_PRO_FILE_PWD_/config.xml
+
+	#if no config file exists, create one with standard values
+	!exists($$QTIFW_CONFIG_FILE) {
+			INSTALLER_CONFIG += $$quote(<?xml version=\"1.0\" encoding=\"UTF-8\"?>)
+			INSTALLER_CONFIG += $$quote(<Installer>)
+			INSTALLER_CONFIG += $$quote(	<Name>$$TARGET</Name>)
+			INSTALLER_CONFIG += $$quote(	<Version>0.0.1-0</Version>)
+			INSTALLER_CONFIG += $$quote(	<Title>$$TARGET Installer</Title>)
+			INSTALLER_CONFIG += $$quote(	<Publisher>ESM-Institut</Publisher>)
+			INSTALLER_CONFIG += $$quote(	<AllowSpaceInPath>true</AllowSpaceInPath>)
+			INSTALLER_CONFIG += $$quote(	<StartMenuDir>$$TARGET</StartMenuDir>)
+			INSTALLER_CONFIG += $$quote(	<TargetDir>@RootDir@$$TARGET</TargetDir>)
+			INSTALLER_CONFIG += $$quote(	<RemoteRepositories>)
+			INSTALLER_CONFIG += $$quote(	</RemoteRepositories>)
+			INSTALLER_CONFIG += $$quote(</Installer>)
+			write_file($$QTIFW_CONFIG_FILE, INSTALLER_CONFIG)
+	}
+
+	INPUT = $$QTIFW_CONFIG_FILE $$QTIFW_PACKAGES
+	INSTALLER_TARGET.input = INPUT
+	INSTALLER_TARGET.output = $$quote($$TARGET)_installer
+	INSTALLER_TARGET.commands = $$QTIFW_EXECUTABLE -c $$QTIFW_CONFIG_FILE $$join(QTIFW_PACKAGES, " -p ", "-p ") ${QMAKE_FILE_OUT}
+	INSTALLER_TARGET.CONFIG += target_predeps no_link combine
+
+	QMAKE_EXTRA_COMPILERS += INSTALLER_TARGET
+}

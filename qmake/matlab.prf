@@ -1,0 +1,24 @@
+win32 {
+
+    ### Get ENV variable if not already set
+    isEmpty(MATLAB_DIR):MATLAB_DIR = $$(MATLAB_DIR)
+    ### Try standard installation dir
+    isEmpty(MATLAB_DIR):MATLAB_DIR = "C:/Program Files/MATLAB/R2015a"
+
+    ### Check if library can be found
+    !exists( $$MATLAB_DIR/extern/include/engine.h ):error(MATLAB not found! Set MATLAB_DIR environment variable to the Matlab installation path!)
+	
+	INCLUDEPATH += \
+		$$MATLAB_DIR/extern/include
+
+	LIBS += \
+		-L$$MATLAB_DIR/extern/lib/win64/microsoft  
+
+	LIBS += \
+		-llibmx \
+		-llibmat \
+		-llibeng 
+      
+} 
+
+DEFINES += MATLAB_USED

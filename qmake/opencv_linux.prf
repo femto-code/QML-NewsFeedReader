@@ -1,0 +1,6 @@
+unix:!macx:!android {
+    CONFIG += link_pkgconfig
+    PKGCONFIG += opencv
+
+    DEFINES += OPENCV_USED
+}

@@ -1,0 +1,35 @@
+win32 {
+
+    ### Get ENV variable if not already set
+    isEmpty(XSENSE_DIR):XSENSE_DIR = $$(XSENSE_DIR)
+    ### Try standard installation dir
+    isEmpty(XSENSE_DIR):XSENSE_DIR = "C:/Program Files (x86)/Xsens/MT Software Suite 4.2.1/MT SDK 4.2.1/"
+
+    ### Check if library can be found
+    !exists( $$XSENSE_DIR/Win32/include/xstypes.h ):error(XSENSE not found! Set XSENSE_DIR environment variable to the MT-SDK path!)
+	
+    contains(QT_ARCH, x86_64) {
+		INCLUDEPATH += \
+			$$XSENSE_DIR/x64/include
+	
+		LIBS += \
+			-L$$XSENSE_DIR/x64/lib
+	
+	    LIBS += \
+			-lxsensdeviceapi64 \
+			-lxstypes64
+	}
+	else {
+	    INCLUDEPATH += \
+			$$XSENSE_DIR/Win32/include
+	
+		LIBS += \
+			-L$$XSENSE_DIR/Win32/lib
+	
+	    LIBS += \
+			-lxsensdeviceapi32 \
+			-lxstypes32
+	}        
+} 
+
+DEFINES += XSENSE_USED

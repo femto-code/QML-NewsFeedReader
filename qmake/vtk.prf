@@ -1,0 +1,2 @@
+win32:load(vtk_win32)
+unix:load(vtk_linux)

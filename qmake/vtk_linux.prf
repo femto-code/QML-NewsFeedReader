@@ -1,0 +1,115 @@
+unix:!macx:!android {
+
+    ### Currently hardcoded for Debian jessie
+    isEmpty(VTK_VERSION):VTK_VERSION = 6.1
+    isEmpty(VTK_DIR):VTK_DIR = /usr/lib/x86_64-linux-gnu
+    isEmpty(VTK_SRC_DIR):VTK_SRC_DIR = /usr/include/vtk-$$VTK_VERSION
+
+    ### Debug output
+    message(VTK-Configuration:)
+	message(VTK_VERSION: $$VTK_VERSION)
+	message(VTK_DIR: $$VTK_DIR)
+	message(VTK_SRC_DIR: $$VTK_SRC_DIR)
+
+    INCLUDEPATH += $$VTK_SRC_DIR
+    LIBS += -L$$VTK_DIR
+
+    LIBS += 
+    LIBS += -lvtksys-$$VTK_VERSION \
+            -lvtkCommonCore-$$VTK_VERSION \
+            -lvtkCommonMath-$$VTK_VERSION \
+            -lvtkCommonMisc-$$VTK_VERSION \
+            -lvtkCommonSystem-$$VTK_VERSION \
+            -lvtkCommonTransforms-$$VTK_VERSION \
+            -lvtkCommonDataModel-$$VTK_VERSION \
+            -lvtkCommonColor-$$VTK_VERSION \
+            -lvtkCommonExecutionModel-$$VTK_VERSION \
+            -lvtkFiltersCore-$$VTK_VERSION \
+            -lvtkCommonComputationalGeometry-$$VTK_VERSION \
+            -lvtkFiltersGeneral-$$VTK_VERSION \
+            -lvtkImagingCore-$$VTK_VERSION \
+            -lvtkImagingFourier-$$VTK_VERSION \
+            -lvtkalglib-$$VTK_VERSION \
+            -lvtkFiltersStatistics-$$VTK_VERSION \
+            -lvtkFiltersExtraction-$$VTK_VERSION \
+            -lvtkInfovisCore-$$VTK_VERSION \
+            -lvtkFiltersGeometry-$$VTK_VERSION \
+            -lvtkFiltersSources-$$VTK_VERSION \
+            -lvtkDICOMParser-$$VTK_VERSION \
+            -lvtkIOCore-$$VTK_VERSION \
+            -lvtkmetaio-$$VTK_VERSION \
+            -lvtkIOImage-$$VTK_VERSION \
+            -lvtkIOXMLParser-$$VTK_VERSION \
+            -lvtkRenderingCore-$$VTK_VERSION \
+            -lvtkftgl-$$VTK_VERSION \
+            -lvtkRenderingFreeType-$$VTK_VERSION \
+            -lvtkImagingHybrid-$$VTK_VERSION \
+            -lvtkRenderingOpenGL-$$VTK_VERSION \
+            -lvtkRenderingContext2D-$$VTK_VERSION \
+            -lvtkChartsCore-$$VTK_VERSION \
+            -lvtkIOGeometry-$$VTK_VERSION \
+            -lvtkIOXML-$$VTK_VERSION \
+            -lvtkDomainsChemistry-$$VTK_VERSION \
+            -lvtkIOLegacy-$$VTK_VERSION \
+            -lvtkParallelCore-$$VTK_VERSION \
+            -lvtkFiltersAMR-$$VTK_VERSION \
+            -lvtkFiltersFlowPaths-$$VTK_VERSION \
+            -lvtkFiltersGeneric-$$VTK_VERSION \
+            -lvtkImagingSources-$$VTK_VERSION \
+            -lvtkFiltersHybrid-$$VTK_VERSION \
+            -lvtkFiltersHyperTree-$$VTK_VERSION \
+            -lvtkImagingGeneral-$$VTK_VERSION \
+            -lvtkFiltersImaging-$$VTK_VERSION \
+            -lvtkFiltersModeling-$$VTK_VERSION \
+            -lvtkFiltersParallel-$$VTK_VERSION \
+            -lvtkFiltersParallelImaging-$$VTK_VERSION \
+            -lvtkFiltersProgrammable-$$VTK_VERSION \
+            -lvtkFiltersSelection-$$VTK_VERSION \
+            -lvtkFiltersTexture-$$VTK_VERSION \
+            -lvtkverdict-$$VTK_VERSION \
+            -lvtkFiltersVerdict-$$VTK_VERSION \
+            -lvtkInfovisLayout-$$VTK_VERSION \
+            -lvtkInteractionStyle-$$VTK_VERSION \
+            -lvtkImagingColor-$$VTK_VERSION \
+            -lvtkRenderingAnnotation-$$VTK_VERSION \
+            -lvtkRenderingVolume-$$VTK_VERSION \
+            -lvtkInteractionWidgets-$$VTK_VERSION \
+            -lvtkViewsCore-$$VTK_VERSION \
+            -lvtkproj4-$$VTK_VERSION \
+            -lvtkGeovisCore-$$VTK_VERSION \
+            -lvtkIOAMR-$$VTK_VERSION \
+            -lvtkIOEnSight-$$VTK_VERSION \
+            -lvtkexoIIc-$$VTK_VERSION \
+            -lvtkIOExodus-$$VTK_VERSION \
+            -lvtkRenderingGL2PS-$$VTK_VERSION \
+            -lvtkIOExport-$$VTK_VERSION \
+            -lvtkIOImport-$$VTK_VERSION \
+            -lvtkIOInfovis-$$VTK_VERSION \
+            -lvtkIOLSDyna-$$VTK_VERSION \
+            -lvtkIOMINC-$$VTK_VERSION \
+            -lvtkIOMovie-$$VTK_VERSION \
+            -lvtkIONetCDF-$$VTK_VERSION \
+            -lvtkIOPLY-$$VTK_VERSION \
+            -lvtkIOParallel-$$VTK_VERSION \
+            -lvtkIOSQL-$$VTK_VERSION \
+            -lvtkIOVideo-$$VTK_VERSION \
+            -lvtkImagingMath-$$VTK_VERSION \
+            -lvtkImagingMorphological-$$VTK_VERSION \
+            -lvtkImagingStatistics-$$VTK_VERSION \
+            -lvtkImagingStencil-$$VTK_VERSION \
+            -lvtkInteractionImage-$$VTK_VERSION \
+            -lvtkRenderingFreeTypeOpenGL-$$VTK_VERSION \
+            -lvtkRenderingImage-$$VTK_VERSION \
+            -lvtkRenderingLOD-$$VTK_VERSION \
+            -lvtkRenderingLabel-$$VTK_VERSION \
+            -lvtkRenderingVolumeAMR-$$VTK_VERSION \
+            -lvtkRenderingVolumeOpenGL-$$VTK_VERSION \
+            -lvtkViewsContext2D-$$VTK_VERSION \
+            -lvtkViewsInfovis-$$VTK_VERSION \
+            -lvtkViewsGeovis-$$VTK_VERSION
+
+    ### It's magic - Some magic defines which normally would be set by cmake
+    #DEFINES += \\"vtkRenderingCore_AUTOINIT=4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)\\"
+    #DEFINES += \\"vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL)\\"
+
+}

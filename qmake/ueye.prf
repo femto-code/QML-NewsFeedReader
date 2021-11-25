@@ -1,0 +1,42 @@
+win32 {
+
+    UEYE_DIR = "C:\Program Files\IDS\uEye"
+
+    ### Get ENV variable if not already set
+    isEmpty(UEYE_DIR):UEYE_DIR = $$(UEYE_DIR)
+
+    ### Check if library can be found
+    !exists( $$UEYE_DIR/Develop/include/uEye.h ):error(UEYE not found! Set UEYE_DIR environment variable to the root install path!)
+
+    LIBS += -L$$UEYE_DIR/Develop/Lib
+
+    contains(QT_ARCH, x86_64) {
+	      LIBS += \
+		-luEye_api_64 \
+		-luEye_tools_64
+	}
+	else {
+	      LIBS += \
+		-luEye_api \
+		-luEye_tools
+	}
+		
+    INCLUDEPATH += \
+        $$UEYE_DIR/Develop/include
+        
+} else {
+
+    ### Check if library can be found
+    !exists( /usr/include/ueye.h ):error(UEYE Header not found!)
+
+    LIBS += -L/usr/lib
+
+    LIBS += \
+        -lueye_api
+
+    INCLUDEPATH += \
+        /usr/include
+    
+}
+
+DEFINES += UEYE_USED

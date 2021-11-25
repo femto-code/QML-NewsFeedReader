@@ -1,0 +1,51 @@
+win32 {
+
+    CONFIG(release, debug|release) : CONFIG_DIR = Release
+    else:CONFIG(debug, debug|release) : CONFIG_DIR = Debug
+	
+    CONFIG(release, debug|release) : CONFIG_SUFFIX =
+    else:CONFIG(debug, debug|release) : CONFIG_SUFFIX = d
+	
+    ### Get ENV variable if not already set
+    isEmpty(OPENBR_DIR):OPENBR_DIR = $$(OPENBR_DIR)
+    isEmpty(OPENBR_SRC_DIR):OPENBR_SRC_DIR = $$(OPENBR_SRC_DIR)
+
+    ### Debug output
+    message(OPENBR-Configuration:)
+    message(OPENBR_DIR: $$OPENBR_DIR)
+    message(OPENBR_SRC_DIR: $$OPENBR_SRC_DIR)
+	
+    ### Check if library can be found
+    !exists( $$OPENBR_DIR/CPackConfig.cmake ):error(OPENBR not found! Set OPENBR_DIR environment variable to the binary/build directory!)
+    !exists( $$OPENBR_SRC_DIR/CMakeLists.txt ):error(OPENBR source directory not found! Set OPENBR_SRC_DIR variable to the source directory!)
+	
+    win32-msvc*:LIBS += -L$$OPENBR_DIR/openbr/$$CONFIG_DIR -L$$OPENBR_SRC_DIR/3rdparty/stasm4.0.0/build/$$CONFIG_DIR
+    win32-g++:LIBS += -L$$OPENBR_DIR/openbr -L$$OPENBR_DIR/stasm/lib
+	
+    win32-msvc*:LIBS += \
+        -lopenbr \
+	-lstasm
+
+   win32-g++:LIBS += \
+        -lopenbr.dll \
+	-lstasm.dll
+
+    INCLUDEPATH += \
+        $$OPENBR_SRC_DIR \
+	$$OPENBR_SRC_DIR/openbr
+
+}else {
+    
+    LIBS += \
+	-L/usr/local/lib
+
+    LIBS += \
+	-lopenbr \
+	-lstasm
+
+    INCLUDEPATH += \
+	/usr/local/include
+
+}
+
+DEFINES += OPENBR_USED

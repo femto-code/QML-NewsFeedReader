@@ -1,0 +1,75 @@
+unix:!macx:!android {
+
+    ### Currently hardcoded for Debian jessie
+    isEmpty(ITK_VERSION):ITK_VERSION = 4.6
+    isEmpty(ITK_DIR):ITK_DIR = /usr/lib
+    isEmpty(ITK_SRC_DIR):ITK_SRC_DIR = /usr/include/ITK-$$ITK_VERSION /usr/include/gdcm-2.4
+
+    ### Debug output
+    message(ITK-Configuration:)
+	message(ITK_VERSION: $$ITK_VERSION)
+	message(ITK_DIR: $$ITK_DIR)
+	message(ITK_SRC_DIR: $$ITK_SRC_DIR)
+
+    INCLUDEPATH += $$ITK_SRC_DIR
+    LIBS += -L$$ITK_DIR
+
+    QMAKE_CXXFLAGS += -fpermissive
+    
+    LIBS += 
+    LIBS += -lITKBiasCorrection-$$ITK_VERSION \
+            -lITKBioCell-$$ITK_VERSION \
+            -lITKCommon-$$ITK_VERSION \
+            -lITKDICOMParser-$$ITK_VERSION \
+            -lITKEXPAT-$$ITK_VERSION \
+            -lITKFEM-$$ITK_VERSION \
+            -lITKGDCM-$$ITK_VERSION \
+            -lITKgiftiio-$$ITK_VERSION \
+            -lITKIOBioRad-$$ITK_VERSION \
+            -lITKIOBMP-$$ITK_VERSION \
+            -lITKIOCSV-$$ITK_VERSION \
+            -lITKIOGDCM-$$ITK_VERSION \
+            -lITKIOGE-$$ITK_VERSION \
+            -lITKIOGIPL-$$ITK_VERSION \
+            -lITKIOHDF5-$$ITK_VERSION \
+            -lITKIOImageBase-$$ITK_VERSION \
+            -lITKIOIPL-$$ITK_VERSION \
+            -lITKIOJPEG-$$ITK_VERSION \
+            -lITKIOLSM-$$ITK_VERSION \
+            -lITKIOMesh-$$ITK_VERSION \
+            -lITKIOMeta-$$ITK_VERSION \
+            -lITKIOMRC-$$ITK_VERSION \
+            -lITKIONIFTI-$$ITK_VERSION \
+            -lITKIONRRD-$$ITK_VERSION \
+            -lITKIOPNG-$$ITK_VERSION \
+            -lITKIOSiemens-$$ITK_VERSION \
+            -lITKIOSpatialObjects-$$ITK_VERSION \
+            -lITKIOStimulate-$$ITK_VERSION \
+            -lITKIOTIFF-$$ITK_VERSION \
+            -lITKIOTransformBase-$$ITK_VERSION \
+            -lITKIOTransformHDF5-$$ITK_VERSION \
+            -lITKIOTransformInsightLegacy-$$ITK_VERSION \
+            -lITKIOTransformMatlab-$$ITK_VERSION \
+            -lITKIOVTK-$$ITK_VERSION \
+            -lITKIOXML-$$ITK_VERSION \
+            -lITKKLMRegionGrowing-$$ITK_VERSION \
+            -lITKLabelMap-$$ITK_VERSION \
+            -lITKMesh-$$ITK_VERSION \
+            -lITKMetaIO-$$ITK_VERSION \
+            -lITKniftiio-$$ITK_VERSION \
+            -lITKNrrdIO-$$ITK_VERSION \
+            -lITKOptimizers-$$ITK_VERSION \
+            -lITKPath-$$ITK_VERSION \
+            -lITKPolynomials-$$ITK_VERSION \
+            -lITKQuadEdgeMesh-$$ITK_VERSION \
+            -lITKReview-$$ITK_VERSION \
+            -lITKSpatialObjects-$$ITK_VERSION \
+            -lITKStatistics-$$ITK_VERSION \
+            -lITKVideoCore-$$ITK_VERSION \
+            -lITKVideoIO-$$ITK_VERSION \
+            -lITKVNLInstantiation-$$ITK_VERSION \
+            -lITKVTK-$$ITK_VERSION \
+            -lITKWatersheds-$$ITK_VERSION \
+            -lITKznz-$$ITK_VERSION 
+
+}

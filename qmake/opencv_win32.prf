@@ -1,0 +1,113 @@
+win32 {
+    #compatibility only - projects should use 'CONFIG += opencv libs' (or just use ENV-Variables)
+    #to trigger the libs feature file for more flexible external library integration (which can include automagical search for the libs)
+    isEmpty(LIBS_FEATURE_ENABLED):include($$(LIBS)/libs.pri)
+
+    CONFIG(release, debug|release) : CONFIG_DIR = Release
+    else:CONFIG(debug, debug|release) : CONFIG_DIR = Debug
+	
+    CONFIG(release, debug|release) : CONFIG_SUFFIX =
+    else:CONFIG(debug, debug|release) : CONFIG_SUFFIX = d
+	
+    ### Get ENV variable if not already set
+    isEmpty(OPENCV_VERSION):OPENCV_VERSION = $$(OPENCV_VERSION)
+    isEmpty(OPENCV_DIR):OPENCV_DIR = $$(OPENCV_DIR)
+    isEmpty(OPENCV_SRC_DIR):OPENCV_SRC_DIR = $$(OPENCV_SRC_DIR)
+
+    ### Debug output
+    message(OpenCV-Configuration:)
+    message(OPENCV_VERSION: $$OPENCV_VERSION)
+    message(OPENCV_DIR: $$OPENCV_DIR)
+    message(OPENCV_SRC_DIR: $$OPENCV_SRC_DIR)
+	
+    ### Check if library can be found
+    !exists( $$OPENCV_DIR/OpenCVConfig.cmake ):error(OpenCV not found! Set OPENCV_DIR environment variable to the binary/build directory!)
+    !exists( $$OPENCV_SRC_DIR/CMakeLists.txt ):error(OpenCV source directory not found! Set OPENCV_SRC_DIR variable to the source directory!)
+    isEmpty( OPENCV_VERSION ):error(OpenCV version not set! Set OPENCV_VERSION variable to a specific version!)
+	
+    win32-msvc*:LIBS += -L$$OPENCV_DIR/lib/$$CONFIG_DIR -L$$OPENCV_DIR/3rdparty/lib/$$CONFIG_DIR
+    win32-g++:LIBS += -L$$OPENCV_DIR/lib -L$$OPENCV_DIR/3rdparty/lib
+	
+    win32-msvc*:LIBS += \
+        -lopencv_core$$OPENCV_VERSION$$CONFIG_SUFFIX  \
+        -lopencv_highgui$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_video$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_objdetect$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_photo$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_calib3d$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_ml$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_features2d$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_flann$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_imgcodecs$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_videoio$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_imgproc$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        -lopencv_contrib$$OPENCV_VERSION$$CONFIG_SUFFIX \
+        ### 3rdParty libs
+        -lIlmImf$$CONFIG_SUFFIX \
+        -lzlib$$CONFIG_SUFFIX \
+        -llibtiff$$CONFIG_SUFFIX \
+        -llibjpeg$$CONFIG_SUFFIX \
+        -llibwebp$$CONFIG_SUFFIX \
+        -llibjasper$$CONFIG_SUFFIX \
+        -llibpng$$CONFIG_SUFFIX
+
+   win32-g++:LIBS += \
+        -lopencv_contrib$$OPENCV_VERSION \
+        -lopencv_video$$OPENCV_VERSION \
+        -lopencv_objdetect$$OPENCV_VERSION \
+        -lopencv_photo$$OPENCV_VERSION \
+        -lopencv_calib3d$$OPENCV_VERSION \
+        -lopencv_ml$$OPENCV_VERSION \
+        -lopencv_imgcodecs$$OPENCV_VERSION \
+        -lopencv_videoio$$OPENCV_VERSION \
+        -lopencv_features2d$$OPENCV_VERSION \
+        -lopencv_highgui$$OPENCV_VERSION \
+        -lopencv_flann$$OPENCV_VERSION \
+        -lopencv_imgproc$$OPENCV_VERSION \
+        -lopencv_core$$OPENCV_VERSION \
+        ### 3rdParty libs
+        -lIlmImf \
+        -lzlib \
+        -llibtiff \
+        -llibjpeg \
+        -llibwebp \
+        -llibjasper \
+        -llibpng
+
+
+	lessThan($$OPENCV_VERSION, 300) {
+		win32-g++:LIBS -=  \
+			-lopencv_imgcodecs$$OPENCV_VERSION \
+			-lopencv_videoio$$OPENCV_VERSION \
+			-llibwebp 
+			
+		win32-msvc*:LIBS -= \
+			-lopencv_imgcodecs$$OPENCV_VERSION$$CONFIG_SUFFIX \
+			-lopencv_videoio$$OPENCV_VERSION$$CONFIG_SUFFIX \
+			-llibwebp$$CONFIG_SUFFIX
+	}
+		
+    #Windows libs
+    LIBS += -luuid -loleaut32 -lole32 -lcomctl32 -lgdi32 -lsetupapi -lws2_32 -lvfw32 -ladvapi32 -luser32 -lshell32
+		
+    INCLUDEPATH += \
+        $$OPENCV_SRC_DIR/include \
+        $$OPENCV_SRC_DIR/include/opencv \
+        $$OPENCV_SRC_DIR/include/opencv2 \
+        $$OPENCV_SRC_DIR/modules/core/include \
+        $$OPENCV_SRC_DIR/modules/imgproc/include \
+        $$OPENCV_SRC_DIR/modules/highgui/include \
+        $$OPENCV_SRC_DIR/modules/video/include \
+        $$OPENCV_SRC_DIR/modules/photo/include \
+        $$OPENCV_SRC_DIR/modules/objdetect/include \
+        $$OPENCV_SRC_DIR/modules/calib3d/include \
+        $$OPENCV_SRC_DIR/modules/ml/include \
+        $$OPENCV_SRC_DIR/modules/features2d/include \
+        $$OPENCV_SRC_DIR/modules/flann/include \
+        $$OPENCV_SRC_DIR/modules/imgcodecs/include \
+        $$OPENCV_SRC_DIR/modules/videoio/include \
+		$$OPENCV_SRC_DIR/modules/contrib/include \
+		$$OPENCV_SRC_DIR/modules/legacy/include
+
+    DEFINES += OPENCV_USED
+}

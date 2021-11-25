@@ -1,0 +1,25 @@
+win32 {
+
+    ### Get ENV variable if not already set
+    isEmpty(KINECTSDK20_DIR):KINECTSDK20_DIR = $$(KINECTSDK20_DIR)
+
+    ### Check if library can be found
+    !exists( $$KINECTSDK20_DIR/Assemblies/Microsoft.Kinect.dll ):error(Kinect SDK 2.0 not found! Check if Kinect SDK 2.0 is correctly installed!)
+
+	INCLUDEPATH += \
+		$$KINECTSDK20_DIR/inc
+	
+    contains(QT_ARCH, x86_64) {
+		LIBS += \
+			-L$$KINECTSDK20_DIR/lib/x64
+	}
+	else {
+		LIBS += \
+			-L$$KINECTSDK20_DIR/lib/x86
+	} 
+	
+	LIBS += \
+		-lkinect20 
+} 
+
+DEFINES += KINECT_USED

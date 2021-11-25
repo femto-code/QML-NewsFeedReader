@@ -1,0 +1,7 @@
+OPENCV_VERSION = $$replace(OPENCV_VERSION, \., )
+win32 {
+	equals(OPENCV_VERSION, 300):load(opencv3.0_win32_experimental)
+	else:load(opencv_win32)
+}
+android:load(opencv_android)
+unix:load(opencv_linux)

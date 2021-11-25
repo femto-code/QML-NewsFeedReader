@@ -1,0 +1,13 @@
+#still win32 only
+
+isEmpty(LIBS_DIR):LIBS_DIR = $$(LIBS)
+isEmpty(LIBS_DIR):LIBS_DIR = $$topsrc_dir/libs
+
+win32 {
+	!exists($$LIBS_DIR/libs.pri):error(libs.pri not found in '$$LIBS_DIR'. A libs.pri must be created in the path specified by the ENV-Variable 'LIBS')
+}
+
+!isEmpty(LIBS_DIR) {
+	include($$LIBS_DIR/libs.pri)
+	LIBS_FEATURE_ENABLED = true
+}

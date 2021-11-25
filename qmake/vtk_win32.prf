@@ -1,0 +1,168 @@
+win32 {
+    #IMPORTANT:
+    #This feature file works only with the default-configurated VTK version 6!
+
+    CONFIG(release, debug|release) : CONFIG_DIR = Release
+    else:CONFIG(debug, debug|release) : CONFIG_DIR = Debug
+
+    ### Get ENV variable if not already set
+    isEmpty(VTK_VERSION):VTK_VERSION = $$(VTK_VERSION)
+    isEmpty(VTK_DIR):VTK_DIR = $$(VTK_DIR)
+    isEmpty(VTK_SRC_DIR):VTK_SRC_DIR = $$(VTK_SRC_DIR)
+	isEmpty(VTK_OPENGL_VERSION):VTK_OPENGL_VERSION = OpenGL
+
+    ### Debug output
+    message(VTK-Configuration:)
+    message(VTK_VERSION: $$VTK_VERSION)
+    message(VTK_DIR: $$VTK_DIR)
+    message(VTK_SRC_DIR: $$VTK_SRC_DIR)
+    
+    ### Check if library can be found
+    !exists( $$VTK_DIR/VTKConfig.cmake ):error(VTK not found! Set VTK_DIR variable to the binary/build directory!)
+    !exists( $$VTK_SRC_DIR/CMakeLists.txt ):error(VTK source directory not found! Set VTK_SRC_DIR variable to the source directory!)
+    isEmpty( VTK_VERSION ):error(VTK version not set! Set VTK_VERSION variable to a specific version!)
+
+    VTK_MODULES += Common Charts Domains Filters Geovis Imaging Infovis Interaction IO Parallel Rendering ThirdParty Utilities Views
+
+    ### VTK is structured into modules and submodules, these have to be added relative to the src and bin directories
+    ### REMARKS: For-loop takes a while to complete
+    for(MODULE, VTK_MODULES) {
+        SUBMODULE_DIRS = $$files($$VTK_SRC_DIR/$$MODULE/*)
+        for(SUBMODULE_DIR, SUBMODULE_DIRS) {
+            SUBMODULE = $$basename(SUBMODULE_DIR)
+            INCLUDEPATH += $$VTK_SRC_DIR/$$MODULE/$$SUBMODULE
+            INCLUDEPATH += $$VTK_DIR/$$MODULE/$$SUBMODULE
+        }
+    }
+
+    ### Remove some files that were captured in the 'Utilities' path
+	INCLUDEPATH -= $$VTK_SRC_DIR/Utilities/internal_stdio_core.h.in
+	INCLUDEPATH -= $$VTK_SRC_DIR/Utilities/tcl2py.py
+	INCLUDEPATH -= $$VTK_SRC_DIR/Utilities/vtk2xml.py
+	INCLUDEPATH -= $$VTK_SRC_DIR/Utilities/vtkstd.h.in
+	INCLUDEPATH -= $$VTK_SRC_DIR/Utilities/SetupForDevelopment.sh
+
+    ### It's magic - Some magic defines which normally would be set by cmake
+    DEFINES += "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRendering$$VTK_OPENGL_VERSION)"
+    DEFINES += "vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolume$$VTK_OPENGL_VERSION)"
+
+    ### lib count exploded in VTK 6.0, a nightmare without cmake - link order matters
+    win32-msvc*:LIBS += -L$$VTK_DIR/lib/$$CONFIG_DIR
+    win32-g++:LIBS += -L$$VTK_DIR/lib
+
+	#ignores lib order and cyclic dependencies
+	QMAKE_LFLAGS += -Wl,--start-group
+	
+    LIBS += 
+    LIBS += \
+            -lvtkViewsInfovis-$$VTK_VERSION \
+            -lvtkViewsContext2D-$$VTK_VERSION \
+            -lvtkRenderingVolume$$VTK_OPENGL_VERSION-$$VTK_VERSION \
+            -lvtkRenderingLabel-$$VTK_VERSION \
+            -lvtkRenderingLOD-$$VTK_VERSION \
+            -lvtkRenderingImage-$$VTK_VERSION \
+            -lvtkInteractionImage-$$VTK_VERSION \
+            -lvtkImagingStencil-$$VTK_VERSION \
+            -lvtkImagingStatistics-$$VTK_VERSION \
+            -lvtkImagingMorphological-$$VTK_VERSION \
+            -lvtkImagingMath-$$VTK_VERSION \
+            -lvtkIOVideo-$$VTK_VERSION \
+            -lvtkIOSQL-$$VTK_VERSION \
+            -lvtksqlite-$$VTK_VERSION \
+            -lvtkIOParallel-$$VTK_VERSION \
+            -lvtkIOPLY-$$VTK_VERSION \
+            -lvtkIONetCDF-$$VTK_VERSION \
+            -lvtkIOMovie-$$VTK_VERSION \
+            -lvtkoggtheora-$$VTK_VERSION \
+            -lvtkIOMINC-$$VTK_VERSION \
+            -lvtkIOLSDyna-$$VTK_VERSION \
+            -lvtkIOInfovis-$$VTK_VERSION \
+            -lvtklibxml2-$$VTK_VERSION \
+            -lvtkIOImport-$$VTK_VERSION \
+            -lvtkIOExport-$$VTK_VERSION \
+            -lvtkRenderingGL2PS-$$VTK_VERSION \
+            -lvtkgl2ps-$$VTK_VERSION \
+            -lvtkIOExodus-$$VTK_VERSION \
+            -lvtkexoIIc-$$VTK_VERSION \
+            -lvtkNetCDF_cxx-$$VTK_VERSION \
+            -lvtkNetCDF-$$VTK_VERSION \
+            -lvtkIOEnSight-$$VTK_VERSION \
+            -lvtkIOAMR-$$VTK_VERSION \
+            -lvtkhdf5_hl-$$VTK_VERSION \
+            -lvtkhdf5-$$VTK_VERSION \
+            -lvtkGeovisCore-$$VTK_VERSION \
+            -lvtkproj4-$$VTK_VERSION \
+            -lvtkViewsCore-$$VTK_VERSION \
+            -lvtkInteractionWidgets-$$VTK_VERSION \
+            -lvtkRenderingVolume-$$VTK_VERSION \
+            -lvtkRenderingAnnotation-$$VTK_VERSION \
+            -lvtkImagingColor-$$VTK_VERSION \
+            -lvtkInteractionStyle-$$VTK_VERSION \
+            -lvtkInfovisLayout-$$VTK_VERSION \
+            -lvtkFiltersVerdict-$$VTK_VERSION \
+            -lvtkverdict-$$VTK_VERSION \
+            -lvtkFiltersTexture-$$VTK_VERSION \
+            -lvtkFiltersSelection-$$VTK_VERSION \
+            -lvtkFiltersProgrammable-$$VTK_VERSION \
+            -lvtkFiltersParallelImaging-$$VTK_VERSION \
+            -lvtkFiltersParallel-$$VTK_VERSION \
+            -lvtkFiltersModeling-$$VTK_VERSION \
+            -lvtkFiltersImaging-$$VTK_VERSION \
+            -lvtkImagingGeneral-$$VTK_VERSION \
+            -lvtkFiltersHyperTree-$$VTK_VERSION \
+            -lvtkFiltersHybrid-$$VTK_VERSION \
+            -lvtkImagingSources-$$VTK_VERSION \
+            -lvtkFiltersGeneric-$$VTK_VERSION \
+            -lvtkFiltersFlowPaths-$$VTK_VERSION \
+            -lvtkFiltersAMR-$$VTK_VERSION \
+            -lvtkParallelCore-$$VTK_VERSION \
+            -lvtkIOLegacy-$$VTK_VERSION \
+            -lvtkDomainsChemistry-$$VTK_VERSION \
+            -lvtkIOXML-$$VTK_VERSION \
+            -lvtkIOGeometry-$$VTK_VERSION \
+            -lvtkjsoncpp-$$VTK_VERSION \
+            -lvtkChartsCore-$$VTK_VERSION \
+            -lvtkRenderingContext2D-$$VTK_VERSION \
+            -lvtkRendering$$VTK_OPENGL_VERSION-$$VTK_VERSION \
+            -lvtkImagingHybrid-$$VTK_VERSION \
+            -lvtkRenderingFreeType-$$VTK_VERSION \
+            -lvtkftgl-$$VTK_VERSION \
+            -lvtkfreetype-$$VTK_VERSION \
+            -lvtkRenderingCore-$$VTK_VERSION \
+            -lvtkIOXMLParser-$$VTK_VERSION \
+            -lvtkexpat-$$VTK_VERSION \
+            -lvtkIOImage-$$VTK_VERSION \
+            -lvtktiff-$$VTK_VERSION \
+            -lvtkpng-$$VTK_VERSION \
+            -lvtkjpeg-$$VTK_VERSION \
+            -lvtkmetaio-$$VTK_VERSION \
+            -lvtkIOCore-$$VTK_VERSION \
+            -lvtkzlib-$$VTK_VERSION \
+            -lvtkDICOMParser-$$VTK_VERSION \
+            -lvtkFiltersSources-$$VTK_VERSION \
+            -lvtkFiltersGeometry-$$VTK_VERSION \
+            -lvtkInfovisCore-$$VTK_VERSION \
+            -lvtkFiltersExtraction-$$VTK_VERSION \
+            -lvtkFiltersStatistics-$$VTK_VERSION \
+            -lvtkalglib-$$VTK_VERSION \
+            -lvtkImagingFourier-$$VTK_VERSION \
+            -lvtkImagingCore-$$VTK_VERSION \
+            -lvtkFiltersGeneral-$$VTK_VERSION \
+            -lvtkCommonComputationalGeometry-$$VTK_VERSION \
+            -lvtkFiltersCore-$$VTK_VERSION \
+            -lvtkCommonExecutionModel-$$VTK_VERSION \
+            -lvtkCommonColor-$$VTK_VERSION \
+            -lvtkCommonDataModel-$$VTK_VERSION \
+            -lvtkCommonTransforms-$$VTK_VERSION \
+            -lvtkCommonSystem-$$VTK_VERSION \
+            -lvtkCommonMisc-$$VTK_VERSION \
+            -lvtkCommonMath-$$VTK_VERSION \
+            -lvtkCommonCore-$$VTK_VERSION \
+            -lvtksys-$$VTK_VERSION
+
+	contains(VTK_OPENGL_VERSION, OpenGL2):LIBS += -lvtkglew-$$VTK_VERSION
+			
+    win32-g++:LIBS += -lopengl32 -lglu32 -lglut32
+    LIBS += -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+
+}

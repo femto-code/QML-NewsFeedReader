@@ -1,0 +1,11 @@
+DEFINES += $$upper($$basename(PWD))_USED
+
+INCLUDEPATH += $$PWD
+
+SOURCES +=
+
+HEADERS +=
+
+RESOURCES +=
+
+OTHER_FILES +=
