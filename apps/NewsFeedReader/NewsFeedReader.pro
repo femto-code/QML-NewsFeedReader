@@ -5,9 +5,11 @@ QT += quick qml
 INCLUDEPATH += $$PWD
 
 SOURCES += main.cpp  \
+    feedsources.cpp
 
 
 HEADERS += \
+    feedsources.h
 
 
 RESOURCES += qml/qml.qrc
