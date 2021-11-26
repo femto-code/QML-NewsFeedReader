@@ -19,7 +19,8 @@ import QtQuick.Layouts
 //}
 
 ApplicationWindow {
-    title: qsTr("Hello World")
+    id: mainWindow
+    title: qsTr("News Feed Reader")
     width: 640
     height: 480
     visible: true
@@ -33,21 +34,19 @@ ApplicationWindow {
     Component {
         id: mainView
 
-        Row {
-            spacing: 10
+        Rectangle{
+            anchors.fill: mainWindow
+
+            Text {
+                id: test
+                text: qsTr("Welcome to our NewsFeedReader")
+                anchors.centerIn: parent
+            }
 
             Button {
                 text: "Push"
-                onClicked: stack.push(mainView)
-            }
-            Button {
-                text: "Pop"
-                enabled: stack.depth > 1
-                onClicked: stack.pop()
-
-            }
-            Text {
-                text: stack.depth
+                onClicked: stack.push("qrc:/feedView.qml")
+                anchors.top: test.bottom
             }
         }
     }

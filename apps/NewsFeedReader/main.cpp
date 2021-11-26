@@ -23,10 +23,12 @@ int main(int argc, char* argv[])
 {
     QGuiApplication app(argc, argv);
 
+    qputenv("QT_QUICK_BACKEND", "software");
+
     QScopedPointer<QQmlApplicationEngine> engine(new QQmlApplicationEngine);
     engine->addImportPath(":/");
 
-    engine->load(QUrl("qrc:/Mainpage.qml"));
+    engine->load(QUrl("qrc:/main.qml"));
 
     return app.exec();
 }
