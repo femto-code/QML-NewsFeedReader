@@ -23,6 +23,8 @@ int main(int argc, char* argv[])
 {
     QGuiApplication app(argc, argv);
 
+    qputenv("QT_QUICK_BACKEND", "software");
+
     QScopedPointer<QQmlApplicationEngine> engine(new QQmlApplicationEngine);
     engine->addImportPath(":/");
 
