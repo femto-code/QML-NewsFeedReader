@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>feedView.qml</file>
+        <file>feedAdd.qml</file>
     </qresource>
 </RCC>
