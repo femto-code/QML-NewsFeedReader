@@ -1,6 +1,8 @@
 #additional Qt modules
 QT += quick qml
 
+include($$modules_dir/feedSources/feedSources.pri)
+
 #Include project files
 INCLUDEPATH += $$PWD
 
