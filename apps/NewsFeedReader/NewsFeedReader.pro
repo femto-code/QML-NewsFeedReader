@@ -1,6 +1,9 @@
 #additional Qt modules
 QT += quick qml
 
+#Include modules here that will be tested
+include($$modules_dir/FeedList/FeedList.pri)
+
 #Include project files
 INCLUDEPATH += $$PWD
 
