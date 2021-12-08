@@ -1,8 +1,14 @@
 #additional Qt modules
 QT += quick qml
 
+#Include modules here
+include($$modules_dir/Feed/Feed.pri)
+
 #Include project files
-INCLUDEPATH += $$PWD
+INCLUDEPATH += $$PWD \
+                3rdparty/rapidxml-1.13 \
+                C:/libs/Qt/6.2.0/mingw81_64/lib
+
 
 SOURCES += main.cpp  \
 
@@ -11,6 +17,11 @@ HEADERS += \
 
 
 RESOURCES += qml/qml.qrc
+
+LIBS += -L"3rdparty/rapidxml-1.13" -lrapidxml \
+        C:/libs/Qt/6.2.0/mingw81_64/lib/libcurl.a \
+        C:/libs/Qt/6.2.0/mingw81_64/lib/libcurl.dll.a
+
 
 OTHER_FILES +=
 

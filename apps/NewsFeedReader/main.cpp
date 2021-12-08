@@ -18,6 +18,7 @@
 
 #include <QGuiApplication>
 #include <QtQuick>
+#include <curl/curl.h>
 
 int main(int argc, char* argv[])
 {
