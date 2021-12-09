@@ -16,7 +16,8 @@ int main(int argc, char* argv[])
 
     cout << "\nParsing my students data (sample.xml)....." << endl;
 
-
+    // TODO: text will be the XML / RSS data queried by
+    // QNetworkAccessManager Class ...WIP
 
     string text = "<?xml version='1.0' encoding='utf-8'?><MyStudentsData><Student student_type='Part-time'><Name>John</Name></Student><Student student_type='Full-time'><Name>Sean</Name></Student><Student student_type='Part-time'><Name>Sarah</Name></Student></MyStudentsData>";
     vector<char> bytes(text.begin(), text.end());
@@ -44,7 +45,7 @@ int main(int argc, char* argv[])
         cout << endl;
     }
 
-    return 0;
+    return 0; // ////// END OF EXAMPLE PROGRAM for demonstrating use of rapixml ///////////////
 
     QGuiApplication app(argc, argv);
 
