@@ -17,7 +17,8 @@ HEADERS += \
 
 RESOURCES += qml/qml.qrc
 
-LIBS += -L"3rdparty/rapidxml-1.13" -lrapidxml
+#LIBS += -L"3rdparty/rapidxml-1.13" -lrapidxml
+# Guess not needed, read here: http://rapidxml.sourceforge.net/manual.html
 
 
 OTHER_FILES +=
