@@ -6,8 +6,7 @@ include($$modules_dir/Feed/Feed.pri)
 
 #Include project files
 INCLUDEPATH += $$PWD \
-                3rdparty/rapidxml-1.13 \
-                C:/libs/Qt/6.2.0/mingw81_64/lib
+                3rdparty/rapidxml-1.13
 
 
 SOURCES += main.cpp  \
@@ -18,9 +17,7 @@ HEADERS += \
 
 RESOURCES += qml/qml.qrc
 
-LIBS += -L"3rdparty/rapidxml-1.13" -lrapidxml \
-        C:/libs/Qt/6.2.0/mingw81_64/lib/libcurl.a \
-        C:/libs/Qt/6.2.0/mingw81_64/lib/libcurl.dll.a
+LIBS += -L"3rdparty/rapidxml-1.13" -lrapidxml
 
 
 OTHER_FILES +=
