@@ -1,5 +1,6 @@
 #additional Qt modules
 QT += quick qml
+#QT += network
 
 #Include modules here
 include($$modules_dir/Feed/Feed.pri)
@@ -13,6 +14,7 @@ SOURCES += main.cpp  \
 
 
 HEADERS += \
+    main.h
 
 
 RESOURCES += qml/qml.qrc

@@ -1,16 +1,21 @@
-#include <QGuiApplication>
-#include <QtQuick>
-
-#include <iostream>
-#include <string>
-#include <vector>
-#include <rapidxml.hpp>
+#include "main.h"
 
 using namespace std;
 using namespace rapidxml;
 
 xml_document<> doc;
 xml_node<> * root_node = NULL;
+
+// //////////////////
+static QPointer<QNetworkAccessManager> globalManager;
+
+QNetworkAccessManager* nMgr(){
+    Q_ASSERT(!qApp || QThread::currentThread() == qApp->thread());
+    return globalManager;
+}
+// /////////////////
+
+
 int main(int argc, char* argv[])
 {
 
@@ -45,9 +50,19 @@ int main(int argc, char* argv[])
         cout << endl;
     }
 
-    return 0; // ////// END OF EXAMPLE PROGRAM for demonstrating use of rapixml ///////////////
+    //return 0; // ////// END OF EXAMPLE PROGRAM for demonstrating use of rapixml ///////////////
 
     QGuiApplication app(argc, argv);
+
+// ///////////////////////////////////  Begin of QNAM test
+    QNetworkAccessManager mgr;
+    globalManager = &mgr;
+
+    Feed feed(&mgr);
+
+    qInfo() << "I'm here";
+    feed.get("https://www.deskmodder.de/blog/feed/");
+// ///////////////////////////////////  End of QNAM test
 
     qputenv("QT_QUICK_BACKEND", "software");
 
