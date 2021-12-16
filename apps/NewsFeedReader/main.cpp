@@ -1,17 +1,17 @@
-#include "main.h"
+#include <QGuiApplication>
+#include <QtQuick>
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+
+#include "Feed.h"
 #include <QDomDocument>
 
 using namespace std;
-
-// //////////////////
-static QPointer<QNetworkAccessManager> globalManager;
-
-QNetworkAccessManager* nMgr(){
-    Q_ASSERT(!qApp || QThread::currentThread() == qApp->thread());
-    return globalManager;
-}
-// /////////////////
-
 
 int main(int argc, char* argv[])
 {
@@ -49,13 +49,15 @@ int main(int argc, char* argv[])
     QGuiApplication app(argc, argv);
 
 // ///////////////////////////////////  Begin of QNAM test
-    QNetworkAccessManager mgr;
-    globalManager = &mgr;
 
-    Feed feed(&mgr);
+    QNetworkAccessManager* mgr = new QNetworkAccessManager;
+    qDebug() << "QNetworkAccessManager" << mgr;
+
+    Feed feed( nullptr, mgr);
 
     qInfo() << "I'm here";
     feed.get("https://www.deskmodder.de/blog/feed/");
+
 // ///////////////////////////////////  End of QNAM test
 
     qputenv("QT_QUICK_BACKEND", "software");

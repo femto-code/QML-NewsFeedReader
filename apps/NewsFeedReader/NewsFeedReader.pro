@@ -4,7 +4,6 @@ QT += quick qml xml
 
 #Include modules here
 include($$modules_dir/Feed/Feed.pri)
-include($$modules_dir/NetworkMgr/NetworkMgr.pri)
 
 #Include project files
 INCLUDEPATH += $$PWD
@@ -13,8 +12,7 @@ INCLUDEPATH += $$PWD
 SOURCES += main.cpp  \
 
 
-HEADERS += \
-    main.h
+HEADERS +=
 
 
 RESOURCES += qml/qml.qrc

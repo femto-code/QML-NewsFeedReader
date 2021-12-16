@@ -10,10 +10,7 @@
 #include <QPixmap>
 #include <iostream>
 
-#include "main.h"
-
 using namespace std;
-
 
 class Feed : public QObject {
 
@@ -25,11 +22,9 @@ class Feed : public QObject {
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
 
 public:
-//    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
-    Feed(QObject* parent = NULL) : QObject(parent){
+    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
 
-//        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
-        connect(qnam, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
+        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
 
     };
 
@@ -50,8 +45,7 @@ private:
     QString m_url;
     int m_id;
     bool m_active;
-//    QNetworkAccessManager* m_nMgr;
-    QNetworkAccessManager* qnam = new QNetworkAccessManager(this);
+    QNetworkAccessManager* m_nMgr;
 
 private slots:
     void downloadFinished(QNetworkReply* reply);

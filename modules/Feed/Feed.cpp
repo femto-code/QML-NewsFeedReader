@@ -57,11 +57,8 @@ void Feed::get(QString location)
     qInfo() << "Getting Feed from Server...";
 
 
-
-//    QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(location)));
-    QNetworkReply* reply = qnam->get(QNetworkRequest(QUrl(location)));
-//    QNetworkReply* reply = globalManager.get(QNetworkRequest(QUrl(location)));
-
+    qDebug() << "Feed::get: " << m_nMgr;
+    QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(location)));
 
     if(reply) {
         qInfo() << "Next step...";
