@@ -9,6 +9,7 @@
 #include <QNetworkRequest>
 #include <QPixmap>
 #include <iostream>
+#include "NetworkMgr.h"
 
 using namespace std;
 
@@ -22,7 +23,10 @@ class Feed : public QObject {
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
 
 public:
-    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
+//    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
+    Feed(QObject* parent = NULL) : QObject(parent){
+
+        m_nMgr = NetworkMgr::getInstance();
 
         connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
 
@@ -38,7 +42,7 @@ public:
     void setActive(bool);
 
 public slots:
-    void get(QString location);
+    void get();
 
 private:
     QString m_name;
