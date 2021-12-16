@@ -7,8 +7,7 @@ include($$modules_dir/Feed/Feed.pri)
 include($$modules_dir/NetworkMgr/NetworkMgr.pri)
 
 #Include project files
-INCLUDEPATH += $$PWD \
-                3rdparty/rapidxml-1.13
+INCLUDEPATH += $$PWD
 
 
 SOURCES += main.cpp  \

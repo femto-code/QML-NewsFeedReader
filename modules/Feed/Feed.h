@@ -8,13 +8,11 @@
 #include <QNetworkReply>
 #include <QNetworkRequest>
 #include <QPixmap>
-#include <rapidxml.hpp>
 #include <iostream>
 
 #include "main.h"
 
 using namespace std;
-using namespace rapidxml;
 
 
 class Feed : public QObject {
@@ -52,7 +50,6 @@ private:
     QString m_url;
     int m_id;
     bool m_active;
-    xml_document<> entries;
 //    QNetworkAccessManager* m_nMgr;
     QNetworkAccessManager* qnam = new QNetworkAccessManager(this);
 

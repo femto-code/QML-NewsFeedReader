@@ -7,7 +7,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <rapidxml.hpp>
 
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
