@@ -1,5 +1,5 @@
 #additional Qt modules
-QT += quick qml
+QT += quick qml xml
 #QT += network
 
 #Include modules here
@@ -43,4 +43,5 @@ QML_IMPORT_PATH += $$plugin_dir
 #copy the executable to the source folder
 DLLDESTDIR = $$_PRO_FILE_PWD_
 
-DISTFILES +=
+DISTFILES += \
+    mydocument.xml

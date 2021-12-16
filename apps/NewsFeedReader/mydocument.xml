@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+        xmlns:content="http://purl.org/rss/1.0/modules/content/"
+        xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+        xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+
+        xmlns:georss="http://www.georss.org/georss"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+        >
+
+<channel>
+        <title>Deskmodder.de</title>
+        <atom:link href="https://www.deskmodder.de/blog/feed/" rel="self" type="application/rss+xml" />
+        <link>https://www.deskmodder.de/blog</link>
+        <description>News zum Thema Microsoft, Windows 11 / 10, sowie anderen Neuigkeiten aus dem Netz, viele Tipps und individuelle Hilfe bei Problemen in unserem Forum ● Deskmodder - seit 2003</description>
+        <lastBuildDate>Thu, 16 Dec 2021 08:39:39 +0000</lastBuildDate>
+        <language>de-DE</language>
+        <sy:updatePeriod>
+        hourly	</sy:updatePeriod>
+        <sy:updateFrequency>
+        1	</sy:updateFrequency>
+        <generator>https://wordpress.org/?v=5.8.2</generator>
+<atom:link rel="hub" href="https://pubsubhubbub.appspot.com"/><atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com"/><site xmlns="com-wordpress:feed-additions:1">65580026</site>	<item>
+                <title>Windows 11 Programme oder Updates deinstallieren wird in die Einstellungen verlegt &#8211; Systemsteuerung verlinkt nur noch</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Thu, 16 Dec 2021 08:16:31 +0000</pubDate>
+                                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[lässt sich nicht öffnen]]></category>
+                <category><![CDATA[Neuer Ort]]></category>
+                <category><![CDATA[Programme und Features]]></category>
+                <category><![CDATA[Updates deinstallieren]]></category>
+                <category><![CDATA[Windows 11 Systemsteuerung]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160481</guid>
+
+                                        <description><![CDATA[<p>Microsoft ist dabei mehr und mehr alte Einträge der Systemsteuerung in die Einstellungen zu verlagern. Ist natürlich von Vorteil, wenn alles an einem Platz ist. Aber man muss auch dementsprechend seinen Arbeitsablauf ändern und sich daran gewöhnen. In der neuen&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/">Windows 11 Programme oder Updates deinstallieren wird in die Einstellungen verlegt &#8211; Systemsteuerung verlinkt nur noch</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Microsoft ist dabei mehr und mehr alte Einträge der Systemsteuerung in die Einstellungen zu verlagern. Ist natürlich von Vorteil, wenn alles an einem Platz ist. Aber man muss auch dementsprechend seinen Arbeitsablauf ändern und sich daran gewöhnen.</p>
+<p>In der neuen Insider wurde nun der Eintrag Programme und Features aus der Systemsteuerung zwar nicht entfernt, aber er leitet jetzt direkt in die Einstellungen -> Apps -> Installierte Apps. Interessant war der Eintrag in der Systemsteuerung bisher für die installierten Updates. Aber auch wenn man in Windows-Taste + R shell:AppUpdatesFolder eingibt, landet man nun in den neuen Einstellungen.</p>
+
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001.jpg' rel="lightbox[160481]"><img width="306" height="183" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001-306x183.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001-306x183.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001-500x299.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001-810x484.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-001.jpg 1346w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002.jpg' rel="lightbox[160481]"><img width="306" height="190" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002-306x190.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002-306x190.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002-500x311.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002-810x504.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-002.jpg 1285w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003.jpg' rel="lightbox[160481]"><img width="306" height="202" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003-306x202.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003-306x202.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003-500x330.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003-810x535.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-systemsteuerung-programme-und-features-einstellungen-003.jpg 1256w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+
+<p>Hier hat Microsoft unter Windows Update -> Updateverlauf -> Unter &#8222;Weitere Optionen&#8220; den Eintrag &#8222;Updates deinstallieren&#8220; die Umleitung herausgenommen und es werden jetzt die Updates in den Einstellungen aufgelistet. Die OptionalFeatures.exe für die Windows Features über Windows-Taste + R funktioniert aber weiterhin.</p>
+<p>Da werden noch sicherlich andere Änderungen auf uns zu kommen und einige werden bestimmt auch wieder schimpfen. Aber wenn man alles an einem Ort, den Einstellungen haben möchte, muss man sich auch umgewöhnen. Ist ähnlich mit der alten Datenträgerbereinigung, die Microsoft auch in der Dev derzeit aus den <a href="https://www.deskmodder.de/blog/2021/09/03/windows-11-datentraegerbereinigung-aus-den-eigenschaften-c-wurde-entfernt/" rel="noopener" target="_blank">Eigenschaften des Laufwerks entfernt hat</a>. Hier hab ich mich selber schon vorab in der Windows 11 (22000) daran gewöhnt im Datei Explorer das Laufwerk zu markieren und dann oben die 3-Punkte -> Bereinigen aufzurufen.</p>
+<p>Mal sehen, was uns im nächsten Jahr mit den neuen Insider Versionen noch alles für Veränderungen bevorstehen und natürlich wann diese Änderungen in der finalen Version übernommen werden.</p>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-146277" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2020/11/01/whatsapp-desktop-app-startet-derzeit-nicht-unter-windows-10-ein-zweites-mal-workaround/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/10/whatsapp-logo-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/10/whatsapp-logo-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/10/whatsapp-logo-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2020/11/01/whatsapp-desktop-app-startet-derzeit-nicht-unter-windows-10-ein-zweites-mal-workaround/" class="wp_rp_title">WhatsApp Desktop App startet derzeit nicht unter Windows 10 ein zweites Mal [Workaround][Update 2.2043.22.0]</a><small class="wp_rp_comments_count"> (66)</small><br /></li><li data-position="1" data-poid="in-105480" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2018/07/26/virtuelle-maschinen-als-windows-feature-in-der-windows-10-1809-und-1903-ohne-hyper-v/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/07/windows-feature-virtuelle-maschine-aktivieren-windows-10-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/07/windows-feature-virtuelle-maschine-aktivieren-windows-10-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/07/windows-feature-virtuelle-maschine-aktivieren-windows-10-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2018/07/26/virtuelle-maschinen-als-windows-feature-in-der-windows-10-1809-und-1903-ohne-hyper-v/" class="wp_rp_title">Virtuelle Maschinen als Windows Feature in der Windows 10 1809 und 1903 auch Home ohne Hyper-V</a><small class="wp_rp_comments_count"> (3)</small><br /></li><li data-position="2" data-poid="in-29306" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2014/07/27/neue-tutorials-fuer-windows-8-1-in-unserem-wiki-hier-kurz-vorgestellt-6/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2014/07/windows-update-direkt-starten-verknuepfung-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" /></a><a href="https://www.deskmodder.de/blog/2014/07/27/neue-tutorials-fuer-windows-8-1-in-unserem-wiki-hier-kurz-vorgestellt-6/" class="wp_rp_title">Neue Tutorials  für Windows 8.1 in unserem Wiki hier kurz vorgestellt #6</a><small class="wp_rp_comments_count"> (3)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/">Windows 11 Programme oder Updates deinstallieren wird in die Einstellungen verlegt &#8211; Systemsteuerung verlinkt nur noch</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/feed/</wfw:commentRss>
+                        <slash:comments>1</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160481</post-id>	</item>
+                <item>
+                <title>Bose SoundLink Flex: Neuer portabler Bluetooth-Lautsprecher vorgestellt</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/bose-soundlink-flex-neuer-portabler-bluetooth-lautsprecher-vorgestellt/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/bose-soundlink-flex-neuer-portabler-bluetooth-lautsprecher-vorgestellt/#respond</comments>
+
+                <dc:creator><![CDATA[Mike]]></dc:creator>
+                <pubDate>Thu, 16 Dec 2021 08:00:19 +0000</pubDate>
+                                <category><![CDATA[Allgemein]]></category>
+                <category><![CDATA[Hardware]]></category>
+                <category><![CDATA[Bluetooth Speaker]]></category>
+                <category><![CDATA[Bluetooth-Lautsprecher]]></category>
+                <category><![CDATA[Bode SoundLink Flex]]></category>
+                <category><![CDATA[Sound]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160463</guid>
+
+                                        <description><![CDATA[<p>Viele von uns haben zu Hause einen kleinen oder größeren Bluetooth-Speaker stehen. Und die Auswahl ist groß. Zahlreiche Hersteller versuchen hier die User von den eigenen Geräten zu überzeugen. Aber gerade beim Sound ist es so &#8211; man muss selbst&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/bose-soundlink-flex-neuer-portabler-bluetooth-lautsprecher-vorgestellt/">Bose SoundLink Flex: Neuer portabler Bluetooth-Lautsprecher vorgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb.jpeg" rel="lightbox[160463]"><img class="aligncenter size-medium wp-image-160466" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-360x360.jpeg" alt="" width="360" height="360" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-360x360.jpeg 360w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-583x583.jpeg 583w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-205x205.jpeg 205w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-1536x1536.jpeg 1536w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb-50x50.jpeg 50w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-composite-render-int-015-rgb.jpeg 1920w" sizes="(max-width: 360px) 100vw, 360px" /></a></p>
+<p>Viele von uns haben zu Hause einen kleinen oder größeren Bluetooth-Speaker stehen. Und die Auswahl ist groß. Zahlreiche Hersteller versuchen hier die User von den eigenen Geräten zu überzeugen. Aber gerade beim Sound ist es so &#8211; man muss selbst ein solches Gerät testen, um das Beste für einen selbst zu finden. Auch Bose stockt nun sein Portfolio an solchen Lautsprechern auf und hat den Bose SoundLink Flex vorgestellt.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb.jpeg" rel="lightbox[160463]"><img class="aligncenter size-medium wp-image-160465" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-360x360.jpeg" alt="" width="360" height="360" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-360x360.jpeg 360w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-583x583.jpeg 583w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-205x205.jpeg 205w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-1536x1536.jpeg 1536w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb-50x50.jpeg 50w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/large-jpg-slfbs-stoneblue-001-9360x7020-rgb.jpeg 1920w" sizes="(max-width: 360px) 100vw, 360px" /></a></p>
+<p>Dieser kommt im handlichen Design und soll zudem sehr robust sein. Hier gibt&#8217;s eine Zertifizierung nach IP67. Natürlich soll auch der SoundLink Flex die Beste Audio-Qualität trotz seiner geringen Größe geben. Der Lautsprecher ist mit der proprietären Bose PositionlQ™-Technologie ausgestattet, die die Ausrichtung des Lautsprechers automatisch erkennt. Der Akku bietet eine Laufzeit von bis zu 12 Stunden. Der SoundLink Flex ist ab heute für 169,95 Euro (UVP) erhältlich. Weitere Details findet ihr auf der Produktseite vom <a href="https://www.bose.de/de_de/products/speakers/portable_speakers/soundlink-flex.html#ProductTabs_tab1" target="_blank" rel="noopener">Bose SoundLink Flex</a>.</p>
+
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-135241" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2020/03/04/ultimate-ears-hyperboom-neuer-leistungsstarker-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/03/hyperboom-gallery-fob-small-50x50.png" alt="Ultimate Ears Hyperboom: Neuer leistungsstarker Bluetooth-Lautsprecher vorgestellt" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2020/03/04/ultimate-ears-hyperboom-neuer-leistungsstarker-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_title">Ultimate Ears Hyperboom: Neuer leistungsstarker Bluetooth-Lautsprecher vorgestellt</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="1" data-poid="in-104727" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2018/07/11/lg-pk7-pk5-pk3-neue-portable-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/07/bild-lg-pk7-2-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/07/bild-lg-pk7-2-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/07/bild-lg-pk7-2-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2018/07/11/lg-pk7-pk5-pk3-neue-portable-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_title">LG PK7, PK5 &#038; PK3: Neue portable Bluetooth-Lautsprecher vorgestellt</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="2" data-poid="in-53034" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2015/09/16/ue-boom-2-neue-version-vom-bekannten-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2015/09/pdp-hero-min-65x65.png" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2015/09/pdp-hero-min-65x65.png 65w, https://www.deskmodder.de/blog/wp-content/uploads/2015/09/pdp-hero-min-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2015/09/16/ue-boom-2-neue-version-vom-bekannten-bluetooth-lautsprecher-vorgestellt/" class="wp_rp_title">UE Boom 2 &#8211; Neue Version vom bekannten Bluetooth-Lautsprecher vorgestellt</a><small class="wp_rp_comments_count"> (0)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/bose-soundlink-flex-neuer-portabler-bluetooth-lautsprecher-vorgestellt/">Bose SoundLink Flex: Neuer portabler Bluetooth-Lautsprecher vorgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/bose-soundlink-flex-neuer-portabler-bluetooth-lautsprecher-vorgestellt/feed/</wfw:commentRss>
+                        <slash:comments>0</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160463</post-id>	</item>
+                <item>
+                <title>Windows 11 Windows Notepad (Editor) App als Preview komplett neu und im dunklen Modus [Update]</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/windows-11-windows-notepad-editor-app-als-preview-komplett-neu-und-im-dunklen-modus/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/windows-11-windows-notepad-editor-app-als-preview-komplett-neu-und-im-dunklen-modus/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Thu, 16 Dec 2021 07:28:59 +0000</pubDate>
+                                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[Windows Apps]]></category>
+                <category><![CDATA[11.2110.64.0]]></category>
+                <category><![CDATA[Dark Modus]]></category>
+                <category><![CDATA[Download]]></category>
+                <category><![CDATA[Editor]]></category>
+                <category><![CDATA[Preview]]></category>
+                <category><![CDATA[Windows Notepad]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160134</guid>
+
+                                        <description><![CDATA[<p>[Update 16.12.21]: Windows Notepad (Editor) App für Windows 11 wurde auf die Version 11.2111.0.0 aktualisiert und die MinVersion der App auf die 10.0.22000. zurückgesetzt. Bedeutet: Wer mit Windows 11 unterwegs ist, kann die App jetzt auch installieren. Siehe Anleitung. (via)&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-windows-notepad-editor-app-als-preview-komplett-neu-und-im-dunklen-modus/">Windows 11 Windows Notepad (Editor) App als Preview komplett neu und im dunklen Modus [Update]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p><strong>[Update 16.12.21]:</strong> Windows Notepad (Editor) App für Windows 11 wurde auf die Version 11.2111.0.0 aktualisiert und die MinVersion der App auf die 10.0.22000. zurückgesetzt. Bedeutet: Wer mit Windows 11 unterwegs ist, kann die App jetzt auch installieren. Siehe Anleitung. (<a href="https://twitter.com/ALumia_Italia/status/1471225820354129921" rel="noopener" target="_blank">via</a>)</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000.jpg" rel="lightbox[160134]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000-500x326.jpg" alt="" width="500" height="326" class="aligncenter size-medium wp-image-160476" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000-500x326.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000-810x528.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000-306x199.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-app-preview-22000.jpg 1311w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>[Original 7.12.21]: Schon im Oktober <a href="https://www.deskmodder.de/blog/2021/10/09/editor-notepad-als-neue-windows-11-app-version-durchgesickert/" rel="noopener" target="_blank">sickerte die Nachricht durch</a>, dass Microsoft die Notepad App (Editor) komplett überarbeitet. Jetzt ist sie als Preview-Version aktuell vorhanden. Derzeit aber nur für die Dev-Insider installierbar.</p>
+
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001.jpg' rel="lightbox[160134]"><img width="306" height="187" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001-306x187.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001-306x187.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001-500x306.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001-810x496.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-001.jpg 1080w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002.jpg' rel="lightbox[160134]"><img width="306" height="198" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002-306x198.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002-306x198.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002-500x323.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002-810x523.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-002.jpg 1096w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003.jpg' rel="lightbox[160134]"><img width="306" height="195" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003-306x195.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003-306x195.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003-500x319.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003-810x516.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-003.jpg 1084w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+
+<p>Die App an das neue Design von Windows 11 angepasst. Nichts erinnert mehr an den guten alten Editor. In den Einstellungen lässt sich der dunkle Modus, helle Modus oder vom System sowie die Schriftarten einstellen. Die derzeitige Version ist die 11.2110.64.0. Über den Store kommt die App derzeit noch nicht, kann aber trotzdem schon installiert werden. Sie wird aber nach und nach ausgerollt.</p>
+
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004.jpg' rel="lightbox[160134]"><img width="306" height="197" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004-306x197.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004-306x197.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004-500x322.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004-810x522.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-004.jpg 1059w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005.jpg' rel="lightbox[160134]"><img width="306" height="189" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005-306x189.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005-306x189.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005-500x309.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005-810x501.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-005.jpg 1080w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006.jpg' rel="lightbox[160134]"><img width="306" height="193" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006-306x193.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006-306x193.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006-500x316.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006-810x512.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-notepad-editor-preview-dunkler-modus-006.jpg 1058w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+
+<p>Wer als Insider im Dev-Kanal unterwegs ist, kann die App schon manuell installieren. Den als MinVersion ist die <del datetime="2021-12-16T07:23:37+00:00">10.0.22468.0</del> in der xml festgelegt.</p>
+<ul>
+<li>Entweder hier herunterladen <a href="https://t1p.de/e4ej" rel="noopener" target="_blank">HiDrive</a> (8,3 MB)</li>
+<li>Oder <a href="https://store.rg-adguard.net" rel="noopener" target="_blank">store.rg-adguard.net</a> und von links nach rechts:</li>
+<li>ProductId | 9msmlrh6lzf3 | Fast | Haken anklicken</li>
+<li>Die Microsoft.WindowsNotepad 11.2111.0.0 8wekyb3d8bbwe.<strong>msixbundle</strong> herunterladen</li>
+<li>In PowerShell als Administrator gestartet:</li>
+<li><strong>Add-AppxPackage -Path</strong> Leerzeichen und den kopierten Pfad der Datei dahinter einfügen und Enter drücken.</li>
+</ul>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-159950" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/02/nanazip-jetzt-auch-als-preview-im-microsoft-store-mit-7-zip-zstandard-funktionen/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/nanazip-preview-windows-11-7-zip-kontextmenue-001-50x50.jpg" alt="NanaZip jetzt auch als Preview im Microsoft Store mit 7-Zip ZStandard Funktionen" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/02/nanazip-jetzt-auch-als-preview-im-microsoft-store-mit-7-zip-zstandard-funktionen/" class="wp_rp_title">NanaZip jetzt auch als Preview im Microsoft Store mit 7-Zip ZStandard Funktionen</a><small class="wp_rp_comments_count"> (4)</small><br /></li><li data-position="1" data-poid="in-159573" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/11/17/windows-11-media-player-einmal-angeschaut/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/11/windows-11-media-player-app-001-50x50.jpg" alt="Windows 11 Media Player einmal angeschaut" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/11/17/windows-11-media-player-einmal-angeschaut/" class="wp_rp_title">Windows 11 Media Player einmal angeschaut</a><small class="wp_rp_comments_count"> (20)</small><br /></li><li data-position="2" data-poid="in-160369" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/14/kb5008215-windows-11-22000-376-manueller-download-sicherheitsupdate-dezember-2021/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/05/windows-10-update-logo-50x50.jpg" alt="KB5008215 Windows 11 22000.376 [Manueller Download] Sicherheitsupdate Dezember 2021" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/14/kb5008215-windows-11-22000-376-manueller-download-sicherheitsupdate-dezember-2021/" class="wp_rp_title">KB5008215 Windows 11 22000.376 [Manueller Download] Sicherheitsupdate Dezember 2021</a><small class="wp_rp_comments_count"> (43)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-windows-notepad-editor-app-als-preview-komplett-neu-und-im-dunklen-modus/">Windows 11 Windows Notepad (Editor) App als Preview komplett neu und im dunklen Modus [Update]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/windows-11-windows-notepad-editor-app-als-preview-komplett-neu-und-im-dunklen-modus/feed/</wfw:commentRss>
+                        <slash:comments>14</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160134</post-id>	</item>
+                <item>
+                <title>Windows 11 22523 ISO / ESD (deutsch, english)</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/#respond</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Thu, 16 Dec 2021 06:57:56 +0000</pubDate>
+                                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[10.0.22523.1000 ISO]]></category>
+                <category><![CDATA[10.0.22524.1000 ISO]]></category>
+                <category><![CDATA[22523 ISO]]></category>
+                <category><![CDATA[22523.1000 ISO]]></category>
+                <category><![CDATA[22524.1000 ISO]]></category>
+                <category><![CDATA[Aktuelle Insider ISO]]></category>
+                <category><![CDATA[Insider Build als ISO]]></category>
+                <category><![CDATA[Neue Insider ISO]]></category>
+                <category><![CDATA[Windows 11 22523 ISO]]></category>
+                <category><![CDATA[Windows 11 22524 ISO]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160469</guid>
+
+                                        <description><![CDATA[<p>Gestern hatte Microsoft die neue Insider Build 22523 auch als ISO für die Insider bereitgestellt. Diese MS-ISOs und auch die &#8222;üblichen&#8220; werden wir hier trotzdem wie immer bereitstellen. Auch in dieser Version wurden wieder einige Probleme korrigiert. Die ARM-Version steht&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/">Windows 11 22523 ISO / ESD (deutsch, english)</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Gestern hatte Microsoft die neue Insider Build 22523 auch als ISO für die Insider bereitgestellt. Diese MS-ISOs und auch die &#8222;üblichen&#8220; werden wir hier trotzdem wie immer bereitstellen.</p>
+<p>Auch in dieser Version wurden wieder einige Probleme korrigiert. Die ARM-Version steht wieder bereit und es wurden weitere Einträge aus der alten Systemsteuerung in die neuen Einstellungen übernommen. Alles Step by Step. Die komplette Release-Note könnt ihr euch <a href="https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/" rel="noopener" target="_blank">hier in Ruhe durchlesen</a>.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-scaled.jpg" rel="lightbox[160469]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-500x281.jpg" alt="" width="500" height="281" class="aligncenter size-medium wp-image-158500" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-500x281.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-810x455.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-306x172.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-1536x863.jpg 1536w, https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-2048x1150.jpg 2048w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Eine spezielle ISO (ohne TPM, CPU) findet ihr wie immer <a href="https://www.deskmodder.de/phpBB3/viewtopic.php?f=354&#038;t=26028" rel="noopener" target="_blank">bei uns im Forum</a>k, auch mit einem <a href="https://www.deskmodder.de/phpBB3/viewtopic.php?p=379326#p379326" rel="noopener" target="_blank">neuen Hinweis</a> für die Installation.</p>
+<h3>Windows 11 22523 MS-ISOs</h3>
+<ul>
+<li><a href="https://t1p.de/myg1" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_x64_de-de_22523.iso</a> (4,6 GB)</li>
+<li><a href="https://t1p.de/oxwq4" rel="noopener" target="_blank">Windows11_InsiderPreview_EnterpriseVL_x64_de-de_22523.iso</a> (4,52 GB)</li>
+<li><a href="https://t1p.de/u4sx" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_x64_en-us_22523.iso</a> (4,48 GB)</li>
+<li><a href="https://t1p.de/i697" rel="noopener" target="_blank">Windows11_InsiderPreview_EnterpriseVL_x64_en-us_22523.iso</a> (4,48 GB)</li>
+<li>ARM als VHDX nur Englisch <a href="https://t1p.de/01wl" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_ARM64_en-us_22523.VHDX</a> (9,5 GB)</li>
+</ul>
+<h3>Windows 11 22523 x64 ISO deutsch</h3>
+<ul>
+<li><strong>Wichtig:</strong> <a href="https://www.deskmodder.de/phpBB3/viewtopic.php?f=327&#038;t=22067" rel="noopener" target="_blank">Bezeichnungen der Windows 10 ISO Dateien</a> hier bei Deskmodder</li>
+<li>Tipp: Ventoy – <a href="https://www.deskmodder.de/blog/2020/04/19/ventoy-bootfaehigen-usb-stick-ganz-einfach-mit-einer-iso-erstellen-multiboot-faehig/" rel="noopener" target="_blank">Bootfähigen USB-Stick ganz einfach mit einer ISO erstellen</a> (Multi-Boot-fähig)</li>
+<li><strong>Home</strong> <a href="https://t1p.de/w38n" rel="noopener" target="_blank">HiDrive</a> (4,11 GB) <em>Danke an Birkuli</em></li>
+<li><strong>Home</strong> inkl. NET 3.5 <a href="https://t1p.de/7z0n" rel="noopener" target="_blank">HiDrive</a> (4,17 GB) <em>Danke an Under the Hood</em></li>
+<li><strong>Pro</strong> <a href="https://t1p.de/kwa5" rel="noopener" target="_blank">HiDrive</a> (4,14 GB) <em>Danke an Birkuli</em></li>
+<li><strong>Pro</strong> inkl. NET 3.5 <a href="https://t1p.de/0q1h" rel="noopener" target="_blank">HiDrive</a> (4,20 GB) <em>Danke an Under the Hood</em></li>
+<li><strong>Home, Pro, Pro Educ., Pro for Work., Educ., Multi Session, Ent.</strong> Auch als N-Version <a href="https://t1p.de/eernx" rel="noopener" target="_blank">HiDrive</a> (4,39 GB) <em>Danke an Birkuli</em></li>
+<li><strong>Home, Pro, Pro Educ., Pro for Work., Educ., Multi Session, Ent.</strong> Auch als N-Version inkl. NET 3.5 <a href="https://t1p.de/tdls" rel="noopener" target="_blank">HiDrive</a> (4,46 GB) <em>Danke an Under the Hood</em></li>
+<li><strong>Home, Pro, Pro Educ., Pro for Work., Educ., Multi Session, Ent.</strong> Auch als N-Version inkl. NET 3.5 <a href="https://t1p.de/n0a1" rel="noopener" target="_blank">GoogleDrive</a> (4,60 GB) <em>Danke an Harry</em></li>
+</ul>
+<h3>Windows 11 22523 ARM ISO deutsch</h3>
+<ul>
+<li><strong>Home, Pro, Pro Educ., Pro for Work., Educ., Multi Session, Ent.</strong> <a href="https://t1p.de/51m4" rel="noopener" target="_blank">HiDrive</a> (4,56 GB) <em>Danke an Birkuli</em></li>
+</ul>
+<h3>Windows 11 22523 ISO english</h3>
+<ul>
+<li>En-Us x64 <strong>Home, Pro, Pro Educ., Pro for Work., Educ., Multi Session, Ent. Vol.</strong> Auch als N-Version <a href="https://t1p.de/0hdt" rel="noopener" target="_blank">HiDrive</a> (4,35 GB) <em>Danke an Birkuli</em></li>
+</ul>
+<h3>Windows 11 22523 ESD UUP</h3>
+<ul>
+<li>Wer sich selber eine ISO erstellen möchte, kann sich <a href="https://t1p.de/eojv" target="_blank" rel="noopener noreferrer"><strong>diese Anleitung</strong></a> genauer anschauen. <em>(Abschnitt 4)</em>.</li>
+<li>Eine ähnliche Anleitung dazu findet ihr <a href="https://www.deskmodder.de/blog/2018/03/10/windows-10-iso-erstellen-jetzt-noch-einfacher-alles-was-benoetigt-wird-wird-mitgeliefert/" target="_blank" rel="noopener noreferrer"><strong>hier</strong></a></li>
+</ul>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-159115" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/11/04/windows-11-22494-iso-esd-deutsch-english/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-50x50.jpg" alt="Windows 11 22494 ISO / ESD (deutsch, english)" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/11/04/windows-11-22494-iso-esd-deutsch-english/" class="wp_rp_title">Windows 11 22494 ISO / ESD (deutsch, english)</a><small class="wp_rp_comments_count"> (8)</small><br /></li><li data-position="1" data-poid="in-158906" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/28/windows-11-22489-iso-esd-deutsch-english/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-50x50.jpg" alt="Windows 11 22489 ISO / ESD (deutsch, english)" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/10/28/windows-11-22489-iso-esd-deutsch-english/" class="wp_rp_title">Windows 11 22489 ISO / ESD (deutsch, english)</a><small class="wp_rp_comments_count"> (7)</small><br /></li><li data-position="2" data-poid="in-158481" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/15/windows-11-22478-iso-esd-deutsch-english/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-insider-logo-1-50x50.jpg" alt="Windows 11 22478 ISO / ESD (deutsch, english)" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/10/15/windows-11-22478-iso-esd-deutsch-english/" class="wp_rp_title">Windows 11 22478 ISO / ESD (deutsch, english)</a><small class="wp_rp_comments_count"> (32)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/">Windows 11 22523 ISO / ESD (deutsch, english)</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/feed/</wfw:commentRss>
+                        <slash:comments>0</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160469</post-id>	</item>
+                <item>
+                <title>Samsung Galaxy Tab A8 (2021) offiziell vorgestellt</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/samsung-galaxy-tab-a8-2021-offiziell-vorgestellt/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/samsung-galaxy-tab-a8-2021-offiziell-vorgestellt/#respond</comments>
+
+                <dc:creator><![CDATA[Mike]]></dc:creator>
+                <pubDate>Thu, 16 Dec 2021 05:48:03 +0000</pubDate>
+                                <category><![CDATA[Allgemein]]></category>
+                <category><![CDATA[Hardware]]></category>
+                <category><![CDATA[Samsung Galaxy Tab A8 2021]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160457</guid>
+
+                                        <description><![CDATA[<p>Nach diversen Leaks hat Samsung am gestrigen Tage sein neues Einsteiger-Tablet, das Samsung Galaxy Tab A8 (2021), offiziell vorgestellt. Ein Preis für Deutschland ist derzeit noch nicht bekannt aber es wurde angegeben, dass das Gerät noch im Dezember in Europa&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/samsung-galaxy-tab-a8-2021-offiziell-vorgestellt/">Samsung Galaxy Tab A8 (2021) offiziell vorgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-scaled.jpg" rel="lightbox[160457]"><img class="aligncenter size-medium wp-image-160461" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-500x354.jpg" alt="" width="500" height="354" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-500x354.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-810x573.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-290x205.jpg 290w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-1536x1086.jpg 1536w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-pink-gold-kv-2048x1448.jpg 2048w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Nach diversen Leaks hat Samsung am gestrigen Tage sein neues Einsteiger-Tablet, das Samsung Galaxy Tab A8 (2021), offiziell vorgestellt. Ein Preis für Deutschland ist derzeit noch nicht bekannt aber es wurde angegeben, dass das Gerät noch im Dezember in Europa verfügbar sein soll. Ausgestattet ist es u.a. mit einem 10,5 Zoll Display, dem UNISOC T618 Octa-Core Prozessor und bis zu 4 GB RAM. Neben einem WLAN only Modell wird es auch wieder ein LTE-Modell geben.</p>
+<p>Hier einmal die Auflistung der Spezifikationen:</p>
+<ul>
+<li>10,5 Zoll WUXGA-Display mit einer Auflösung von 2000 x 1200 Pixeln</li>
+<li>UNISOC T618 Octa-Core Prozessor samt Mali G52 MP2 GPU</li>
+<li>Modell mit 3 GB RAM/ 32 GB Speicher</li>
+<li>Modell mit 4 GB RAM und wahlweise 64 GB oder 128 GB Speicher</li>
+<li>Speicher per MicroSD-Karte erweiterbar auf bis zu 1 TB</li>
+<li>8 MP Rückseitenkamera</li>
+<li>5 MP Frontkamera</li>
+<li>3,5mm Klinkenanschluss</li>
+<li>Quad-Stereolautsprecher mit Dolby Atmos Unterstützung</li>
+<li>Android 11 vorinstalliert</li>
+<li>Dual-Wlan ac</li>
+<li>Bluetooth 5 LE</li>
+<li>USB Typ C Anschluss</li>
+<li>Je nach Modell auch LTE</li>
+<li>Abmessungen:246.8 x 161.9 x 6.9mm</li>
+<li>Gewicht: 508 Gramm</li>
+<li>7.040 mAh Akku</li>
+</ul>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-scaled.jpg" rel="lightbox[160457]"><img class="aligncenter size-large wp-image-160460" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-323x583.jpg" alt="" width="323" height="583" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-323x583.jpg 323w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-200x360.jpg 200w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-114x205.jpg 114w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-852x1536.jpg 852w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-1136x2048.jpg 1136w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/galaxy-tab-a8-specifications-infographic-scaled.jpg 1420w" sizes="(max-width: 323px) 100vw, 323px" /></a></p>
+<p>Sobald sie Preise für Deutschland verfügbar sind, reichen wir diese nach.</p>
+
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-157814" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/09/28/samsung-galaxy-tab-a8-2021-weitere-informationen-zur-ausstattung/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/galaxy-tab-a8-2021-5k2-1068x801-1-50x50.jpg" alt="Samsung Galaxy Tab A8 2021: Weitere Informationen zur Ausstattung" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/09/28/samsung-galaxy-tab-a8-2021-weitere-informationen-zur-ausstattung/" class="wp_rp_title">Samsung Galaxy Tab A8 2021: Weitere Informationen zur Ausstattung</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="1" data-poid="in-157531" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/09/17/samsung-galaxy-tab-a8-2021-erste-render-bilder-daten-zum-kommenden-tablet/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/galaxy-tab-a8-2021-5k3-50x50.jpg" alt="Samsung Galaxy Tab A8 2021: Erste Render-Bilder &#038; Daten zum kommenden Tablet" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/09/17/samsung-galaxy-tab-a8-2021-erste-render-bilder-daten-zum-kommenden-tablet/" class="wp_rp_title">Samsung Galaxy Tab A8 2021: Erste Render-Bilder &#038; Daten zum kommenden Tablet</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="2" data-poid="in-31712" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2014/09/10/die-neue-apple-watch-ausfuehrliche-vorstellung/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2014/09/apple-watch-gehäuse-farebn-150x150.png" class="attachment-50x50 size-50x50 wp-post-image" alt="" /></a><a href="https://www.deskmodder.de/blog/2014/09/10/die-neue-apple-watch-ausfuehrliche-vorstellung/" class="wp_rp_title">Die neue Apple Watch: Ausführliche Vorstellung</a><small class="wp_rp_comments_count"> (0)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/samsung-galaxy-tab-a8-2021-offiziell-vorgestellt/">Samsung Galaxy Tab A8 (2021) offiziell vorgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/samsung-galaxy-tab-a8-2021-offiziell-vorgestellt/feed/</wfw:commentRss>
+                        <slash:comments>0</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160457</post-id>	</item>
+                <item>
+                <title>Heute im Adventskalender Audials Radio 2022 Special Edition [Giveaway]</title>
+                <link>https://www.deskmodder.de/blog/2021/12/16/heute-im-adventskalender-audials-radio-2022-special-edition-giveaway/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/16/heute-im-adventskalender-audials-radio-2022-special-edition-giveaway/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 23:01:02 +0000</pubDate>
+                                <category><![CDATA[Software & Updates]]></category>
+                <category><![CDATA[Audials Radio 2022]]></category>
+                <category><![CDATA[Giveaway]]></category>
+                <category><![CDATA[kostenlos]]></category>
+                <category><![CDATA[Special Edition]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160067</guid>
+
+                                        <description><![CDATA[<p>Audials Radio 2022 Special Edition ist eine Auskopplung aus Audials One und eine kostengünstigere Variante als Audials Radio 2022 im Wert von 19,90 €. Für Musikliebhaber, die gerne Musik oder anderes aufnehmen, dürfte es genau das richtige sein. Es stehen&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/heute-im-adventskalender-audials-radio-2022-special-edition-giveaway/">Heute im Adventskalender Audials Radio 2022 Special Edition [Giveaway]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Audials Radio 2022 Special Edition ist eine Auskopplung aus Audials One und eine kostengünstigere Variante als <a href="https://audials.com/de/radio/neuheiten-2022" rel="noopener" target="_blank">Audials Radio 2022</a> im Wert von 19,90 €. Für Musikliebhaber, die gerne Musik oder anderes aufnehmen, dürfte es genau das richtige sein.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition.png" rel="lightbox[160067]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition-500x333.png" alt="" width="500" height="333" class="aligncenter size-medium wp-image-160068" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition-500x333.png 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition-810x540.png 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition-306x205.png 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/audials-radio-2022-special-edition.png 900w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Es stehen über 100.000 internationale, nationale und sogar regionale Internetradios aus 120 Musikkategorien zum Hören und Aufnehmen zur Auswahl.  Sender mit Werbung werden in der Liste mit &#8222;Ads&#8220; gekennzeichnet. Somit kann man schneller herausfinden, welche Sender ohne Werbung laufen. Wollt ihr die Musik aufnehmen, dann wird diese automatisch aufgenommen, trennt die Lieder aus den Streams, normalisiert die Lautstärke des Musikstückes und speichert dann in perfekter Musikshop-Qualität die Musikstücke als MP3 mit allen ID3-Tags und Alben-Bildern auf der Festplatte. Danach kann die Musik sortiert werden, wenn man es möchte.</p>
+<h3>Audials Radio 2022 Special Edition als Giveaway</h3>
+<ul>
+<li><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/deskmodder-audials-radio-2022-special-edition.zip">Deskmodder_Audials Radio 2022 Special Edition.zip</a> (2,94 MB) einfach herunterladen, entpacken und starten.</li>
+<li>Danach startet der Webinstaller die Installation und lädt das Programm komplett herunter.</li>
+<li>Das Giveaway ist nur heut gültig.</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-159954" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/09/heute-im-adventskalender-audials-music-2022-special-edition-giveaway/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2019/10/adventskalender-2019-50x50.png" alt="Heute im Adventskalender Audials Music 2022 Special Edition [Giveaway]" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/09/heute-im-adventskalender-audials-music-2022-special-edition-giveaway/" class="wp_rp_title">Heute im Adventskalender Audials Music 2022 Special Edition [Giveaway]</a><small class="wp_rp_comments_count"> (12)</small><br /></li><li data-position="1" data-poid="in-160167" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/11/heute-im-adventskalender-ascomp-image-former-giveaway/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2019/10/adventskalender-2019-50x50.png" alt="Heute im Adventskalender ASCOMP Image Former [Giveaway]" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/11/heute-im-adventskalender-ascomp-image-former-giveaway/" class="wp_rp_title">Heute im Adventskalender ASCOMP Image Former [Giveaway]</a><small class="wp_rp_comments_count"> (8)</small><br /></li><li data-position="2" data-poid="in-125354" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/30/aomei-backupper-pro-kostenlos-fuer-euch/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2019/08/aomei-backupper-pro-kostenlos-001-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2019/08/aomei-backupper-pro-kostenlos-001-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2019/08/aomei-backupper-pro-kostenlos-001-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2021/10/30/aomei-backupper-pro-kostenlos-fuer-euch/" class="wp_rp_title">AOMEI Backupper Pro 6.7.0 kostenlos für euch [Update]</a><small class="wp_rp_comments_count"> (348)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/16/heute-im-adventskalender-audials-radio-2022-special-edition-giveaway/">Heute im Adventskalender Audials Radio 2022 Special Edition [Giveaway]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/16/heute-im-adventskalender-audials-radio-2022-special-edition-giveaway/feed/</wfw:commentRss>
+                        <slash:comments>2</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160067</post-id>	</item>
+                <item>
+                <title>Windows 11 22523 inklusive ISOs steht für die Insider als letzte Dev Version für dieses Jahr zum Download bereit</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 18:09:58 +0000</pubDate>
+                                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[10.0.22523.1000]]></category>
+                <category><![CDATA[10.0.22524.1000]]></category>
+                <category><![CDATA[22523]]></category>
+                <category><![CDATA[22523.1000]]></category>
+                <category><![CDATA[22524]]></category>
+                <category><![CDATA[22524.1000]]></category>
+                <category><![CDATA[Aktuelle Insider]]></category>
+                <category><![CDATA[Dev-Kanal]]></category>
+                <category><![CDATA[neue Insider]]></category>
+                <category><![CDATA[rs_prerelease]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160438</guid>
+
+                                        <description><![CDATA[<p>Es geht weiter mit der neuen Windows 11 Insider Build 22523.1000, genauer die 10.0.22523.1000 rs_prerelease, erstellt am 10.12.21. Es wird die letzte Insider in diesem Jahr sein, denn das Team geht in den Weihnachtsurlaub. Anfang nächsten Jahres kommt dann das&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/">Windows 11 22523 inklusive ISOs steht für die Insider als letzte Dev Version für dieses Jahr zum Download bereit</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Es geht weiter mit der neuen Windows 11 Insider Build 22523.1000, genauer die 10.0.22523.1000 rs_prerelease, erstellt am 10.12.21. Es wird die letzte Insider in diesem Jahr sein, denn das Team geht in den Weihnachtsurlaub.</p>
+<p>Anfang nächsten Jahres kommt dann das große Rollout, wie schon einmal von uns angekündigt. Bevor dann später der Wechsel vom &#8222;Untergrund&#8220; von (Codename) Nickel auf Copper gewechselt wird. Das liegt daran, dass das Azure- mit dem Windows-Team zusammen weiterhin eine halbjährliche Version von der Basis von Windows erstellt. Das Windows-Team aber nur noch einmal im Jahr (im Herbst die H2) ein Funktionsupdate mit den neuen Funktionen bereitstellt.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos.jpg" rel="lightbox[160438]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos-500x305.jpg" alt="" width="500" height="305" class="aligncenter size-medium wp-image-160446" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos-500x305.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos-810x495.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos-306x187.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-22523-inklusive-isos.jpg 1053w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Wir werden natürlich wieder die ISOs zu dieser Version sammeln und einen Link dann hier einfügen. <strong>[Update]:</strong> Hier ist auch der <a href="https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/" rel="noopener" target="_blank">Link zu den ISOs</a>.  Weiter unten werden wir aber schon temporäre Downloadlinks für die Windows 11 22523 ISOs hinzufügen.</p>
+<p><strong>Hinweis:</strong> Falls Microsoft nichts geändert hat, muss auch bei dieser neuen Insider bei inkompatibler Hardware der neue Trick angewendet werden:</p>
+<ul>
+<li>Nach der Fehlermeldung auf dem Desktop eine AppraiserRes.<strong>txt</strong> erstellen und in AppraiserRes.<strong>dll</strong> umbenennen. Windows Update erneut starten und den Ordner C:\$WINDOWS.~BT\Sources im Auge behalten.</li>
+<li>Bei etwa 8 % füllt sich der Ordner. Jetzt die AppraiserRes.dll in den Ordner Source kopieren und die Datei überschreiben lassen. Das sollte es gewesen sein. </li>
+</ul>
+<p>Aber kommen wir jetzt zu den Änderungen in dieser Version.</p>
+<ul>
+<li>Wir zeigen Snap-Gruppen in ALT + TAB und in der Task-Ansicht an, genau wie wenn Sie offene Apps in der Taskleiste mit dem Mauszeiger verschieben, und Sie sehen sie dort, mit allen Insidern im Dev Channel. genau wie wenn Sie offene Apps in der Taskleiste verschieben, und Sie sehen sie dort, mit allen Insidern im Dev Channel.</li>
+<li>Wenn der Datei-Explorer auf diesem PC geöffnet ist, ist die Option &#8222;Medienserver hinzufügen&#8220; und (falls zutreffend) &#8222;Medienserver entfernen&#8220; jetzt verfügbar, wenn Sie auf das &#8222;&#8230;&#8220; in der Menüleist klicken.</li>
+<li>Als Teil unserer laufenden Bemühungen, die Einstellungen aus der Systemsteuerung in die Einstellungen-App zu übernehmen:
+<ul>
+<li>Links zu Programmen &amp; Funktionen in der Systemsteuerung öffnen sich nun zu Einstellungen > Apps > Installierte Apps. Siehe auch <a href="https://www.deskmodder.de/blog/2021/12/16/windows-11-programme-oder-updates-deinstallieren-wird-in-die-einstellungen-verlegt-systemsteuerung-verlinkt-nur-noch/" rel="noopener" target="_blank">diesen Beitrag</a>.</li>
+<li>Wir verschieben die Deinstallation von Updates (für kumulative Updates usw.) von der Systemsteuerung auf eine neue Seite in den Einstellungen unter Einstellungen > Windows Update > Updateverlauf.</li>
+</ul>
+</li>
+</ul>
+<h3>Bekannte Probleme in der Windows 11 22523</h3>
+<ul>
+<li>Möglicherweise können Sie sich bei bestimmten Anwendungen wie Feedback Hub nicht anmelden. Ein Neustart Ihres PCs sollte das Problem beheben.</li>
+<li>Wir untersuchen Berichte, dass bei einigen Insidern in aktuellen Builds Treiber- und Firmware-Updates mit dem Fehler 0x8007012a fehlschlagen.</li>
+<li><strong>Startmenü:</strong> In einigen Fällen kann es vorkommen, dass Sie keinen Text eingeben können, wenn Sie die Suche über Start oder die Taskleiste verwenden. Drücken Sie in diesem Fall die Tastenkombination WIN + R, um das Dialogfeld Ausführen zu öffnen, und schließen Sie es anschließend.</li>
+<li><strong>Taskleiste:</strong> </li>
+<li>Die Taskleiste flackert manchmal beim Umschalten der Eingabemethoden.</li>
+<li>Das Netzwerksymbol wird manchmal nicht in der Taskleiste angezeigt, obwohl es eigentlich vorhanden sein sollte. Sollte dies der Fall sein, versuchen Sie bitte, explorer.exe mit dem Task-Manager neu zu starten.</li>
+<li>Wenn Sie mehrere Monitore an Ihren PC angeschlossen haben und mit der rechten Maustaste auf das Datum und die Uhrzeit in der Taskleiste auf Ihrem Hauptmonitor klicken, stürzt explorer.exe ab.</li>
+<li><strong>Suchfunktion:</strong> Nach einem Klick auf das Suchsymbol in der Taskleiste wird das Suchfeld möglicherweise nicht geöffnet. Starten Sie in diesem Fall den &#8222;Windows Explorer&#8220;-Prozess neu, und öffnen Sie das Suchfeld erneut.</li>
+<li><strong>Einstellungen:</strong> </li>
+<li>Wenn die Liste der verfügbaren Wi-Fi-Netzwerke angezeigt wird, zeigen die Signalstärkeanzeigen nicht die korrekte Signalstärke an.</li>
+<li>Die Einstellungen können abstürzen, wenn Sie zu System > Anzeige > HDR gehen.</li>
+<li>Unter Bluetooth &amp; Geräte ist ein leerer Eintrag vorhanden.</li>
+<li><strong>Spotlight:</strong> Wenn Sie die Spotlight-Sammlung verwenden, wird das aktuelle Bild beim Upgrade derzeit nicht migriert, was dazu führen kann, dass Sie nach dem Upgrade auf dieses Build einen schwarzen Desktop-Hintergrund haben. Dies sollte mit dem nächsten Build behoben werden.</li>
+<li><strong>Widgets:</strong></li>
+<li>Das Ändern der Ausrichtung der Taskleiste kann dazu führen, dass die Schaltfläche Widgets aus der Taskleiste verschwindet.</li>
+<li>Die Widgets-Leiste hat möglicherweise nicht die richtige Auflösung, wenn der Eingabepunkt auf einem sekundären Monitor angezeigt wird.</li>
+<li>Die Widgets-Leiste kann vorübergehend leer sein.</li>
+<li>Bei mehreren Monitoren kann der Inhalt der Widgets in der Taskleiste zwischen den Monitoren nicht mehr synchronisiert werden.</li>
+<li>Wenn die Taskleiste linksbündig ist, werden Informationen wie die Temperatur nicht angezeigt. Dies wird in einem zukünftigen Update korrigiert. </li>
+<li><strong>Sprachsteuerung:</strong></li>
+<li>Einige Textverarbeitungsbefehle, z. B. &#8222;das auswählen&#8220; oder &#8222;das löschen&#8220;, funktionieren möglicherweise nicht wie erwartet in allen Windows-Anwendungen.</li>
+<li>Die Erkennung einiger Satzzeichen und Symbole, wie z. B. das @-Zeichen, ist nicht genau.</li>
+</ul>
+<h3>Behobene Probleme in der Windows 11 22523</h3>
+<ul>
+<li><strong>Taskleiste:</strong></li>
+<li>Korrektur eines Problems im Zusammenhang mit der Initialisierung von Texteingaben, das dazu führen konnte, dass die Shell (z. B. das Startmenü und die Suche) auf ARM64-PCs nicht mehr reagierte.</li>
+<li>Der Tooltip des Batteriesymbols sollte nicht mehr unerwartet einen Prozentwert über 100 anzeigen.</li>
+<li>App-Symbole sollten nicht mehr das Datum und die Uhrzeit auf sekundären Monitoren überlappen, wenn viele Apps geöffnet sind.</li>
+<li>Datei Explorer: Es wurden einige Arbeiten durchgeführt, um ein Problem zu beheben, das dazu führte, dass der Tastaturfokus manchmal nach dem Drücken der Eingabetaste verloren ging, wenn F2 zum Umbenennen von OneDrive-Dateien verwendet wurde.</li>
+<li><strong>Spotlight: </strong></li>
+<li>Nach der Aktivierung der Spotlight-Sammlung sollte das erste Bild (nach Whitehaven Beach) jetzt etwas schneller erscheinen.</li>
+<li>Den Einträgen im Kontextmenü der Spotlight-Sammlung wurden Icons hinzugefügt.</li>
+<li><strong>Eingabe: </strong></li>
+<li>Die Zuverlässigkeit beim Aufrufen der Spracheingabe wurde verbessert.</li>
+<li>Es wurde ein Problem korrigiert, bei dem der Rand unserer Texteingabe-Erlebnisse (Spracheingabe, Emoji-Panel usw.) nicht korrekt gezeichnet wurde, wenn ein Kontrastthema aktiviert war.</li>
+<li>Ein zeitweiliger Absturz des Stiftmenüs wurde behoben, der auftrat, wenn es gestartet und dann unmittelbar vor dem Start geschlossen wurde.</li>
+<li><strong>Widgets:</strong> Wir haben das Problem korrigiert, das dazu führte, dass Links nicht richtig geöffnet wurden, wenn das Widgets-Board mit dem Mauszeiger geöffnet wurde.</li>
+<li><strong>Einstellungen: </strong></li>
+<li>Der Inhalt der Einstellungen sollte nicht mehr am Rand des Fensters abgeschnitten werden, wenn das Einstellungsfenster verkleinert wird.</li>
+<li>Die Einstellungen sollten nicht mehr sporadisch abstürzen, wenn Kombinationsfelder geöffnet werden, was sich auf bestimmte Einstellungen auswirkte, z. B. auf die Möglichkeit, benutzerdefinierte Klickaktionen für den Stift festzulegen.</li>
+<li>Es wurde ein Problem behoben, bei dem die Option &#8222;Gerät hinzufügen&#8220; in Bluetooth &amp; Geräte beim Versuch, neue Bluetooth-Geräte zu verbinden, unbemerkt abstürzte.</li>
+<li>Es wurde eine Reihe von Schlüsselwörtern hinzugefügt, damit die Funktion Sprachsteuerung in den Suchergebnissen der Einstellungen angezeigt wird.</li>
+<li><strong>Sonstiges:</strong></li>
+<li>Es wurde ein Problem korrigiert, das bei ARM64-PCs zu Fehlerprüfungen führte, die auf einen Speicherverwaltungsfehler im vorherigen Build hinwiesen.</li>
+<li>Korrektur eines Problems, das zum Absturz von DWM führte (mit wiederholtem Blinken des Bildschirms), wenn man versuchte, bestimmte Anwendungen zu verwenden.</li>
+<li>Ein Problem wurde behoben, das dazu führte, dass bestimmte Anwendungen hängen blieben, wenn die Sprachausgabe ausgeführt wurde.</li>
+<li>Es wurden einige fehlende Informationen hinzugefügt, wenn man die Details in den Eigenschaften von narratorquickstart.exe untersucht.</li>
+<li>Es wurde ein Problem behoben, bei dem die Sprachausgabe nicht auf UIA-Ereignisse wie Benachrichtigungen, Live-Regionen oder Text-Ereignisse reagierte.</li>
+<li><a href="https://blogs.windows.com/windows-insider/2021/12/15/announcing-windows-11-insider-preview-build-22523/" rel="noopener" target="_blank">blogs.windows</a></li>
+</ul>
+<h3>Windows 11 22523 ISO + SDK und mehr temporäre Downloadlinks</h3>
+<ul>
+<li>Die Links sind bis 16.12. etwa 19.00 Uhr gültig</li>
+<li>Wenn die Zeit abgelaufen ist, findet ihr <a href="https://www.deskmodder.de/blog/2021/12/16/windows-11-22523-iso-esd-deutsch-english/" rel="noopener" target="_blank"><strong>diese ISOs in diesem Beitrag</strong></a>.</li>
+<li><a href="https://software-download.microsoft.com/db/Windows11_InsiderPreview_Client_x64_de-de_22523.iso?t=4a651f70-14a2-4217-bc45-2c0012f6d032&#038;e=1639677015&#038;h=451496a9da1f2604352862b6e66bf89a" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_x64_de-de_22523.iso</a></li>
+<li><a href="https://software-download.microsoft.com/db/Windows11_InsiderPreview_EnterpriseVL_x64_de-de_22523.iso?t=b8b259f2-0e1b-4860-9a34-b7b3d65c9e59&#038;e=1639676340&#038;h=1c8991f08c83f5e1ccb69a3c8b0c3e13" rel="noopener" target="_blank">Windows11_InsiderPreview_EnterpriseVL_x64_de-de_22523.iso</a></li>
+<li><a href="https://software-download.microsoft.com/db/Windows11_InsiderPreview_Client_x64_en-us_22523.iso?t=33291ed4-5d33-40fc-b97f-871b883d184b&#038;e=1639677060&#038;h=a405131799c970a5a0fc5d4693fe0a6a" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_x64_en-us_22523.iso</a></li>
+<li><a href="https://software-download.microsoft.com/db/Windows11_InsiderPreview_EnterpriseVL_x64_en-us_22523.iso?t=f9114f30-41d5-4588-8ec0-08a65eff0a00&#038;e=1639676981&#038;h=0bccbea5a19dc8af401d477558ea5afd" rel="noopener" target="_blank">Windows11_InsiderPreview_EnterpriseVL_x64_en-us_22523.iso</a></li>
+<li>ARM als VHDX nur Englisch <a href="https://software-download.microsoft.com/db/Windows11_InsiderPreview_Client_ARM64_en-us_22523.VHDX?t=d9ce0a0c-56d1-4407-b8dc-3ed1aa510a3b&#038;e=1639677098&#038;h=6634827d679db6036cb85f3b12195a82" rel="noopener" target="_blank">Windows11_InsiderPreview_Client_ARM64_en-us_22523.VHDX</a></li>
+<li></li>
+<li><a href="https://software-download.microsoft.com/db/Windows_InsiderPreview_SDK_en-us_22523.iso?t=e342b2bf-3791-4bfe-a40c-929860121f50&#038;e=1639676304&#038;h=09cf0f534fa62389f79609ec83f6c47f" rel="noopener" target="_blank">Windows_InsiderPreview_SDK_en-us_22523.iso</a></li>
+<li><a href="https://software-download.microsoft.com/db/Windows_InsiderPreview_ADK_en-us_22523.iso?t=00c572ae-3840-4963-bf5e-d285e5ba422d&#038;e=1639676255&#038;h=59a38b89bf4ca668f4ccb0fd17127d1f" rel="noopener" target="_blank">Windows_InsiderPreview_ADK_en-us_22523.iso</a></li>
+</ul>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-160173" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/08/windows-11-22518-steht-fuer-die-insider-im-dev-kanal-zum-download-bereit/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/11/insider-logo-50x50.jpg" alt="Windows 11 22518 steht für die Insider im Dev Kanal + Server 22518 zum Download bereit" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/08/windows-11-22518-steht-fuer-die-insider-im-dev-kanal-zum-download-bereit/" class="wp_rp_title">Windows 11 22518 steht für die Insider im Dev Kanal + Server 22518 zum Download bereit</a><small class="wp_rp_comments_count"> (38)</small><br /></li><li data-position="1" data-poid="in-158630" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/20/windows-11-22483-1000-steht-fuer-die-insider-im-dev-kanal-bereit/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/10/windows-11-224831000-50x50.jpg" alt="Windows 11 22483.1000 steht für die Insider im Dev-Kanal bereit" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/10/20/windows-11-22483-1000-steht-fuer-die-insider-im-dev-kanal-bereit/" class="wp_rp_title">Windows 11 22483.1000 steht für die Insider im Dev-Kanal bereit</a><small class="wp_rp_comments_count"> (65)</small><br /></li><li data-position="2" data-poid="in-159874" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/01/windows-11-22509-steht-fuer-die-insider-im-dev-kanal-zum-download-bereit-verbessertes-startmenue-und-mehr/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/11/insider-logo-50x50.jpg" alt="Windows 11 22509 steht für die Insider im Dev-Kanal zum Download bereit &#8211; Verbessertes Startmenü und mehr" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/01/windows-11-22509-steht-fuer-die-insider-im-dev-kanal-zum-download-bereit-verbessertes-startmenue-und-mehr/" class="wp_rp_title">Windows 11 22509 steht für die Insider im Dev-Kanal zum Download bereit &#8211; Verbessertes Startmenü und mehr</a><small class="wp_rp_comments_count"> (76)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/">Windows 11 22523 inklusive ISOs steht für die Insider als letzte Dev Version für dieses Jahr zum Download bereit</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/windows-11-22523-inklusive-isos-steht-fuer-die-insider-als-letzte-dev-version-fuer-dieses-jahr-zum-download-bereit/feed/</wfw:commentRss>
+                        <slash:comments>24</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160438</post-id>	</item>
+                <item>
+                <title>Intel Grafiktreiber 30.0.101.1191 steht zum Download bereit</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/intel-grafiktreiber-30-0-101-1191-steht-zum-download-bereit/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/intel-grafiktreiber-30-0-101-1191-steht-zum-download-bereit/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 11:26:46 +0000</pubDate>
+                                <category><![CDATA[Hardware]]></category>
+                <category><![CDATA[Software & Updates]]></category>
+                <category><![CDATA[30.0.101.1191]]></category>
+                <category><![CDATA[Grafiktreiber]]></category>
+                <category><![CDATA[Intel]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160435</guid>
+
+                                        <description><![CDATA[<p>Intel hat den Grafiktreiber auf die Version 30.0.101.1191 (14.12.21) aktualisiert. Hier wurden einige Probleme in verschiedenen Spielen und auch Stabilitätsverbesserungen beim DWM (Desktop Window Manager) vorgenommen. Aber die Liste der offenen Probleme ist nicht gerade kurz. Verbesserte Darstellung von Halo:&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/intel-grafiktreiber-30-0-101-1191-steht-zum-download-bereit/">Intel Grafiktreiber 30.0.101.1191 steht zum Download bereit</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Intel hat den Grafiktreiber auf die Version 30.0.101.1191 (14.12.21) aktualisiert. Hier wurden einige Probleme in verschiedenen Spielen und auch Stabilitätsverbesserungen beim DWM (Desktop Window Manager) vorgenommen. Aber die Liste der offenen Probleme ist nicht gerade kurz.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu.jpg" rel="lightbox[160435]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-500x327.jpg" alt="" width="500" height="327" class="aligncenter size-medium wp-image-144140" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-500x327.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-810x529.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-306x200.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu.jpg 1450w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<ul>
+<li>Verbesserte Darstellung von Halo: Combat Evolved Anniversary im klassischen Grafikmodus unter Intel Core Prozessoren der 11. Generation mit Intel Iris Xe Grafik</li>
+<li>Abstürze oder Hänger in Battlefield 2042 (DX12), FIFA 21 (DX12) unter Intel Core Prozessoren der 11. Generation mit Intel Iris Xe Grafik wurden behoben.</li>
+<li>Kleinere Grafikanomalien in Shadow of the Tomb Raider (DX11) wurden korrigiert.</li>
+<li>Fehlermeldung bei der Ausführung von Rise of the Tomb Raider (DX12) unter Intel Iris Xe diskrete Grafik wurden korrigiert.</li>
+<li>Stabilitätsverbesserungen beim Desktop Window Manager (DWM) unter Intel Core Prozessoren der 6. bis 10. Generation</li>
+</ul>
+<h3>Offene Probleme:</h3>
+<ul>
+<li>Zeitweilige Abstürze oder Hänger können in Call of Duty: Black Ops Cold War (DX12), Call of the Duty: Vanguard (DX12), Far Cry 6 (DX12), CS: GO (beim Wechsel des Anzeigemodus zwischen Vollbild und Fenstermodus), The Sims 4 (Hot-Plug oder Trennen des externen Displays) auftreten.</li>
+<li>Kleinere Grafikanomalien können in Baldur&#8217;s Gate 3 (Vulkan), Dark Souls 3 (DX11), Far Cry 6 (DX12) beobachtet werden, Halo Infinite (DX12), Metro Exodus (DX12), Mount &amp; Blade II: Bannerlord (DX11), Red Dead Redemption 2 (Vulkan), The Surge 2 (Vulkan), Tom Clancy&#8217;s Ghost Recon Breakpoint (DX11) können auftreten..</li>
+<li>Beim Starten von Battlefield 1 nach einem Upgrade von 30.0.100.9955 oder älteren Treibern kann ein Popup-Fehler &#8222;Treiber aktualisieren&#8220; angezeigt werden. Oder älteren Treibern aufgrund des Roll-over der Treiberversion.</li>
+<li>Intel Core-Prozessoren der 11. Generation mit Intel Iris Xe-Grafik]: Zeitweilige Abstürze oder Hänger können in ANVIL (DX12), Breathedge (DX11), Detroit: Become Human (Vulkan), Microsoft Build Simulator (während der Installation), NBA 2K21 (DX12) (beim Umschalten der Auflösung von 1920 x 1080 auf 1600 x 900 und 1280 x 720), The Ascent auftreten.</li>
+<li>Intel Core-Prozessoren der 11. Generation mit Intel Iris Xe-Grafik]: Geringfügige Grafikanomalien können in Adobe Premiere Pro 2020 während der Videowiedergabe auftreten, Call of the Duty: Vanguard (DX12), Call of the Sea (DX11), Crysis Remastered (DX11), Elex (DX11), Forza Horizon 5 (DX12), Forza Horizon 4 (DX12), Just Cause 4 (DX11), Rage 2 (Vulkan), Red Dead Redemption 2 (DX12), The Ascent (DX11).</li>
+<li>Intel Iris Xe diskrete Grafik]: Zeitweilige Abstürze oder Hänger können in Conan Exiles (Low End Laptop Mode&#8220; in den Spieleinstellungen), Forza Horizon 4 (DX12), Forza Motorsport 6 (DX12), Spyro: Reignited Trilogy(DX11) auftreten.</li>
+<li>Intel Iris Xe diskrete Grafik]: Geringfügige Grafikanomalien können in Assassin&#8217;s Creed Valhalla (DX12), Code Vein(DX11), Death Stranding (DX12), Microsoft Build Simulator(DX11), GRID 2019 (DX12) beobachtet werden.</li>
+<li>(11. und 12. Generation Intel Core Prozessoren): Der Bildschirm wird bei 4K@60hz-Auflösung, die über das Dock angeschlossen ist, ausgeblendet.</li>
+<li>Intel Core-Prozessoren der 12. Generation mit Intel UHD-Grafik]: Zeitweilige Abstürze oder Hänger können in Marvel&#8217;s Avengers (DX12), Metro Exodus (DX12) (nach Qualitätsänderung), Shadow of the Tomb Raider (DX12), The Sims 4 (beim Laden einer Speicherdatei) auftreten.</li>
+<li>Intel Core-Prozessoren der 12. Generation mit Intel UHD-Grafik]: Kleinere Grafikanomalien können in Gears 5 (DX12), Genshin Impact (DX11), Ring of Elysium (DX12) beobachtet werden.</li>
+<li>Intel Core-Prozessoren der 12. Generation mit Intel UHD-Grafik]: Leerer Bildschirm auf 8k-TV-Monitor nach Einstellung auf Klon-Modus mit 4k-Display</li>
+<li>Zeitweilige Abstürze oder Hänger können in Marvel&#8217;s Guardians of the Galaxy auf Intel Core-Prozessoren der 11. Generation mit Intel Iris Xe-Grafik auftreten (wird untersucht).</li>
+</ul>
+<p>Nebenbei erwähnt: Auch der Intel Grafiktreiber für Windows 10 und 11 für Intel NUC mit einer Intel CPU der 11. Generation wurde auf die Version <a href="https://www.intel.com/content/www/us/en/download/19697/intel-graphics-dch-driver-for-intel-nuc-kit-11th-gen.html?wapkw=driver" rel="noopener" target="_blank">30.0101.9999</a> aktualisiert</p>
+<h3>Info und Download:</h3>
+<ul>
+<li><a href="https://www.intel.com/content/www/us/en/download/19344/intel-graphics-windows-dch-drivers.html?wapkw=driver" rel="noopener" target="_blank">intel.com/intel-graphics-windows-dch-drivers</a></li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-159569" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/11/17/intel-grafiktreiber-30-0-101-1121-als-beta-korrigiert-einige-fehler-in-games/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-50x50.jpg" alt="Intel Grafiktreiber 30.0.101.1121 als Beta korrigiert einige Fehler in Games" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/11/17/intel-grafiktreiber-30-0-101-1121-als-beta-korrigiert-einige-fehler-in-games/" class="wp_rp_title">Intel Grafiktreiber 30.0.101.1121 als Beta korrigiert einige Fehler in Games</a><small class="wp_rp_comments_count"> (1)</small><br /></li><li data-position="1" data-poid="in-159368" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/11/12/intel-grafiktreiber-30-0-101-1069-unterstuetzt-nun-auch-den-alder-lake-neben-den-anderen-cpus/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/09/intel-logo-neu-50x50.jpg" alt="Intel Grafiktreiber 30.0.101.1069 unterstützt nun auch den Alder Lake neben den anderen CPUs" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/11/12/intel-grafiktreiber-30-0-101-1069-unterstuetzt-nun-auch-den-alder-lake-neben-den-anderen-cpus/" class="wp_rp_title">Intel Grafiktreiber 30.0.101.1069 unterstützt nun auch den Alder Lake neben den anderen CPUs</a><small class="wp_rp_comments_count"> (6)</small><br /></li><li data-position="2" data-poid="in-158483" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/15/intel-grafiktreiber-30-0-100-9955-mit-support-fuer-h264-und-hevc-dx12-fuer-intel-iris-plus-und-hoeher/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/08/intel-logo-neu-500x327-1-50x50.jpg" alt="Intel Grafiktreiber 30.0.100.9955 mit Support für H264 und HEVC DX12 für Intel Iris Plus und höher" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/10/15/intel-grafiktreiber-30-0-100-9955-mit-support-fuer-h264-und-hevc-dx12-fuer-intel-iris-plus-und-hoeher/" class="wp_rp_title">Intel Grafiktreiber 30.0.100.9955 mit Support für H264 und HEVC DX12 für Intel Iris Plus und höher</a><small class="wp_rp_comments_count"> (3)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/intel-grafiktreiber-30-0-101-1191-steht-zum-download-bereit/">Intel Grafiktreiber 30.0.101.1191 steht zum Download bereit</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/intel-grafiktreiber-30-0-101-1191-steht-zum-download-bereit/feed/</wfw:commentRss>
+                        <slash:comments>4</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160435</post-id>	</item>
+                <item>
+                <title>Windows Treiber-Updates werden jetzt auch am Wochenende freigegeben</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 09:38:59 +0000</pubDate>
+                                <category><![CDATA[Windows 10]]></category>
+                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[Treiber Updates]]></category>
+                <category><![CDATA[Update Kalender]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160429</guid>
+
+                                        <description><![CDATA[<p>Microsoft stellt für die Hardwarehersteller jedes Jahr einen Update-Kalender für die Treiber zur Verfügung. Hier werden die Tage eingetragen, an denen keine Treiber von Microsoft freigegeben werden. Mit dem neuen Kalender für 2022 nimmt Microsoft eine Änderung vor. Die bisherigen&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/">Windows Treiber-Updates werden jetzt auch am Wochenende freigegeben</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Microsoft stellt für die Hardwarehersteller jedes Jahr einen Update-Kalender für die Treiber zur Verfügung. Hier werden die Tage eingetragen, an denen keine Treiber von Microsoft freigegeben werden.</p>
+
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001.jpg' rel="lightbox[160429]"><img width="306" height="200" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001-306x200.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001-306x200.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001-500x326.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001-810x528.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001.jpg 1532w" sizes="(max-width: 306px) 100vw, 306px" /></a>
+<a href='https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002.jpg' rel="lightbox[160429]"><img width="204" height="205" src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-204x205.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-204x205.jpg 204w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-359x360.jpg 359w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-581x583.jpg 581w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-1530x1536.jpg 1530w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002-50x50.jpg 50w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-002.jpg 1532w" sizes="(max-width: 204px) 100vw, 204px" /></a>
+
+<p>Mit dem neuen Kalender für 2022 nimmt Microsoft eine Änderung vor. Die bisherigen Sperren am Wochenende wurden nun entfernt. Bedeutet, dass Treiber jetzt auch am Wochenende freigegeben werden. <em>&#8222;Die erwartete Auswirkung dieser Änderung ist ein schnelleres Wartungssystem für Treiber, da die durchschnittlichen monatlichen Sperrtage von 18 pro Monat auf 5 Sperrtage pro Monat reduziert wurden.&#8220;</em></p>
+<p>Damit bleiben pro Monat nur noch die Sperrfristen einen Tag vor und nach dem Sicherheitsupdate (B-Update) und die US-Feiertage, an denen keine Treiber freigeben werden. Im Vergleich der beiden Kalender kann man die Änderung gut erkennen. Wie Microsoft noch schreibt, hat man diese Änderung seit dem Sommer 2021 ausprobiert und hat sich als tragfähige Lösung für die Zukunft bewährt.</p>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-160416" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710-50x50.jpg" alt="Windows Terminal 1.12.3472.0 und 1.11.3471.0 zum Download bereitgestellt" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/" class="wp_rp_title">Windows Terminal 1.12.3472.0 und 1.11.3471.0 zum Download bereitgestellt</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="1" data-poid="in-160195" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/09/nanazip-1-0-als-finale-version-erschienen-7zip-fork-mit-verbesserungen-und-mehr/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/nanazip-10-001-50x50.jpg" alt="NanaZip 1.0 als finale Version erschienen &#8211; 7-Zip Fork mit Verbesserungen und mehr" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/09/nanazip-1-0-als-finale-version-erschienen-7zip-fork-mit-verbesserungen-und-mehr/" class="wp_rp_title">NanaZip 1.0 als finale Version erschienen &#8211; 7-Zip Fork mit Verbesserungen und mehr</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="2" data-poid="in-160101" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/07/windows-11-und-10-datei-explorer-bekommt-dank-powertoys-mehr-funktionen-im-vorschaufenster/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-und-10-datei-explorer-vorschaufenster-2-50x50.gif" alt="Windows 11 und 10 Datei Explorer bekommt dank PowerToys mehr Funktionen im Vorschaufenster" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/07/windows-11-und-10-datei-explorer-bekommt-dank-powertoys-mehr-funktionen-im-vorschaufenster/" class="wp_rp_title">Windows 11 und 10 Datei Explorer bekommt dank PowerToys mehr Funktionen im Vorschaufenster</a><small class="wp_rp_comments_count"> (0)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/">Windows Treiber-Updates werden jetzt auch am Wochenende freigegeben</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/feed/</wfw:commentRss>
+                        <slash:comments>1</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160429</post-id>	</item>
+                <item>
+                <title>PowerShell 7.2.1 mit Korrekturen und Verbesserungen</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/powershell-7-2-1-mit-korrekturen-und-verbesserungen/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/powershell-7-2-1-mit-korrekturen-und-verbesserungen/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 08:03:43 +0000</pubDate>
+                                <category><![CDATA[Software & Updates]]></category>
+                <category><![CDATA[Windows 10]]></category>
+                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[PowerShell 7.2.1]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160422</guid>
+
+                                        <description><![CDATA[<p>PowerShell 7 hat gestern ein Update auf die Version 7.2.1 erhalten. Es wurden hier einige Fehler korrigiert und Korrekturen vorgenommen. So wurde pwsh.exe für Framework-abhängige Pakete wieder integriert, um einen Start-Job zu unterstützen. Angaben zu experimentellen Funktionen im Manifest des&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/powershell-7-2-1-mit-korrekturen-und-verbesserungen/">PowerShell 7.2.1 mit Korrekturen und Verbesserungen</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>PowerShell 7 hat gestern ein Update auf die Version 7.2.1 erhalten. Es wurden hier einige Fehler korrigiert und Korrekturen vorgenommen. So wurde pwsh.exe für Framework-abhängige Pakete wieder integriert, um einen Start-Job zu unterstützen.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721.jpg" rel="lightbox[160422]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721-500x315.jpg" alt="" width="500" height="315" class="aligncenter size-medium wp-image-160423" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721-500x315.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721-810x511.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721-306x193.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/powershell-721.jpg 1111w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Angaben zu experimentellen Funktionen im Manifest des Utility-Moduls wurden entfernt, da sie nun &#8222;Final&#8220; sind und Tippfehler wurden korrigiert. Einige weitere Änderungen sind:</p>
+<ul>
+<li>Eindeutiger Jobname für Freigabe-Aufgaben in der Snap-Stufe hinzugefügt</li>
+<li>Korrektur des Builds durch Entfernen doppelter TSAUpload-Einträge </li>
+<li>Korrekturen am Port CGManifest und Aktualisierung des CGManifests</li>
+<li>Paketabhängigkeiten für 7.2.1 wurden aktualisiert</li>
+<li>Die Verwendung von metadata.json zum Abrufen von LTS-Informationen wurden aktualisiert</li>
+<li>Mapping-Datei in Produkt-Repos verschoben und Debian 11 wurde hinzugefügt.</li>
+</ul>
+<h3>Info und Download:</h3>
+<ul>
+<li><a href="https://github.com/PowerShell/PowerShell" rel="noopener" target="_blank">github.com/PowerShell</a></li>
+<li><a href="https://github.com/PowerShell/PowerShell/releases" rel="noopener" target="_blank">github.com/PowerShell/releases</a></li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-119074" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2019/04/27/nvidia-geforce-430-39-nvdisplay-container-exe-erzeugt-hohe-cpu-auslastung-workaround/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2019/04/nvidia-geforce-43039-workaround-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2019/04/nvidia-geforce-43039-workaround-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2019/04/nvidia-geforce-43039-workaround-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2019/04/27/nvidia-geforce-430-39-nvdisplay-container-exe-erzeugt-hohe-cpu-auslastung-workaround/" class="wp_rp_title">Nvidia Geforce 430.39 nvdisplay.container.exe erzeugt hohe CPU Auslastung (Hotfix Treiber 430.53)</a><small class="wp_rp_comments_count"> (49)</small><br /></li><li data-position="1" data-poid="in-139066" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2020/05/20/vodafone-schaltet-960-000-neue-gigabit-kabel-anschluesse-frei/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2017/09/vodafone-logo-ifa17-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2017/09/vodafone-logo-ifa17-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2017/09/vodafone-logo-ifa17-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2020/05/20/vodafone-schaltet-960-000-neue-gigabit-kabel-anschluesse-frei/" class="wp_rp_title">Vodafone schaltet 960.000 neue Gigabit-Kabel-Anschlüsse frei</a><small class="wp_rp_comments_count"> (9)</small><br /></li><li data-position="2" data-poid="in-52845" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2015/09/13/die-windows-woche-kon%c2%adsis%c2%adtentere-benutzeroberflaeche-skype-app-neue-werbe-videos-und-ein-skandal/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2015/06/Windows-10-Hero-Desktop-Wallpaper-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" /></a><a href="https://www.deskmodder.de/blog/2015/09/13/die-windows-woche-kon%c2%adsis%c2%adtentere-benutzeroberflaeche-skype-app-neue-werbe-videos-und-ein-skandal/" class="wp_rp_title">Windows-News der Woche: kon­sis­tentere Benutzeroberfläche, Skype-App, neue Werbe-Videos und ein &#8222;Skandal&#8220;</a><small class="wp_rp_comments_count"> (1)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/powershell-7-2-1-mit-korrekturen-und-verbesserungen/">PowerShell 7.2.1 mit Korrekturen und Verbesserungen</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/powershell-7-2-1-mit-korrekturen-und-verbesserungen/feed/</wfw:commentRss>
+                        <slash:comments>7</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160422</post-id>	</item>
+                <item>
+                <title>Visual Studio 2022, 2019, .NET Core 3.1, .NET 5 und .NET 6 mit einem Sicherheitsupdate</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/visual-studio-2022-2019-net-core-3-1-net-5-und-net-6-mit-einem-sicherheitsupdate/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/visual-studio-2022-2019-net-core-3-1-net-5-und-net-6-mit-einem-sicherheitsupdate/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 07:46:07 +0000</pubDate>
+                                <category><![CDATA[Software & Updates]]></category>
+                <category><![CDATA[Windows 10]]></category>
+                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[Windows 7]]></category>
+                <category><![CDATA[.NET 5]]></category>
+                <category><![CDATA[.NET 6]]></category>
+                <category><![CDATA[.NET Core 3.1]]></category>
+                <category><![CDATA[CVE-2021-43877]]></category>
+                <category><![CDATA[Visual Studio 2019]]></category>
+                <category><![CDATA[Visual Studio 2022]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160420</guid>
+
+                                        <description><![CDATA[<p>Mal kurz informiert. Neben den Sicherheitspatches für Windows hat Microsoft gestern auch das Visual Studio 2022 auf die 17.03, Visual Studio 2019 auf die 16.11.8. Sowie 3.1, .NET 5 und .NET 6 mit einem Sicherheitsupdate aktualisiert. Für das Visual Studio&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/visual-studio-2022-2019-net-core-3-1-net-5-und-net-6-mit-einem-sicherheitsupdate/">Visual Studio 2022, 2019, .NET Core 3.1, .NET 5 und .NET 6 mit einem Sicherheitsupdate</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Mal kurz informiert. Neben den Sicherheitspatches für Windows hat Microsoft gestern auch das Visual Studio 2022 auf die 17.03, Visual Studio 2019 auf die 16.11.8. Sowie 3.1, .NET 5 und .NET 6 mit einem Sicherheitsupdate aktualisiert.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo.jpg" rel="lightbox[160420]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo-500x317.jpg" alt="" width="500" height="317" class="aligncenter size-medium wp-image-135642" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo-500x317.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo-306x194.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo.jpg 506w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Für das Visual Studio beschreibt Microsoft das Problem so: <em>&#8222;Um einen potenziell bösartigen Exploit zu verhindern, mit dem Code falsch dargestellt werden kann, lässt der Visual Studio-Editor keine bidirektionalen Textsteuerungszeichen mehr zu, um die Reihenfolge der Zeichen auf der Bearbeitungsoberfläche zu manipulieren. Eine neue Option bewirkt, dass diese bidirektionalen Textsteuerzeichen mit Platzhaltern angezeigt werden. Die bidirektionalen Textsteuerzeichen sind weiterhin im Code vorhanden, da dieses Verhalten nur Auswirkungen auf die Darstellung im Code-Editor hat.&#8220;</em></p>
+<p>Für die .NET Anwendungen: <em>&#8222;Es gibt eine Sicherheitsanfälligkeit in ASP.NET Core Module (ANCM), die eine Erhöhung der Berechtigungen ermöglichen könnte, wenn .NET Core-, .NET 5- und .NET 6-Anwendungen in IIS gehostet werden.&#8220;</em></p>
+<p>Alle diese Lücken werden unter der <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-43877" rel="noopener" target="_blank">CVE-2021-43877</a> geführt. Von dort aus kommt ihr auch zu den einzelnen Release-Notes für weitere Infos.</p>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-158415" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/10/13/net-6-rc-2-event-mit-finalem-visual-studio-2022-und-net-6-am-8-november/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2020/03/microsoft-net-logo-50x50.jpg" alt=".NET 6 RC 2  Event mit finalem Visual Studio 2022 und .NET 6 am 8. November" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/10/13/net-6-rc-2-event-mit-finalem-visual-studio-2022-und-net-6-am-8-november/" class="wp_rp_title">.NET 6 RC 2  Event mit finalem Visual Studio 2022 und .NET 6 am 8. November</a><small class="wp_rp_comments_count"> (3)</small><br /></li><li data-position="1" data-poid="in-130146" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2019/11/15/net-core-3-1-preview-3-und-visual-studio-2019-preview-5-stehen-zum-download-bereit/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2019/06/net-core-logo-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2019/06/net-core-logo-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2019/06/net-core-logo-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2019/11/15/net-core-3-1-preview-3-und-visual-studio-2019-preview-5-stehen-zum-download-bereit/" class="wp_rp_title">.NET Core 3.1 Preview 3 und Visual Studio 2019 Preview 5 stehen zum Download bereit</a><small class="wp_rp_comments_count"> (5)</small><br /></li><li data-position="2" data-poid="in-159906" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/01/visual-studio-2022-17-0-2-mit-einigen-korrekturen/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/11/visual-studio-2022-50x50.jpg" alt="Visual Studio 2022 17.0.2 mit einigen Korrekturen" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/01/visual-studio-2022-17-0-2-mit-einigen-korrekturen/" class="wp_rp_title">Visual Studio 2022 17.0.2 mit einigen Korrekturen</a><small class="wp_rp_comments_count"> (1)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/visual-studio-2022-2019-net-core-3-1-net-5-und-net-6-mit-einem-sicherheitsupdate/">Visual Studio 2022, 2019, .NET Core 3.1, .NET 5 und .NET 6 mit einem Sicherheitsupdate</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/visual-studio-2022-2019-net-core-3-1-net-5-und-net-6-mit-einem-sicherheitsupdate/feed/</wfw:commentRss>
+                        <slash:comments>2</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160420</post-id>	</item>
+                <item>
+                <title>Windows Terminal 1.12.3472.0 und 1.11.3471.0 zum Download bereitgestellt</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/#respond</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 07:19:19 +0000</pubDate>
+                                <category><![CDATA[Windows 10]]></category>
+                <category><![CDATA[Windows 11]]></category>
+                <category><![CDATA[1.11.3471.0]]></category>
+                <category><![CDATA[1.12.3472.0]]></category>
+                <category><![CDATA[Windows Terminal]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160416</guid>
+
+                                        <description><![CDATA[<p>Microsoft hat gestern das Windows Terminal aktualisiert. Einmal als Preview auf die Version 1.12.3472.0 und in der Stable auf die Version 1.11.3471.0. In beiden Versionen wurden Korrekturen vorgenommen und auch Änderungen. Beide Versionen wurden mit Cascadia Code 2111.01 ausgestattet. &#8222;Das&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/">Windows Terminal 1.12.3472.0 und 1.11.3471.0 zum Download bereitgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Microsoft hat gestern das Windows Terminal aktualisiert. Einmal als Preview auf die Version 1.12.3472.0 und in der Stable auf die Version 1.11.3471.0. In beiden Versionen wurden Korrekturen vorgenommen und auch Änderungen.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710.jpg" rel="lightbox[160416]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710-500x306.jpg" alt="" width="500" height="306" class="aligncenter size-medium wp-image-160417" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710-500x306.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710-810x495.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710-306x187.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-terminal-11234720-und-11134710.jpg 1171w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Beide Versionen wurden mit <a href="https://github.com/microsoft/cascadia-code/releases" rel="noopener" target="_blank">Cascadia Code 2111.01</a> ausgestattet. <em>&#8222;Das Einblenden der Klammer-Ligaturen war im Italic-Stil nicht korrekt, was geradezu komisch aussah.&#8220;</em> In der Preview wird unter Windows 11 jetzt das Snap-Layout hinzugefügt.</p>
+<h3>Einige Korrekturen in der Preview und Stable vom Windows Terminal 1.12.3472.0</h3>
+<ul>
+<li>Die Option Standard-Terminal funktioniert jetzt auch auf Rechnern, auf denen Visual C++ Redistributable nicht installiert ist</li>
+<li>Das Aufteilen eines nicht fokussierten Tabs führt nicht mehr dazu, dass das Terminal ins Weltall geschossen wird</li>
+<li>Alle alternativen Zeichensatz-Slots sind nun standardmäßig auf ASCII eingestellt</li>
+<li>Der Pfad des Hintergrundbildes sollte nun wieder in den Einstellungen angezeigt werden </li>
+<li>AltGr sollte wieder in der Einstellungsoberfläche funktionieren</li>
+<li>Bei der Aktualisierung von Fragmenten, die mehrere Profile aktualisieren, werden wir nicht mehr verwirrt und verärgert</li>
+<li>Es gibt wieder einen Fensterrand, wenn man Win+↓ im Vollbildmodus benutzt</li>
+<li>Das Starten von zusätzlichen Anwendungen in &#8222;Standard-Terminal&#8220;-Fenstern wurde zuverlässiger gemacht </li>
+<li>Der Deckkraft-Schieberegler erscheint nun wieder, wenn er sollte (und verschwindet, wenn er nicht sollte), und nicht mehr umgekehrt </li>
+<li>Wir haben den Fehler begangen, hexadezimale Fehlercodes mit negativen Vorzeichen zu drucken (ups); das haben wir korrigiert</li>
+<li>Erkannte URLs werden nicht mehr durch komplexe Unicode-Zeichen in derselben Zeile versetzt  </li>
+<li>Unter Windows Server wird die Anzeige in Terminal nicht mehr im Stil einer &#8222;Lösegeldforderung&#8220; dargestellt</li>
+</ul>
+<h3>Info und Download:</h3>
+<ul>
+<li><a href="https://github.com/microsoft/terminal" rel="noopener" target="_blank">github.com/terminal</a></li>
+<li><a href="https://github.com/microsoft/terminal/releases" rel="noopener" target="_blank">github.com/terminal/releases</a></li>
+<li>Als Info von gestern: <a href="https://devblogs.microsoft.com/commandline/windows-terminal-as-your-default-command-line-experience/" rel="noopener" target="_blank">devblogs.microsoft.com/windows-terminal-as-your-default-command-line-experience</a></li>
+</ul>
+<h3>Windows 11 Tutorials und Hilfe</h3>
+<ul>
+<li>In unserem <a href="https://www.deskmodder.de/wiki/index.php?title=Kategorie:Windows_11" rel="noopener noreferrer" target="_blank">Windows 11 Wiki</a> findet ihr sehr viele hilfreiche Tipps und Tricks.</li>
+<li>Falls ihr Fragen habt, dann stellt diese ganz einfach bei uns im <a href="https://www.deskmodder.de/phpBB3/viewforum.php?f=353" target="_blank" rel="noopener noreferrer"><strong>Forum</strong></a>.</li>
+<li><strong>Installationsmedien:</strong> Aktuelle Windows 11 ISOs findet ihr immer in der <a href="https://www.deskmodder.de/blog/2021/06/29/windows-11-22000-iso-esd-deutsch-english/" rel="noopener" target="_blank">rechten Sidebar</a> hier im Blog im Download-Bereich.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_neu_clean_installieren_Tipps_und_Tricks" target="_blank" rel="noopener noreferrer"><strong>Windows 11 neu clean installieren Tipps und Tricks</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Windows_11_Inplace_Upgrade_Reparatur_oder_Feature_Update" target="_blank" rel="noopener noreferrer"><strong>Windows 11 Inplace Upgrade Reparatur oder Feature Update</strong></a>.</li>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Automatisch_anmelden_Pin_entfernen_Windows_11" target="_blank" rel="noopener noreferrer"><strong>Automatisch anmelden Pin entfernen Windows 11</strong></a>.</li>
+<li>Alle Beiträge zu Windows 11 im Blog findet ihr <a href="https://www.deskmodder.de/blog/category/windows-11/" rel="noopener" target="_blank">über diese Seite</a>. Wobei auch <a href="https://www.deskmodder.de/blog/" rel="noopener" target="_blank">alle anderen Artikel</a> interessant sein können.</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-160429" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-treiber-updates-kalender-2022-001-50x50.jpg" alt="Windows Treiber-Updates werden jetzt auch am Wochenende freigegeben" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/15/windows-treiber-updates-werden-jetzt-auch-am-wochenende-freigegeben/" class="wp_rp_title">Windows Treiber-Updates werden jetzt auch am Wochenende freigegeben</a><small class="wp_rp_comments_count"> (1)</small><br /></li><li data-position="1" data-poid="in-160195" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/09/nanazip-1-0-als-finale-version-erschienen-7zip-fork-mit-verbesserungen-und-mehr/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/nanazip-10-001-50x50.jpg" alt="NanaZip 1.0 als finale Version erschienen &#8211; 7-Zip Fork mit Verbesserungen und mehr" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/09/nanazip-1-0-als-finale-version-erschienen-7zip-fork-mit-verbesserungen-und-mehr/" class="wp_rp_title">NanaZip 1.0 als finale Version erschienen &#8211; 7-Zip Fork mit Verbesserungen und mehr</a><small class="wp_rp_comments_count"> (0)</small><br /></li><li data-position="2" data-poid="in-160101" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/07/windows-11-und-10-datei-explorer-bekommt-dank-powertoys-mehr-funktionen-im-vorschaufenster/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/windows-11-und-10-datei-explorer-vorschaufenster-2-50x50.gif" alt="Windows 11 und 10 Datei Explorer bekommt dank PowerToys mehr Funktionen im Vorschaufenster" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/07/windows-11-und-10-datei-explorer-bekommt-dank-powertoys-mehr-funktionen-im-vorschaufenster/" class="wp_rp_title">Windows 11 und 10 Datei Explorer bekommt dank PowerToys mehr Funktionen im Vorschaufenster</a><small class="wp_rp_comments_count"> (0)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/">Windows Terminal 1.12.3472.0 und 1.11.3471.0 zum Download bereitgestellt</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/windows-terminal-1-12-3472-0-und-1-11-3471-0-zum-download-bereitgestellt/feed/</wfw:commentRss>
+                        <slash:comments>0</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160416</post-id>	</item>
+                <item>
+                <title>KB5008244 / KB5008282 Windows 7 Sicherheitsupdate Dezember 2021</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/kb5008244-kb5008282-windows-7-sicherheitsupdate-dezember-2021/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/kb5008244-kb5008282-windows-7-sicherheitsupdate-dezember-2021/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 06:58:54 +0000</pubDate>
+                                <category><![CDATA[Windows 7]]></category>
+                <category><![CDATA[changelog]]></category>
+                <category><![CDATA[Dezember 2021]]></category>
+                <category><![CDATA[Download]]></category>
+                <category><![CDATA[KB 5008244]]></category>
+                <category><![CDATA[KB 5008282]]></category>
+                <category><![CDATA[KB5008244]]></category>
+                <category><![CDATA[KB5008282]]></category>
+                <category><![CDATA[Patchday]]></category>
+                <category><![CDATA[windows 7]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160411</guid>
+
+                                        <description><![CDATA[<p>Neben den anderen Windows Versionen hat auch Windows 7 das Sicherheitsupdate KB5008282 bzw. Rollup Update KB5008244 erhalten. Insgesamt wurden 18 Sicherheitslücken geschlossen. Der ESU Bypass v11 funktioniert auch diesen Monat weiterhin ohne Probleme. Alles Weitere dazu wie immer in diesem&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/kb5008244-kb5008282-windows-7-sicherheitsupdate-dezember-2021/">KB5008244 / KB5008282 Windows 7 Sicherheitsupdate Dezember 2021</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Neben den anderen Windows Versionen hat auch Windows 7 das Sicherheitsupdate KB5008282 bzw. Rollup Update KB5008244 erhalten. Insgesamt wurden 18 Sicherheitslücken geschlossen.</p>
+<p>Der ESU Bypass v11 funktioniert auch diesen Monat weiterhin ohne Probleme. Alles Weitere dazu wie immer in diesem Beitrag: Windows 7 – Erweiterte Sicherheitsupdates (ESU).</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2018/01/windows-7-microsoft-laptop.png" rel="lightbox[160411]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2018/01/windows-7-microsoft-laptop.png" alt="" width="484" height="301" class="aligncenter size-full wp-image-96247" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/01/windows-7-microsoft-laptop.png 484w, https://www.deskmodder.de/blog/wp-content/uploads/2018/01/windows-7-microsoft-laptop-320x200.png 320w" sizes="(max-width: 484px) 100vw, 484px" /></a></p>
+<p>Noch als Hinweis, wie schon im letzten Monat: Microsoft hat noch bekanntgegeben, dass man den Supportzeitraum für Windows Server 2008 um ein Jahr verlängert. Dies trifft aber nicht auf Windows 7 zu. Hier bleibt es beim Ende zum Januar 2023 mit den Updates.</p>
+<h3>Behobene Probleme:</h3>
+<ul>
+<li>Beseitigt ein bekanntes Problem, das die Fehlercodes <strong>0x000006e4, 0x0000007c</strong> oder <strong>0x00000709</strong> verursacht, wenn eine Verbindung zu einem Remote-Drucker hergestellt wird, der auf einem Windows-Druckserver freigegeben ist.</li>
+<li>Behebt ein bekanntes Problem, das dazu führen kann, dass Anwendungen, wie z. B. Kaspersky-Anwendungen, nicht geöffnet werden können, nachdem Sie versucht haben, die Anwendungen mithilfe des Microsoft Installer (MSI) zu reparieren oder zu aktualisieren.</li>
+<li>Update zur Unterstützung der Abschaffung der Sommerzeit (DST) für 2021 für die Republik Fidschi.</li>
+</ul>
+<h3>Bekannte Probleme:</h3>
+<ul>
+<li>Bestimmte Vorgänge, wie z. B. das Umbenennen von Dateien oder Ordnern, die sich auf einem Cluster Shared Volume (CSV) befinden, schlagen möglicherweise mit dem Fehler &#8222;STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)&#8220; fehl. Dies tritt auf, wenn Sie den Vorgang auf einem CSV-Besitzerknoten von einem Prozess aus durchführen, der keine Administratorrechte besitzt. Workaround: Führen Sie den Vorgang von einem Prozess aus, der über Administratorrechte verfügt. Führen Sie den Vorgang von einem Knoten aus, der nicht über CSV-Eigentümerrechte verfügt. Microsoft arbeitet an einer Lösung und wird in einer der nächsten Versionen ein Update bereitstellen. </li>
+<li><a href="https://support.microsoft.com/en-us/topic/december-14-2021-kb5008244-monthly-rollup-d128e47c-8828-4f0d-9d30-571bb1bc1c5f" rel="noopener" target="_blank">support.microsoft</a></li>
+</ul>
+<h3>Manueller Download der KB5008244 (Rollup Update)</h3>
+<ul>
+<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2021/12/windows6.1-kb5008244-x64_c81c585d39ba28e41a30dee804279e3cc9e746a6.msu" rel="noopener" target="_blank">windows6.1-kb5008244-x64.msu</a></li>
+<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2021/12/windows6.1-kb5008244-x86_dcdc36e40807179b4cc3fec3e5a3ba3b80c8cfec.msu" rel="noopener" target="_blank">windows6.1-kb5008244-x86.msu</a></li>
+</ul>
+<h3>Manueller Download der KB5008282 (Sicherheitsupdate only)</h3>
+<ul>
+<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/secu/2021/12/windows6.1-kb5008282-x64_23442d0fdff798be905733e683897145736ef363.msu" rel="noopener" target="_blank">windows6.1-kb5008282-x64.msu</a></li>
+<li><a href="http://download.windowsupdate.com/c/msdownload/update/software/secu/2021/12/windows6.1-kb5008282-x86_1fe479999f71341844b3e61f387afa31a434d6aa.msu" rel="noopener" target="_blank">windows6.1-kb5008282-x86.msu</a></li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-160369" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/14/kb5008215-windows-11-22000-376-manueller-download-sicherheitsupdate-dezember-2021/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/05/windows-10-update-logo-50x50.jpg" alt="KB5008215 Windows 11 22000.376 [Manueller Download] Sicherheitsupdate Dezember 2021" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/14/kb5008215-windows-11-22000-376-manueller-download-sicherheitsupdate-dezember-2021/" class="wp_rp_title">KB5008215 Windows 11 22000.376 [Manueller Download] Sicherheitsupdate Dezember 2021</a><small class="wp_rp_comments_count"> (43)</small><br /></li><li data-position="1" data-poid="in-149744" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/02/09/kb4601319-manueller-download-windows-10-21h1-20h2-und-2004/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-65x65.png" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-65x65.png 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2021/02/09/kb4601319-manueller-download-windows-10-21h1-20h2-und-2004/" class="wp_rp_title">KB4601319  [Manueller Download] Windows 10 21H1 19043.804, 20H2 19042.804 und 2004 19041.804</a><small class="wp_rp_comments_count"> (137)</small><br /></li><li data-position="2" data-poid="in-148648" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/01/12/kb4598242-und-kb4598481-als-ssu-manueller-download-windows-10-20h2-2004-19042-746-19041-746/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-65x65.png" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-65x65.png 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/11/windows-update-logo-150x150.png 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2021/01/12/kb4598242-und-kb4598481-als-ssu-manueller-download-windows-10-20h2-2004-19042-746-19041-746/" class="wp_rp_title">KB4598242 und KB4598481 als SSU [Manueller Download] Windows 10 20H2 / 2004 19042.746 / 19041.746</a><small class="wp_rp_comments_count"> (159)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/kb5008244-kb5008282-windows-7-sicherheitsupdate-dezember-2021/">KB5008244 / KB5008282 Windows 7 Sicherheitsupdate Dezember 2021</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/kb5008244-kb5008282-windows-7-sicherheitsupdate-dezember-2021/feed/</wfw:commentRss>
+                        <slash:comments>3</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160411</post-id>	</item>
+                <item>
+                <title>Microsoft Edge 96.0.1054.57 korrigiert 5 weitere Sicherheitslücken</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/microsoft-edge-96-0-1054-57-korrigiert-5-weitere-sicherheitsluecken/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/microsoft-edge-96-0-1054-57-korrigiert-5-weitere-sicherheitsluecken/#respond</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Wed, 15 Dec 2021 06:41:16 +0000</pubDate>
+                                <category><![CDATA[Browser]]></category>
+                <category><![CDATA[96.0.1054.57]]></category>
+                <category><![CDATA[CVE-2021-4102]]></category>
+                <category><![CDATA[Microsoft Edge]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160409</guid>
+
+                                        <description><![CDATA[<p>Nachdem der Microsoft Edge (Stable) am 11.12. schon einmal ein Sicherheitsupdate bekam, hat man gestern Abend ein weiteres Sicherheitsupdate auf die Version 96.0.1054.57 nachgeschoben. Der Grund ist, dass eine Sicherheitslücke CVE-2021-4102 nach Angaben des Chromium-Teams schon in der freien Wildbahn&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/microsoft-edge-96-0-1054-57-korrigiert-5-weitere-sicherheitsluecken/">Microsoft Edge 96.0.1054.57 korrigiert 5 weitere Sicherheitslücken</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Nachdem der Microsoft Edge (Stable) am 11.12. schon einmal ein Sicherheitsupdate bekam, hat man gestern Abend ein weiteres Sicherheitsupdate auf die Version 96.0.1054.57 nachgeschoben.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version.jpg" rel="lightbox[160409]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version-500x310.jpg" alt="" width="500" height="310" class="aligncenter size-medium wp-image-157726" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version-500x310.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version-810x502.jpg 810w, https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version-306x190.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version.jpg 1220w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Der Grund ist, dass eine Sicherheitslücke <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-4102" rel="noopener" target="_blank">CVE-2021-4102</a> nach Angaben des Chromium-Teams schon in der freien Wildbahn unterwegs ist. Neben dieser Lücke wurden noch <a href="https://msrc.microsoft.com/update-guide/" rel="noopener" target="_blank">vier weitere</a> Sicherheitskorrekturen vorgenommen. Wer also seinen Edge nicht automatisch aktualisieren lässt, sollte es jetzt tun.</p>
+<h3>Alle Microsoft Edge Downloads auch Insider:</h3>
+<ul>
+<li>Microsoft Edge Stable (Windows, macOS, iOS, Android) <a href="https://www.microsoft.com/de-de/edge" rel="noopener noreferrer" target="_blank">microsoft.com/de-de/edge</a></li>
+<li>Canary, Dev, Beta (Windows, macOS)<a href="https://www.microsoftedgeinsider.com/de-de/download/" target="_blank" rel="noopener noreferrer">microsoftedgeinsider.com/de-de/download/</a>,</li>
+<li><strong>Business:</strong> Microsoft Edge Stable, Beta und Dev (Windows, macOS: <a href="https://www.microsoft.com/de-de/edge/business/download" rel="noopener noreferrer" target="_blank">microsoft.com/de-de/edge/business</a></li>
+<li>Die <strong>portablen Versionen:</strong> <a href="https://www.deskmodder.de/blog/2019/05/27/portabler-microsoft-edge-chromium-updater-fuer-canary-developer-beta-und-spaeter-auch-der-finale-edge/" target="_blank" rel="noopener noreferrer">Portable Edge Updater</a></li>
+<li>Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.emmx&amp;hl=de" target="_blank" rel="noopener noreferrer">play.google.com/microsoft.emmx</a></li>
+<li>iOS: <a href="https://apps.apple.com/de/app/microsoft-edge/id1288723196" target="_blank" rel="noopener noreferrer">apps.apple.com/microsoft-edge</a></li>
+<li><strong>Deinstallation</strong> Microsoft Edge: Sollte der Edge nicht selbst installiert worden sein, kann man den Edge trotzdem entfernen, wenn man denn möchte
+<ul>
+<li><a href="https://www.deskmodder.de/blog/2020/07/05/microsoft-edge-deinstallieren-auch-wenn-es-grau-hinterlegt-ist/" rel="noopener noreferrer" target="_blank">Microsoft Edge deinstallieren – Auch wenn es grau hinterlegt ist</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-160305" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/12/microsoft-edge-mit-neuer-einrichtung-intro-bei-der-installation/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/microsoft-edge-mit-neuer-einrichtung-intro-bei-der-installation-001-50x50.jpg" alt="Microsoft Edge mit neuer Einrichtung (Intro) bei der Installation" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/12/microsoft-edge-mit-neuer-einrichtung-intro-bei-der-installation/" class="wp_rp_title">Microsoft Edge mit neuer Einrichtung (Intro) bei der Installation</a><small class="wp_rp_comments_count"> (5)</small><br /></li><li data-position="1" data-poid="in-160267" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/11/microsoft-edge-stable-96-0-1054-53-korrigiert-14-sicherheitsluecken/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/09/microsoft-edge-logo-neue-version-50x50.jpg" alt="Microsoft Edge (Stable) 96.0.1054.53 korrigiert 14 Sicherheitslücken" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/11/microsoft-edge-stable-96-0-1054-53-korrigiert-14-sicherheitsluecken/" class="wp_rp_title">Microsoft Edge (Stable) 96.0.1054.53 korrigiert 14 Sicherheitslücken</a><small class="wp_rp_comments_count"> (1)</small><br /></li><li data-position="2" data-poid="in-160253" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/10/microsoft-edge-datenschutzeinstellungen-blockierte-tracker-wurde-ueberarbeitet/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/microsoft-edge-datenschutzeinstellungen-blockierte-tracker-001-50x50.jpg" alt="Microsoft Edge &#8211; Datenschutzeinstellungen (Blockierte Tracker) wurde überarbeitet [Update]" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/10/microsoft-edge-datenschutzeinstellungen-blockierte-tracker-wurde-ueberarbeitet/" class="wp_rp_title">Microsoft Edge &#8211; Datenschutzeinstellungen (Blockierte Tracker) wurde überarbeitet [Update]</a><small class="wp_rp_comments_count"> (2)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/microsoft-edge-96-0-1054-57-korrigiert-5-weitere-sicherheitsluecken/">Microsoft Edge 96.0.1054.57 korrigiert 5 weitere Sicherheitslücken</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/microsoft-edge-96-0-1054-57-korrigiert-5-weitere-sicherheitsluecken/feed/</wfw:commentRss>
+                        <slash:comments>0</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160409</post-id>	</item>
+                <item>
+                <title>Heute im Adventskalender WinX HD Video Converter Deluxe [Giveaway]</title>
+                <link>https://www.deskmodder.de/blog/2021/12/15/heute-im-adventskalender-winx-hd-video-converter-deluxe-giveaway-3/</link>
+                                        <comments>https://www.deskmodder.de/blog/2021/12/15/heute-im-adventskalender-winx-hd-video-converter-deluxe-giveaway-3/#comments</comments>
+
+                <dc:creator><![CDATA[moinmoin]]></dc:creator>
+                <pubDate>Tue, 14 Dec 2021 23:01:54 +0000</pubDate>
+                                <category><![CDATA[Software & Updates]]></category>
+                <category><![CDATA[Adventskalender]]></category>
+                <category><![CDATA[Giveaway]]></category>
+                <category><![CDATA[HD Video Converter Deluxe]]></category>
+                <category><![CDATA[Win+x]]></category>
+                <guid isPermaLink="false">https://www.deskmodder.de/blog/?p=160035</guid>
+
+                                        <description><![CDATA[<p>Mit dem WinX HD Video Converter Deluxe können Videos ganz einfach in ein anderes Format konvertiert werden. Aber auch Filme aus dem Internet können heruntergeladen, bearbeitet und abgespeichert werden. Mithilfe der Grafikbeschleunigung geht es dann auch richtig schnell. Unterstützt werden&#8230; </p>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/heute-im-adventskalender-winx-hd-video-converter-deluxe-giveaway-3/">Heute im Adventskalender WinX HD Video Converter Deluxe [Giveaway]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></description>
+                                                                                <content:encoded><![CDATA[<p>Mit dem WinX HD Video Converter Deluxe können Videos ganz einfach in ein anderes Format konvertiert werden. Aber auch Filme aus dem Internet können heruntergeladen, bearbeitet und abgespeichert werden.</p>
+<p>Mithilfe der Grafikbeschleunigung geht es dann auch richtig schnell. Unterstützt werden hier eine Reihe von Formaten und auch verschiedene vorgefertigte Profile für Handys, Tablet etc. stehen zur Verfügung.  Wer nur die Musik aus den Videos benötigt, kann auch diese extrahieren.</p>
+<p><a href="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/winx-hd-video-converter-deluxe-adventskalender.jpg" rel="lightbox[160035]"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/winx-hd-video-converter-deluxe-adventskalender-500x316.jpg" alt="" width="500" height="316" class="aligncenter size-medium wp-image-160036" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2021/12/winx-hd-video-converter-deluxe-adventskalender-500x316.jpg 500w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/winx-hd-video-converter-deluxe-adventskalender-306x193.jpg 306w, https://www.deskmodder.de/blog/wp-content/uploads/2021/12/winx-hd-video-converter-deluxe-adventskalender.jpg 760w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Unterstützt werden auch 4K Videos, die in alle gängigen Formate umgewandelt werden können. &#8222;Durch die Level-3 Hardwarebeschleunigung nutzt WinX Intel QSV und Nvidia CUDA/NVENC voll aus, um Videos zu codieren und decodieren.&#8220; Was der Converter noch alles kann, könnt <a href="https://www.winxdvd.com/hd-video-converter-deluxe/index-de.htm" rel="noopener" target="_blank">ihr hier nachlesen</a>.</p>
+<h3>Giveaway WinX HD Video Converter Deluxe</h3>
+<ul>
+<li>Es handelt sich hier um die aktuelle Version 5.16.8. Die Version ist kostenlos und keine 3-Monats-Lizenz.</li>
+<li>Die Aktion geht bis zum 31.12.2021</li>
+<li>Mit der Giveaway-Lizenz habt ihr den vollen Funktionsumfang, bekommt aber keine Updates oder neuen Funktionen.</li>
+<li>Über <a href="https://www.winxdvd.com/giveaway/converter-xmas-giveaway.htm?ttref=21oavcd-ty-dmod-xgive" rel="noopener" target="_blank">diesen Link</a> könnt ihr euch nach der Eingabe einer Mail-Adresse das Programm herunterladen.</li>
+</ul>
+<p>Denkt daran, auch morgen werden wir eine weitere Tür von unserem Adventskalender öffnen.</p>
+
+<div class="wp_rp_wrap  wp_rp_plain" ><div class="wp_rp_content"><h3 class="related_post_title">Ähnliche Artikel</h3><ul class="related_post wp_rp"><li data-position="0" data-poid="in-102589" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2018/05/30/giveaway-winx-hd-video-converter-deluxe-kostenlos-zu-haben/" class="wp_rp_thumbnail"><img width="50" height="50" src="https://www.deskmodder.de/blog/wp-content/uploads/2018/05/giveaway-winx-hd-video-converter-deluxe-65x65.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" srcset="https://www.deskmodder.de/blog/wp-content/uploads/2018/05/giveaway-winx-hd-video-converter-deluxe-65x65.jpg 65w, https://www.deskmodder.de/blog/wp-content/uploads/2018/05/giveaway-winx-hd-video-converter-deluxe-150x150.jpg 150w" sizes="(max-width: 50px) 100vw, 50px" /></a><a href="https://www.deskmodder.de/blog/2018/05/30/giveaway-winx-hd-video-converter-deluxe-kostenlos-zu-haben/" class="wp_rp_title">Giveaway: WinX HD Video Converter Deluxe kostenlos zu haben</a><small class="wp_rp_comments_count"> (8)</small><br /></li><li data-position="1" data-poid="in-160026" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/12/10/heute-im-adventskalender-ashampoo-uninstaller-9-giveaway/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2019/10/adventskalender-2019-50x50.png" alt="Heute im Adventskalender Ashampoo UnInstaller 9 [Giveaway]" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/12/10/heute-im-adventskalender-ashampoo-uninstaller-9-giveaway/" class="wp_rp_title">Heute im Adventskalender Ashampoo UnInstaller 9 [Giveaway]</a><small class="wp_rp_comments_count"> (2)</small><br /></li><li data-position="2" data-poid="in-149440" data-post-type="none" ><a href="https://www.deskmodder.de/blog/2021/01/30/giveaway-hd-video-converter-deluxe-kostenlos-zum-super-bowl/" class="wp_rp_thumbnail"><img src="https://www.deskmodder.de/blog/wp-content/uploads/2021/01/winx-hd-video-converter-deluxe-free-50x50.jpg" alt="Giveaway: HD Video Converter Deluxe kostenlos zum Super Bowl" width="50" height="50" /></a><a href="https://www.deskmodder.de/blog/2021/01/30/giveaway-hd-video-converter-deluxe-kostenlos-zum-super-bowl/" class="wp_rp_title">Giveaway: HD Video Converter Deluxe kostenlos zum Super Bowl</a><small class="wp_rp_comments_count"> (7)</small><br /></li></ul></div></div>
+<p>Der Beitrag <a rel="nofollow" href="https://www.deskmodder.de/blog/2021/12/15/heute-im-adventskalender-winx-hd-video-converter-deluxe-giveaway-3/">Heute im Adventskalender WinX HD Video Converter Deluxe [Giveaway]</a> erschien zuerst auf <a rel="nofollow" href="https://www.deskmodder.de/blog">Deskmodder.de</a>.</p>
+<p><a href="https://www.amazon.de/gp/angebote?tag=deskmodderde-21" target="_blank" rel="noopener"><b>Amazon Blitzangebote:</b> Immer die aktuellen Angebote im Überblick. Bei einem Kauf über diesen Link unterstützt ihr uns.</a></p>
+]]></content:encoded>
+
+                                        <wfw:commentRss>https://www.deskmodder.de/blog/2021/12/15/heute-im-adventskalender-winx-hd-video-converter-deluxe-giveaway-3/feed/</wfw:commentRss>
+                        <slash:comments>4</slash:comments>
+
+
+                <post-id xmlns="com-wordpress:feed-additions:1">160035</post-id>	</item>
+        </channel>
+</rss>
