@@ -52,17 +52,22 @@ void Feed::setActive(bool newActive)
     }
 }
 
-void Feed::get(QString location)
+void Feed::get()
 {
     qInfo() << "Getting Feed from Server...";
 
 
     qDebug() << "Feed::get: " << m_nMgr;
-    QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(location)));
+    QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
 
     if(reply) {
         qInfo() << "Next step...";
     }
+}
+
+void Feed::parse(QNetworkReply* reply)
+{
+    char* s = reply->readAll().data();
 }
 
 
@@ -73,6 +78,7 @@ void Feed::downloadFinished(QNetworkReply * reply)
     if(reply){
         qInfo() << reply->readAll();
     }
+    this->parse(reply);
 }
 
 

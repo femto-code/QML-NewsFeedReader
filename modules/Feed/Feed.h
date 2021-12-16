@@ -50,6 +50,7 @@ private:
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
+    void parse(QNetworkReply* reply);
 
 private slots:
     void downloadFinished(QNetworkReply* reply);
