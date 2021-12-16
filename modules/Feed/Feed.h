@@ -28,7 +28,7 @@ public:
 
         m_nMgr = NetworkMgr::getInstance();
 
-        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
+        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
 
     };
 
@@ -50,10 +50,9 @@ private:
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
-    void parse(QNetworkReply* reply);
 
 private slots:
-    void downloadFinished(QNetworkReply* reply);
+    void parse(QNetworkReply* reply);
 
 signals:
     void nameChanged();

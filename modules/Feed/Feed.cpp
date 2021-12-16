@@ -71,14 +71,3 @@ void Feed::parse(QNetworkReply* reply)
 }
 
 
-void Feed::downloadFinished(QNetworkReply * reply)
-{
-    qInfo() << "Ready to read...";
-
-    if(reply){
-        qInfo() << reply->readAll();
-    }
-    this->parse(reply);
-}
-
-
