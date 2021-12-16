@@ -19,8 +19,6 @@ public:
         }
         return qnam;
     }
-//    QNetworkAccessManager(QNetworkAccessManager const&) = delete;
-//    void operator=(QNetworkAccessManager const&) = delete;
 };
 
 #endif

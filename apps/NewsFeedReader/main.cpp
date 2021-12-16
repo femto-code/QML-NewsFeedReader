@@ -22,10 +22,10 @@ int main(int argc, char* argv[]){
     QNetworkAccessManager* mgr = new QNetworkAccessManager;
     qDebug() << "QNetworkAccessManager" << mgr;
 
-    Feed feed( nullptr, mgr);
+    Feed feed;
 
     qInfo() << "I'm here";
-    feed.get("https://www.deskmodder.de/blog/feed/");
+    feed.get();
 
 // ///////////////////////////////////  End of QNAM test
 
