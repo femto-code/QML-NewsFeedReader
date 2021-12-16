@@ -9,7 +9,6 @@
 #include <QNetworkReply>
 
 #include "Feed.h"
-#include <QDomDocument>
 
 using namespace std;
 

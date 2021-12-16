@@ -9,6 +9,7 @@
 #include <QNetworkRequest>
 #include <QPixmap>
 #include <iostream>
+#include <QDomDocument>
 #include "NetworkMgr.h"
 
 using namespace std;

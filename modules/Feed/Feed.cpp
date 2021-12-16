@@ -79,10 +79,10 @@ void Feed::parse(QNetworkReply* reply)
     QDomDocument doc("mydocument");
     QFile file("../NewsFeedReader/mydocument.xml");
     if (!file.open(QIODevice::ReadOnly))
-        return 1;
+        //return 1;
     if (!doc.setContent(&file)) {
         file.close();
-        return 1;
+        //return 1;
     }
     file.close();
 
