@@ -2,7 +2,7 @@ INCLUDEPATH += $$PWD
 
 QT += sql
 
-SOURCES += 	$$modules_dir/NetworkMgr/NetworkMgr.cpp
+SOURCES +=
 
 HEADERS +=	$$modules_dir/NetworkMgr/NetworkMgr.h
 

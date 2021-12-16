@@ -56,7 +56,6 @@ void Feed::get()
 {
     qInfo() << "Getting Feed from Server...";
 
-
     qDebug() << "Feed::get: " << m_nMgr;
     QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
 

@@ -26,10 +26,11 @@ public:
 //    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
     Feed(QObject* parent = NULL) : QObject(parent){
 
-        m_nMgr = NetworkMgr::getInstance();
+        NetworkMgr nMgr;
+
+        m_nMgr = nMgr.NetworkMgr::getInstance();
 
         connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
-
     };
 
     QString name();
