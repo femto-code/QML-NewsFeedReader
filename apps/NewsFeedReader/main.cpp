@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
         n = n.nextSibling();
     }
 
-    return 0; // ////// END OF EXAMPLE PROGRAM for demonstrating use of xml parser ///////////////
+// ////// END OF EXAMPLE PROGRAM for demonstrating use of xml parser ///////////////
 
     QGuiApplication app(argc, argv);
 
