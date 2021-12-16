@@ -23,14 +23,13 @@ class Feed : public QObject {
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
 
 public:
-//    Feed(QObject* parent = NULL, QNetworkAccessManager* nMgr = NULL) : QObject(parent), m_nMgr(nMgr){
     Feed(QObject* parent = NULL) : QObject(parent){
 
-        NetworkMgr nMgr;
 
-        m_nMgr = nMgr.NetworkMgr::getInstance();
+        m_nMgr = NetworkMgr::getInstance();
 
-        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(downloadFinished(QNetworkReply*)));
+        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
+
     };
 
     QString name();
@@ -51,10 +50,9 @@ private:
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
-    void parse(QNetworkReply* reply);
 
 private slots:
-    void downloadFinished(QNetworkReply* reply);
+    void parse(QNetworkReply* reply);
 
 signals:
     void nameChanged();
