@@ -1,6 +1,6 @@
 #additional Qt modules
 QT += quick qml xml
-#QT += network
+QT += network
 
 #Include modules here
 include($$modules_dir/Feed/Feed.pri)

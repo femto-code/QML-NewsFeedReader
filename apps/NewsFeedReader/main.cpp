@@ -18,12 +18,15 @@ int main(int argc, char* argv[]){
 
 // ///////////////////////////////////  Begin of QNAM test
 
-    QNetworkAccessManager* mgr = new QNetworkAccessManager;
-    qDebug() << "QNetworkAccessManager" << mgr;
+    //QNetworkAccessManager* mgr = new QNetworkAccessManager;
+    //qDebug() << "QNetworkAccessManager" << mgr;
 
     Feed feed;
 
+
+
     qInfo() << "I'm here";
+    feed.setUrl("https://www.deskmodder.de/blog/feed/");
     feed.get();
 
 // ///////////////////////////////////  End of QNAM test

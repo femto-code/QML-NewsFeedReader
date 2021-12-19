@@ -9,16 +9,20 @@
 class NetworkMgr : public QObject {
     Q_OBJECT
 
-    NetworkMgr(QObject* parent = NULL){};
-    static QNetworkAccessManager* qnam;
+    NetworkMgr(QObject* parent = NULL) : QObject(parent){};
+    ~NetworkMgr(){};
+
 
 public:
     static QNetworkAccessManager* getInstance(){
-        if(qnam == NULL){
-            qnam = new QNetworkAccessManager();
-        }
-        return qnam;
+
+        static QNetworkAccessManager instance;
+        return &instance;
     }
+
+    NetworkMgr(NetworkMgr const& copy) = delete;
+    NetworkMgr& operator=(NetworkMgr const& copy) = delete;
+
 };
 
 #endif

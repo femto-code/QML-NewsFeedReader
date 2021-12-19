@@ -24,6 +24,7 @@ void Feed::setUrl(QString newUrl)
         m_url = newUrl;
        //emit urlChanged();
     }
+    setActive(true);
 }
 
 int Feed::id()
@@ -54,14 +55,18 @@ void Feed::setActive(bool newActive)
 
 void Feed::get()
 {
-    qInfo() << "Getting Feed from Server...";
+    if(m_active){
 
-    qDebug() << "Feed::get: " << m_nMgr;
-    QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
+        qInfo() << "Getting Feed from Server...";
 
-    if(reply) {
-        qInfo() << "Next step...";
+        qDebug() << "Feed::get: " << m_nMgr;
+        QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
+
+        if(reply) {
+            qInfo() << "Next step...";
+        }
     }
+    cout << "No URL set...";
 }
 
 void Feed::parse(QNetworkReply* reply)

@@ -26,10 +26,9 @@ class Feed : public QObject {
 public:
     Feed(QObject* parent = NULL) : QObject(parent){
 
-
         m_nMgr = NetworkMgr::getInstance();
-
         connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
+        m_active = false;
 
     };
 
