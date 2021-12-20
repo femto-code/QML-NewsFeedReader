@@ -71,12 +71,12 @@ void Feed::get()
 
 void Feed::parse(QNetworkReply* reply)
 {
-    char* s = reply->readAll().data();
-    size_t len = strlen(s);
-    char* s2 = new char[len+1];
-    s2[len]='\0';
+//    char* s = reply->readAll().data();
+//    size_t len = strlen(s);
+//    char* s2 = new char[len+1];
+//    s2[len]='\0';
 
-    cout << "\nParsing my students data (sample.xml)....." << endl;
+    qInfo() << "\nParsing my students data (sample.xml).....";
 
     // TODO: text will be the XML / RSS data queried by
     // QNetworkAccessManager Class ...WIP
