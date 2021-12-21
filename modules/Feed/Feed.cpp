@@ -66,9 +66,43 @@ void Feed::get()
             qInfo() << "Next step...";
         }
     }
-    cout << "No URL set...";
+    else{
+        cout << "No URL set..."; }
 }
 
+void Feed::parse(QNetworkReply* reply){
+
+    QDomDocument doc("testDoc");
+    if(doc.setContent(reply))
+        qInfo() << "Successfully parsed...";
+
+    QDomElement docElem = doc.documentElement();
+
+    QDomNode n = docElem.firstChild();
+    while(!n.isNull()) {
+
+        qInfo() << "Step into creating elements...";
+
+        QDomElement e = n.toElement(); // try to convert the node to an element.
+        if(!e.isNull()) {
+            qInfo() << "Inside creating element...";
+            cout << qPrintable(e.tagName()) << '\n'; // the node really is an element.
+        // cout just prints after exiting the program, that's why I use qInfo() here aswell
+            qInfo() << e.tagName();
+        }
+        n = n.nextSibling();
+
+        // I'm just checking here if next sibling is null
+        if(n.isNull())
+            qInfo() << "something went wrong with nexSibling()...";
+    }
+
+    qInfo() << "Step out of creating elements...";
+
+}
+
+
+/*
 void Feed::parse(QNetworkReply* reply)
 {
 //    char* s = reply->readAll().data();
@@ -106,5 +140,5 @@ void Feed::parse(QNetworkReply* reply)
 
     // ////// END OF EXAMPLE PROGRAM for demonstrating use of xml parser ///////////////
 }
-
+*/
 
