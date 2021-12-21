@@ -79,6 +79,13 @@ void Feed::parse(QNetworkReply* reply){
     QDomElement docElem = doc.documentElement();
 
     QDomNode n = docElem.firstChild();
+
+    // Gets list of the childs of the node
+    QDomNodeList nList = docElem.childNodes();
+
+    // But here we can see, that there is only one child in "channel", which is very unlikely
+    qInfo() << "child count: " << nList.size();
+
     while(!n.isNull()) {
 
         qInfo() << "Step into creating elements...";
