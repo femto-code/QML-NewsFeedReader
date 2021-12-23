@@ -101,7 +101,7 @@ void Feed::get()
         }
     }
     else{
-        std::cout << "No URL set..."; }
+        qDebug() << "No URL set..."; }
 
     QTimer timer;
     timer.setSingleShot(true);
@@ -111,11 +111,12 @@ void Feed::get()
     timer.start(1000);
     loop.exec();
 
+    qDebug() << "Timer finished..";
+
     if(timer.isActive())
         qDebug("Download finished...");
     else
         qDebug("timeout");
-
 }
 
 void Feed::parse(QNetworkReply* reply){
@@ -156,16 +157,16 @@ void Feed::parse(QNetworkReply* reply){
             while(!n2.isNull()){
 
                 if(n2.toElement().tagName() == "title"){
-                    newItem->setTitle(n.toElement().text());
+                    newItem->setTitle(n2.toElement().text());
                 }
                 if(n2.toElement().tagName() == "link"){
-                    newItem->setLink(n.toElement().text());
+                    newItem->setLink(n2.toElement().text());
                 }
                 if(n2.toElement().tagName() == "description"){
-                    newItem->setDescription(n.toElement().text());
+                    newItem->setDescription(n2.toElement().text());
                 }
                 if(n2.toElement().tagName() == "pubDate"){
-                    newItem->setDescription(n.toElement().text());
+                    newItem->setPubDate(n2.toElement().text());
                 }
                 n2 = n2.nextSibling();
             }
@@ -173,89 +174,11 @@ void Feed::parse(QNetworkReply* reply){
             feedItems.emplace(m_itemCount, newItem);
             m_itemCount++;
             qInfo() << m_itemCount;
+
         }
         n = n.nextSibling();
     }
-
-
-
-
-
-
-
-
-//    while(!n.isNull()) {
-
-//        qInfo() << "Step into creating elements...";
-//        qInfo() << n.toElement().tagName();
-
-//        if(n.toElement().tagName() == "title"){
-//            qInfo() << "comparison works";
-//            qInfo() << n.toElement().text();   // This works!
-//        }
-
-//        if(n.toElement().tagName() == "lastBuildDate"){
-//            qInfo() << n.toElement().text();
-//        }
-
-// //        QDomElement e = n.toElement(); // try to convert the node to an element.
-// //        if(!e.isNull()) {
-// //            qInfo() << "Inside creating element...";
-// //            cout << qPrintable(e.tagName()) << '\n'; // the node really is an element.
-// //        // cout just prints after exiting the program, that's why I use qInfo() here aswell
-// //            qInfo() << e.tagName();
-// //        }
-
-
-//        n = n.nextSibling();
-
-//        // I'm just checking here if next sibling is null
-// //        if(n.isNull())
-// //            qInfo() << "something went wrong with nexSibling()...";
-//    }
 
     qInfo() << "Step out of creating elements...";
-
 }
-
-
-/*
-void Feed::parse(QNetworkReply* reply)
-{
-//    char* s = reply->readAll().data();
-//    size_t len = strlen(s);
-//    char* s2 = new char[len+1];
-//    s2[len]='\0';
-
-    qInfo() << "\nParsing my students data (sample.xml).....";
-
-    // TODO: text will be the XML / RSS data queried by
-    // QNetworkAccessManager Class ...WIP
-
-    QDomDocument doc("mydocument");
-    QFile file("../NewsFeedReader/mydocument.xml");
-    if (!file.open(QIODevice::ReadOnly))
-        //return 1;
-    if (!doc.setContent(&file)) {
-        file.close();
-        //return 1;
-    }
-    file.close();
-
-    // print out the element names of all elements that are direct children
-    // of the outermost element.
-    QDomElement docElem = doc.documentElement();
-
-    QDomNode n = docElem.firstChild();
-    while(!n.isNull()) {
-        QDomElement e = n.toElement(); // try to convert the node to an element.
-        if(!e.isNull()) {
-            cout << qPrintable(e.tagName()) << '\n'; // the node really is an element.
-        }
-        n = n.nextSibling();
-    }
-
-    // ////// END OF EXAMPLE PROGRAM for demonstrating use of xml parser ///////////////
-}
-*/
 

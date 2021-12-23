@@ -28,6 +28,10 @@ int main(int argc, char* argv[]){
     qInfo() << "Back in main... get ItemCount: " << feed.getItemCount();
     std::unordered_map<int, Item*> testItem = feed.getFeedItems();
     qInfo() << testItem[10]->link();
+    qInfo() << testItem[10]->title();
+    qInfo() << testItem[10]->pubDate();
+    qInfo() << testItem[10]->description();
+
 
 // ///////////////////////////////////  End of QNAM test
 
