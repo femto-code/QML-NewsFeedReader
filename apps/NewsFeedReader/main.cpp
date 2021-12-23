@@ -22,15 +22,12 @@ int main(int argc, char* argv[]){
 
     Feed feed;
 
-
-
     qInfo() << "I'm here";
     feed.setUrl("https://www.deskmodder.de/blog/feed/");
     feed.get();
     qInfo() << "Back in main... get ItemCount: " << feed.getItemCount();
     std::unordered_map<int, Item*> testItem = feed.getFeedItems();
-//    qInfo() << testItem[0]->title();
-
+    qInfo() << testItem[10]->link();
 
 // ///////////////////////////////////  End of QNAM test
 

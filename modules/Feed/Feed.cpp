@@ -102,6 +102,20 @@ void Feed::get()
     }
     else{
         std::cout << "No URL set..."; }
+
+    QTimer timer;
+    timer.setSingleShot(true);
+    QEventLoop loop;
+    connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
+    connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
+    timer.start(1000);
+    loop.exec();
+
+    if(timer.isActive())
+        qDebug("Download finished...");
+    else
+        qDebug("timeout");
+
 }
 
 void Feed::parse(QNetworkReply* reply){
