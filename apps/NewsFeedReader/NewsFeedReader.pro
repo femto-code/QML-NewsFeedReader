@@ -5,6 +5,8 @@ QT += network
 #Include modules here
 include($$modules_dir/Feed/Feed.pri)
 include($$modules_dir/NetworkMgr/NetworkMgr.pri)
+include($$modules_dir/Item/Item.pri)
+
 
 #Include project files
 INCLUDEPATH += $$PWD

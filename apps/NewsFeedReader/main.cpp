@@ -9,8 +9,7 @@
 #include <QNetworkReply>
 
 #include "Feed.h"
-
-using namespace std;
+#include "Item.h"
 
 int main(int argc, char* argv[]){
 
@@ -28,6 +27,10 @@ int main(int argc, char* argv[]){
     qInfo() << "I'm here";
     feed.setUrl("https://www.deskmodder.de/blog/feed/");
     feed.get();
+    qInfo() << "Back in main... get ItemCount: " << feed.getItemCount();
+    std::unordered_map<int, Item*> testItem = feed.getFeedItems();
+//    qInfo() << testItem[0]->title();
+
 
 // ///////////////////////////////////  End of QNAM test
 

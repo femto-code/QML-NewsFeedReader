@@ -53,40 +53,6 @@ void Feed::setActive(bool newActive)
     }
 }
 
-const QString &Feed::description() const
-{
-    return m_description;
-}
-
-void Feed::setDescription(const QString &newDescription)
-{
-    if (m_description == newDescription)
-        return;
-    m_description = newDescription;
-}
-
-std::unordered_map<int, Item *> Feed::getFeedItems()
-{
-    return feedItems;
-}
-
-int Feed::getItemCount()
-{
-    return m_itemCount;
-}
-
-void Feed::setLink(const QString &newLink)
-{
-    if (m_link == newLink)
-        return;
-    m_link = newLink;
-}
-
-QString Feed::link()
-{
-    return m_link;
-}
-
 void Feed::get()
 {
     if(m_active){
@@ -104,24 +70,49 @@ void Feed::get()
         std::cout << "No URL set..."; }
 }
 
+const QString &Feed::description() const
+{
+    return m_description;
+}
+
+void Feed::setDescription(const QString &newDescription)
+{
+    if (m_description == newDescription)
+        return;
+    m_description = newDescription;
+    emit descriptionChanged();
+}
+
+void Feed::setLink(const QString &newLink)
+{
+    if (m_link == newLink)
+        return;
+    m_link = newLink;
+    emit linkChanged();
+}
+
+QString Feed::link()
+{
+    return m_link;
+}
+
 void Feed::parse(QNetworkReply* reply){
 
-    qInfo() << "Start of parse()...";
-
     QDomDocument doc("testDoc");
-
-    qDebug() << "Setting doc...";
-
     if(doc.setContent(reply))
         qInfo() << "Successfully parsed...";
-    else
-        qDebug() << "What the fuck??";
 
     QDomElement docElem = doc.documentElement();
 
     QDomNode n = docElem.firstChild();
     // Go into "channel"
     n = n.firstChild();
+
+//    // Gets list of the childs of the node
+//    QDomNodeList nList = docElem.childNodes();
+
+//    // But here we can see, that there is only one child in "channel", which is very unlikely
+//    qInfo() << "child count: " << nList.size();
 
     while(!n.isNull()){
 
@@ -133,35 +124,40 @@ void Feed::parse(QNetworkReply* reply){
         }
 
         if(n.toElement().tagName() == "item"){
-
-            qInfo() << "Found an item node...";
-            QDomNode n2 = n.firstChild();
-
-            Item* newItem = new Item();
-
-            while(!n2.isNull()){
-
-                if(n2.toElement().tagName() == "title"){
-                    newItem->setTitle(n.toElement().text());
-                }
-                if(n2.toElement().tagName() == "link"){
-                    newItem->setLink(n.toElement().text());
-                }
-                if(n2.toElement().tagName() == "description"){
-                    newItem->setDescription(n.toElement().text());
-                }
-                if(n2.toElement().tagName() == "pubDate"){
-                    newItem->setDescription(n.toElement().text());
-                }
-                n2 = n2.nextSibling();
-            }
-
-            feedItems.emplace(m_itemCount, newItem);
             m_itemCount++;
-            qInfo() << m_itemCount;
+
+            while(!n.isNull()){
+
+                /*
+                 * Aktuelles Problem:
+                 *      Ich müsste für jedes Item eine Map anlegen, damit ich die Werte darin ablegen kann, müsste mir aber auch die Iteratoren über diese Maps merken,
+                 *      um überhaupt darauf zugreifen zu können..
+                 *
+                */
+                if(n.toElement().tagName() == "title"){
+
+                    itemValues.emplace("title", n.toElement().text());
+                }
+                if(n.toElement().tagName() == "link"){
+
+                    itemValues.emplace("link", n.toElement().text());
+                }
+                if(n.toElement().tagName() == "description"){
+
+                    itemValues.emplace("description", n.toElement().text());
+                }
+                if(n.toElement().tagName() == "pubDate"){
+
+                    itemValues.emplace("pubDate", n.toElement().text());
+                }
+                n = n.nextSibling();
+            }
         }
         n = n.nextSibling();
+        qInfo() << m_description;
+
     }
+
 
 
 
