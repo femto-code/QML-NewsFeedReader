@@ -163,7 +163,8 @@ void Feed::parse(QNetworkReply* reply){
                     newItem->setLink(n2.toElement().text());
                 }
                 if(n2.toElement().tagName() == "description"){
-                    newItem->setDescription(n2.toElement().text());
+                    QString plain = QTextDocumentFragment::fromHtml(n2.toElement().text()).toPlainText();
+                    newItem->setDescription(plain);
                 }
                 if(n2.toElement().tagName() == "pubDate"){
                     newItem->setPubDate(n2.toElement().text());
