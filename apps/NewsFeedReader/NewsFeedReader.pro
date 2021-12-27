@@ -1,16 +1,26 @@
 #additional Qt modules
-QT += quick qml
+QT += quick qml xml
+QT += network
+
+#Include modules here
+include($$modules_dir/Feed/Feed.pri)
+include($$modules_dir/FeedList/FeedList.pri)
+include($$modules_dir/NetworkMgr/NetworkMgr.pri)
+include($$modules_dir/Item/Item.pri)
+
 
 #Include project files
 INCLUDEPATH += $$PWD
 
+
 SOURCES += main.cpp  \
 
 
-HEADERS += \
+HEADERS +=
 
 
 RESOURCES += qml/qml.qrc
+
 
 OTHER_FILES +=
 
@@ -32,4 +42,5 @@ QML_IMPORT_PATH += $$plugin_dir
 #copy the executable to the source folder
 DLLDESTDIR = $$_PRO_FILE_PWD_
 
-DISTFILES +=
+DISTFILES += \
+    mydocument.xml
