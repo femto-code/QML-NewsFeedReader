@@ -7,7 +7,7 @@ include($$modules_dir/Feed/Feed.pri)
 include($$modules_dir/FeedList/FeedList.pri)
 include($$modules_dir/NetworkMgr/NetworkMgr.pri)
 include($$modules_dir/Item/Item.pri)
-include($$modules_dir/dataBase/dataBase.pri)
+#include($$modules_dir/dataBase/dataBase.pri) leave as is! work done in separate branch!
 
 
 #Include project files
