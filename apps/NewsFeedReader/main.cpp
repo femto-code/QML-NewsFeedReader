@@ -10,10 +10,10 @@
 
 #include "Feed.h"
 #include "Item.h"
+#include "FeedList.h"
 
 int main(int argc, char* argv[]){
 
-    QGuiApplication app(argc, argv);
 
 // ///////////////////////////////////  Begin of QNAM test
 
@@ -37,9 +37,16 @@ int main(int argc, char* argv[]){
 
     qputenv("QT_QUICK_BACKEND", "software");
 
-    QScopedPointer<QQmlApplicationEngine> engine(new QQmlApplicationEngine);
-    engine->addImportPath(":/");
+    QGuiApplication app(argc, argv);
 
+    QScopedPointer<QQmlApplicationEngine> engine(new QQmlApplicationEngine);
+
+    qmlRegisterType<Feed>("SET", 1, 1, "Feed");
+
+    QPointer<FeedList> feedList(new FeedList());
+    engine->rootContext()->setContextProperty("feedList", feedList.data());
+
+    engine->addImportPath(":/");
     engine->load(QUrl("qrc:/main.qml"));
 
     return app.exec();
