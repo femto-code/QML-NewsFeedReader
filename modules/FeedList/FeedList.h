@@ -21,6 +21,7 @@ public:
 
 public slots:
     void add(QString name);
+    void debugFeedList();
 
 signals:
     void feedSourcesChanged();
