@@ -30,3 +30,9 @@ void FeedList::debugFeedList(){
         qInfo() << testItem[10]->description();
     }
 }
+void FeedList::saveToDB(){
+    for( int i=0; i<m_FeedSources.count(); ++i ) {
+        Feed* el = m_FeedSources[i];
+        // save
+    }
+}

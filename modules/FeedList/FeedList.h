@@ -21,6 +21,7 @@ public:
 
 public slots:
     void add(QString name);
+    void saveToDB();
     void debugFeedList();
 
 signals:
