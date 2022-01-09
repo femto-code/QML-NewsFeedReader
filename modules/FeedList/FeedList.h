@@ -4,7 +4,7 @@
 #include "Feed.h"
 #include <QObject>
 #include <QQmlListProperty>
-#include <Qlist>
+#include <QList>
 
 typedef QList<Feed*> FeedSources;
 
@@ -20,7 +20,7 @@ public:
     QQmlListProperty<Feed> feedSources();
 
 public slots:
-    void add(QString name);
+    void add(QString url);
     void saveToDB();
     void debugFeedList();
 
