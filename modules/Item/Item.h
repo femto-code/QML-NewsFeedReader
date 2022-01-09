@@ -9,6 +9,12 @@ class Item : public QObject {
 
     Q_OBJECT
 
+    Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
+    Q_PROPERTY(QString link READ link WRITE setLink NOTIFY linkChanged)
+    Q_PROPERTY(QString pubDate READ pubDate WRITE setPubDate NOTIFY pubDateChanged)
+    Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
+
+
 public:
     Item(QObject* parent = NULL) : QObject(parent){
     };
@@ -27,9 +33,15 @@ public:
 
 private:
     QString m_title;
-    QString m_description;
     QString m_link;
     QString m_pubDate;
+    QString m_description;
+
+signals:
+    void titleChanged();
+    void linkChanged();
+    void pubDateChanged();
+    void descriptionChanged();
 };
 
 #endif
