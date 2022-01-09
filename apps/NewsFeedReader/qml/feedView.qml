@@ -27,4 +27,12 @@ Item {
             anchors.top: pushButton.bottom
         }
     }
+
+    ListView{
+        id: view
+        delegate: FeedDelegate {}
+        spacing: 4
+        cacheBuffer: 20
+        model: feedList.feedSources.item
+    }
 }
