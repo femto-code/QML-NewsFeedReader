@@ -23,8 +23,8 @@ int main(int argc, char* argv[]){
 
     QPointer<FeedList> feedList(new FeedList());
     engine->rootContext()->setContextProperty("feedList", feedList.data());
-    feedList->add("https://www.deskmodder.de/blog/feed/");
-    feedList->debugFeedList();
+//    feedList->add("https://www.deskmodder.de/blog/feed/");
+//    feedList->debugFeedList();
 
     engine->addImportPath(":/");
     engine->load(QUrl("qrc:/main.qml"));

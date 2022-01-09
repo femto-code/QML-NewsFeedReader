@@ -3,5 +3,8 @@
         <file>main.qml</file>
         <file>feedView.qml</file>
         <file>feedAdd.qml</file>
+        <file>FeedManageDelegate.qml</file>
+        <file>delete-button-png-28557.png</file>
+        <file>add_button.png</file>
     </qresource>
 </RCC>

@@ -91,46 +91,50 @@ void Feed::get()
 {
     if(m_active){
 
-        qInfo() << "Getting Feed from Server...";
+        qInfo() << "FEED.CPP::get() :: Getting Feed from Server...";
 
-        qDebug() << "Feed::get: " << m_nMgr;
+        qDebug() << "FEED.CPP::get() :: " << m_nMgr;
         QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
 
+        qDebug() << "FEED.CPP::get() :: " << m_url;
+
         if(reply) {
-            qInfo() << "Next step...";
+            qInfo() << "FEED.CPP::get() :: Next step...";
         }
     }
     else{
         qDebug() << "No URL set..."; }
 
+    qDebug() << "FEED.CPP::get() :: Initializing Timer..";
     QTimer timer;
     timer.setSingleShot(true);
     QEventLoop loop;
     connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
     connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
+    qDebug() << "FEED.CPP::get() :: Starting Timer..";
     timer.start(1000);
     loop.exec();
 
-    qDebug() << "Timer finished..";
+    qDebug() << "FEED.CPP::get() :: Timer finished..";
 
     if(timer.isActive())
-        qDebug("Download finished...");
+        qDebug("FEED.CPP::get() :: Download finished...");
     else
-        qDebug("timeout");
+        qDebug("FEED.CPP::get() :: timeout");
 }
 
 void Feed::parse(QNetworkReply* reply){
 
-    qInfo() << "Start of parse()...";
+    qInfo() << "FEED.CPP::parse() :: Start of parse()...";
 
     QDomDocument doc("testDoc");
 
-    qDebug() << "Setting doc...";
+    qDebug() << "FEED.CPP::parse() :: Setting doc...";
 
     if(doc.setContent(reply))
-        qInfo() << "Successfully parsed...";
+        qInfo() << "FEED.CPP::parse() :: Successfully parsed...";
     else
-        qDebug() << "What the fuck??";
+        qDebug() << "FEED.CPP::parse() :: What?? Parse fucked up...";
 
     QDomElement docElem = doc.documentElement();
 
@@ -149,7 +153,7 @@ void Feed::parse(QNetworkReply* reply){
 
         if(n.toElement().tagName() == "item"){
 
-            qInfo() << "Found an item node...";
+            //qInfo() << "Found an item node...";
             QDomNode n2 = n.firstChild();
 
             Item* newItem = new Item();
@@ -174,12 +178,13 @@ void Feed::parse(QNetworkReply* reply){
 
             feedItems.emplace(m_itemCount, newItem);
             m_itemCount++;
-            qInfo() << m_itemCount;
+            //qInfo() << m_itemCount;
 
         }
         n = n.nextSibling();
     }
 
-    qInfo() << "Step out of creating elements...";
-}
+    qInfo() << "FEED.CPP::parse() :: itemCount:" << m_itemCount;
 
+    qInfo() << "FEED.CPP::parse() :: Step out of creating elements...";
+}
