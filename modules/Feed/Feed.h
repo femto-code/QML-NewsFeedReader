@@ -10,6 +10,8 @@
 #include <QPixmap>
 #include <iostream>
 #include <QDomDocument>
+#include <QList>
+#include <QQmlListProperty>
 #include "NetworkMgr.h"
 #include "Item.h"
 
@@ -21,6 +23,7 @@ class Feed : public QObject {
     Q_PROPERTY(QString url READ url WRITE setUrl NOTIFY urlChanged)
     Q_PROPERTY(int id READ id WRITE setId NOTIFY idChanged)
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
+    Q_PROPERTY(QQmlListProperty<Item> item READ items NOTIFY itemsChanged)
 
 public:
     Feed(QObject* parent = NULL) : QObject(parent){
@@ -46,7 +49,8 @@ public:
     void setLink(const QString &newLink);
     const QString &description() const;
     void setDescription(const QString &newDescription);
-    std::unordered_map<int, Item*> getFeedItems();
+    QList<Item*> getFeedItems();
+    QQmlListProperty<Item> items();
     int getItemCount();
 
 public slots:
@@ -58,7 +62,7 @@ private:
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
-    std::unordered_map<int, Item*> feedItems;
+    QList<Item*> m_FeedItems;
     QString m_link;
     QString m_description;
     int m_itemCount = 0;
@@ -71,6 +75,7 @@ signals:
     void urlChanged();
     void idChanged();
     void activeChanged();
+    void itemsChanged();
 };
 
 #endif

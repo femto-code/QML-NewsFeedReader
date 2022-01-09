@@ -23,7 +23,7 @@ void FeedList::debugFeedList(){
         Feed* el = m_FeedSources[i];
         el->get();
         qInfo() << "get ItemCount: " << el->getItemCount();
-        std::unordered_map<int, Item*> testItem = el->getFeedItems();
+        QList<Item*> testItem = el->getFeedItems();
         qInfo() << testItem[10]->link();
         qInfo() << testItem[10]->title();
         qInfo() << testItem[10]->pubDate();

@@ -65,9 +65,14 @@ void Feed::setDescription(const QString &newDescription)
     m_description = newDescription;
 }
 
-std::unordered_map<int, Item *> Feed::getFeedItems()
+QList<Item *> Feed::getFeedItems()
 {
-    return feedItems;
+    return m_FeedItems;
+}
+
+QQmlListProperty<Item> Feed::items()
+{
+    return QQmlListProperty<Item>(this, &m_FeedItems);
 }
 
 int Feed::getItemCount()
@@ -177,6 +182,7 @@ void Feed::parse(QNetworkReply* reply){
             }
 
             feedItems.emplace(m_itemCount, newItem);
+            m_FeedItems.push_back(newItem);
             m_itemCount++;
             //qInfo() << m_itemCount;
 
