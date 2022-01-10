@@ -181,7 +181,6 @@ void Feed::parse(QNetworkReply* reply){
                 n2 = n2.nextSibling();
             }
 
-            feedItems.emplace(m_itemCount, newItem);
             m_FeedItems.push_back(newItem);
             m_itemCount++;
             //qInfo() << m_itemCount;
