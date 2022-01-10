@@ -1,21 +1,32 @@
 #include "FeedList.h"
-
+#include "Item.h"
+#include <QList>
 
 
 FeedList::FeedList(QObject *parent) : QObject(parent) {
 
 }
 
-QQmlListProperty<Feed> FeedList::feedSources()
+QQmlListProperty<Item> FeedList::feedItems()
 {
-    return QQmlListProperty<Feed>(this, &m_FeedSources);
+    for( int i=0; i<m_FeedSources.count(); ++i ) {
+        qInfo() << "Found Feed";
+        Feed* el = m_FeedSources[i];
+        QList<Item*> items = el->getFeedItems();
+        for( int j=0; j<items.count(); ++j ) {
+            qInfo() << "Found Item";
+            merged.push_back(items[j]);
+        }
+    }
+    qInfo() << "Merged count: " << merged.count();
+    return QQmlListProperty<Item>(this, &merged);
 }
 
 void FeedList::add(QString url) {
     Feed* feed = new Feed();
     feed->setUrl(url);
     m_FeedSources.push_back(feed);
-    emit feedSourcesChanged();
+    emit feedItemsChanged();
 }
 void FeedList::debugFeedList(){
     qInfo() << "I'm here";
