@@ -20,11 +20,12 @@ int main(int argc, char* argv[]){
     QScopedPointer<QQmlApplicationEngine> engine(new QQmlApplicationEngine);
 
     qmlRegisterType<Feed>("SET", 1, 1, "Feed");
+    //qmlRegisterType<Item>("SET2", 2, 2, "Item");
 
     QPointer<FeedList> feedList(new FeedList());
     engine->rootContext()->setContextProperty("feedList", feedList.data());
-//    feedList->add("https://www.deskmodder.de/blog/feed/");
-//    feedList->debugFeedList();
+    feedList->add("https://www.deskmodder.de/blog/feed/");
+    feedList->debugFeedList();
 
     engine->addImportPath(":/");
     engine->load(QUrl("qrc:/main.qml"));

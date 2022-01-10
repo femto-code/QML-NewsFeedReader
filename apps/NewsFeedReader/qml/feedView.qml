@@ -29,10 +29,12 @@ Item {
     }
 
     ListView{
+        width: mainWindow.width
+        height: 500
         id: view
         delegate: FeedDelegate {}
         spacing: 4
-        cacheBuffer: 20
-        model: feedList.feedSources.item
+//        cacheBuffer: 20
+        model: feedList.feedItems
     }
 }
