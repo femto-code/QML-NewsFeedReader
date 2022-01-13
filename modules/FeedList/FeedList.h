@@ -13,6 +13,7 @@ class FeedList : public QObject {
 
     Q_OBJECT
     Q_PROPERTY(QQmlListProperty<Item> feedItems READ feedItems NOTIFY feedItemsChanged)
+    Q_PROPERTY(QQmlListProperty<Feed> feedSources READ feedSources NOTIFY feedSourcesChanged)
 
     FeedSources m_FeedSources;
     QList<Item*> merged;
@@ -20,6 +21,7 @@ class FeedList : public QObject {
 public:
     FeedList(QObject* parent = nullptr);
     QQmlListProperty<Item> feedItems();
+    QQmlListProperty<Feed> feedSources();
 
 public slots:
     void add(QString url);
@@ -28,6 +30,7 @@ public slots:
 
 signals:
     void feedItemsChanged();
+    void feedSourcesChanged();
 };
 
 #endif

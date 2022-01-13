@@ -7,6 +7,11 @@ FeedList::FeedList(QObject *parent) : QObject(parent) {
 
 }
 
+QQmlListProperty<Feed> FeedList::feedSources()
+{
+    return QQmlListProperty<Feed>(this, &m_FeedSources);
+}
+
 QQmlListProperty<Item> FeedList::feedItems()
 {
     for( int i=0; i<m_FeedSources.count(); ++i ) {
