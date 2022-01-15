@@ -147,7 +147,12 @@ void Feed::parse(QNetworkReply* reply){
     // Go into "channel"
     n = n.firstChild();
 
+
     while(!n.isNull()){
+
+        if(n.toElement().tagName() == "title"){
+            m_name = n.toElement().text();
+        }
 
         if(n.toElement().tagName() == "link"){
             m_link = n.toElement().text();

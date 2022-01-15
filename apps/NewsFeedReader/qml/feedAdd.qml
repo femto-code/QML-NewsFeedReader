@@ -16,13 +16,9 @@ import QtQuick.Layouts
                 height: 25
                 width: parent.width
                 color: "lightsteelblue"
-
-                Rectangle {
-                    id: titleRect
-                    height: 25
+                Text {
+                    text: "Manage your Feeds"
                     anchors.centerIn: parent
-                    Text {
-                        text: "Manage your Feeds" }
                     }
             }
 
@@ -51,25 +47,6 @@ import QtQuick.Layouts
                             feedUrl.text = "";
                         }
                     }
-
-//                    Image {
-//                        id: addButton
-//                        source: "add_button.png"
-//                        width: 20
-//                        height: 20
-//                        MouseArea {
-//                            Layout.fillHeight: parent.height
-//                            Layout.fillWidth: parent.width
-//                            acceptedButtons: Qt.AllButtons
-//                            onClicked: {
-//                                //feedList.add(feedUrl.text)
-//                                console.log("clicked..");
-//                            }
-//                            onEntered: {
-//                                addButton.opacity = 1
-//                            }
-//                        }
-//                    }
                 }
             }
             Rectangle {
@@ -83,9 +60,10 @@ import QtQuick.Layouts
                     anchors {fill: parent; margins: 2}
 
                     delegate: FeedManageDelegate {}
-
+                    model: feedList.feedItems
                     spacing: 4
                     cacheBuffer: 50
+                    clip: true
                 }
 
             }
