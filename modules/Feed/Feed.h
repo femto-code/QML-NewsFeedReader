@@ -38,17 +38,23 @@ public:
 
     QString name();
     void setName(QString);
+
     QString url();
     void setUrl(QString);
+
     int id();
     void setId(int);
+
     bool active();
     void setActive(bool);
-    QString getItemValue(int, QString);
+
     QString link();
     void setLink(const QString &newLink);
+
     const QString &description() const;
     void setDescription(const QString &newDescription);
+
+    QString getItemValue(int, QString);
     QList<Item*> getFeedItems();
     QQmlListProperty<Item> items();
     int getItemCount();

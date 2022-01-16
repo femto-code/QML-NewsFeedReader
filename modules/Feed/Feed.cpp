@@ -147,7 +147,6 @@ void Feed::parse(QNetworkReply* reply){
     // Go into "channel"
     n = n.firstChild();
 
-
     while(!n.isNull()){
 
         if(n.toElement().tagName() == "title"){

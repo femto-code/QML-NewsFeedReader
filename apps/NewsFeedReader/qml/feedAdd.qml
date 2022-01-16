@@ -6,7 +6,6 @@ import QtQuick.Layouts
     Rectangle{
         width: mainWindow.width
 
-
         ColumnLayout {
             Layout.topMargin: 5
             width: parent.width
@@ -43,7 +42,7 @@ import QtQuick.Layouts
                         text: "Add"
                         onClicked: {
                             feedList.add(feedUrl.text);
-                            feedList.debugFeedList();
+                            //feedList.debugFeedList();
                             feedUrl.text = "";
                         }
                     }
@@ -60,7 +59,7 @@ import QtQuick.Layouts
                     anchors {fill: parent; margins: 2}
 
                     delegate: FeedManageDelegate {}
-                    model: feedList.feedItems
+                    model: feedList.feedSources
                     spacing: 4
                     cacheBuffer: 50
                     clip: true
@@ -84,8 +83,11 @@ import QtQuick.Layouts
 
         Connections {
             target: feedList
+            onFeedSourcesChanged:
+            {
+                stack.pop(null)
+            }
         }
-
     }
 
 

@@ -6,28 +6,27 @@ import QtQuick.Layouts
 Rectangle{
     id: feedSources
     width: view.width
-    height: 30
+    height: 25
     border.width: 2; border.color: "lightsteelblue"
 
     Row {
-
+        spacing: 5
         Rectangle {
-            width: view.width - 20
-            height: 30
+            width: view.width - 30
+            height: 15
             Row{
                 spacing: 5
-                Text{ text: "title"; font.pointSize: 12; color: "red" }
-                Text{ text: modelData.title; font.pointSize: 10 }
+                Text{ text: "name"; font.pointSize: 15; color: "red" ; font.bold: true}
+                Text{ text: modelData.name; font.pointSize: 15 }
             }
         }
         Rectangle {
-            width: 20
-            height: 30
+            width: 15
+            height: 15
             Image {
                 id: deleteButton
                 opacity: 0.7
-                height: 20
-                width: 20
+                anchors.fill: parent
                 clip: true
                 source: "delete-button-png-28557.png"
                 MouseArea {
@@ -37,9 +36,8 @@ Rectangle{
                         console.log("delete..");
                     }
                     onEntered: {
-                        addButton.opacity = 1.0
+                        deleteButton.opacity = 1.0
                     }
-
                 }
             }
         }

@@ -8,12 +8,12 @@ Rectangle{
     height: 130
     border.width: 2; border.color: "lightsteelblue"
     Column{
-        Text{ text: "title"; font.pointSize: 12; color: "red" }
-        Text{ text: modelData.title; font.pointSize: 10 }
-        Text{ text: "link"; font.pointSize: 12; color: "red" }
-        Text{ text: modelData.link; font.pointSize: 10 }
-        Text{ text: "pubDate"; font.pointSize: 12; color: "red" }
-        Text{ text: modelData.pubDate; font.pointSize: 10 }
+        Text{ text: "  title"; font.pointSize: 12; color: "red" }
+        Text{ text: "  " + modelData.title; font.pointSize: 10 }
+        Text{ text: "  link"; font.pointSize: 12; color: "red" }
+        Text{ text: "  " + modelData.link; font.pointSize: 10 }
+        Text{ text: "  pubDate"; font.pointSize: 12; color: "red" }
+        Text{ text: "  " + modelData.pubDate; font.pointSize: 10 }
     }
     MouseArea {
         anchors.fill: parent
