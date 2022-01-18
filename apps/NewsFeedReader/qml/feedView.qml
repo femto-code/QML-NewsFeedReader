@@ -5,7 +5,7 @@ import QtQuick.Layouts
 Item {
     id: feed
 
-    ColumnLayout{
+    Column{
 
         width: mainWindow.width
         height: mainWindow.height
@@ -56,6 +56,12 @@ Item {
                 text: "Pop"
                 onClicked: stack.pop()
                 anchors.top: pushButton.bottom
+            }
+            Button {
+                id: debugBtn
+                text: "Debug"
+                onClicked: feedList.debugFeedList();
+                anchors.top: popButton.bottom
             }
         }
     }

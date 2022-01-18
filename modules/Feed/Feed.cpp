@@ -1,4 +1,5 @@
 #include "Feed.h"
+#include "FeedList.h"
 
 QString Feed::name()
 {
@@ -70,10 +71,10 @@ QList<Item *> Feed::getFeedItems()
     return m_FeedItems;
 }
 
-QQmlListProperty<Item> Feed::items()
-{
-    return QQmlListProperty<Item>(this, &m_FeedItems);
-}
+//QQmlListProperty<Item> Feed::items()
+//{
+//    return QQmlListProperty<Item>(this, &m_FeedItems);
+//}
 
 int Feed::getItemCount()
 {
@@ -94,7 +95,9 @@ QString Feed::link()
 
 void Feed::get()
 {
+
     if(m_active){
+        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
 
         qInfo() << "FEED.CPP::get() :: Getting Feed from Server...";
 
@@ -110,22 +113,22 @@ void Feed::get()
     else{
         qDebug() << "No URL set..."; }
 
-    qDebug() << "FEED.CPP::get() :: Initializing Timer..";
-    QTimer timer;
-    timer.setSingleShot(true);
-    QEventLoop loop;
-    connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
-    connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
-    qDebug() << "FEED.CPP::get() :: Starting Timer..";
-    timer.start(1000);
-    loop.exec();
+//    qDebug() << "FEED.CPP::get() :: Initializing Timer..";
+//    QTimer timer;
+//    timer.setSingleShot(true);
+//    QEventLoop loop;
+//    connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
+//    connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
+//    qDebug() << "FEED.CPP::get() :: Starting Timer..";
+//    timer.start(1000);
+//    loop.exec();
 
-    qDebug() << "FEED.CPP::get() :: Timer finished..";
+//    qDebug() << "FEED.CPP::get() :: Timer finished..";
 
-    if(timer.isActive())
-        qDebug("FEED.CPP::get() :: Download finished...");
-    else
-        qDebug("FEED.CPP::get() :: timeout");
+//    if(timer.isActive())
+//        qDebug("FEED.CPP::get() :: Download finished...");
+//    else
+//        qDebug("FEED.CPP::get() :: timeout");
 }
 
 void Feed::parse(QNetworkReply* reply){
@@ -150,7 +153,12 @@ void Feed::parse(QNetworkReply* reply){
     while(!n.isNull()){
 
         if(n.toElement().tagName() == "title"){
+            qInfo() << "!!!!!!: FEED.CPP::parse() :: Current m_name: " << m_name << ", tagNameTitle: "<<n.toElement().text();
+            if( (m_name != n.toElement().tagName()) && (m_name != "") ){
+                return;
+            }
             m_name = n.toElement().text();
+
         }
 
         if(n.toElement().tagName() == "link"){
@@ -196,4 +204,6 @@ void Feed::parse(QNetworkReply* reply){
     qInfo() << "FEED.CPP::parse() :: itemCount:" << m_itemCount;
 
     qInfo() << "FEED.CPP::parse() :: Step out of creating elements...";
+    disconnect(m_nMgr, nullptr, nullptr, nullptr);
+
 }

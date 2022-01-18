@@ -20,34 +20,49 @@ QQmlListProperty<Feed> FeedList::feedSources()
  */
 QQmlListProperty<Item> FeedList::feedItems()
 {
+    merged.clear();
+    qInfo() << "BEGIN ___ FEEDLIST.CPP::feedItems() : FeedSources.count() : " << m_FeedSources.count();
     for( int i=0; i<m_FeedSources.count(); ++i ) {
-        qInfo() << "Found Feed";
-        qInfo() << "FEEDLIST.CPP::feedItems() : FeedSources.count() : " << m_FeedSources.count();
+        //qInfo() << "Found Feed";
+
         Feed* el = m_FeedSources[i];
         QList<Item*> items = el->getFeedItems();
         for( int j=0; j<items.count(); ++j ) {
-            qInfo() << "Found Item";
+            //qInfo() << "Found Item";
             merged.push_back(items[j]);
         }
-        qInfo() << "FEEDLIST.CPP::feedItems() : FeedSource: " << m_FeedSources[i]->name();
+        qInfo() << "FEEDLIST.CPP::feedItems() : FeedSource: " << el->name() << " with item count: " << items.count();
     }
-    qInfo() << "Merged count: " << merged.count();
+    qInfo() << "END ___ Merged count: " << merged.count();
     return QQmlListProperty<Item>(this, &merged);
 }
 
 void FeedList::add(QString url) {
+    if(url==""){
+        return;
+    }
     Feed* feed = new Feed();
+    //qDebug() << "FEEDLIST.CPP::add() : address: " << feed;
     feed->setUrl(url);
-    feed->get();        // Der Aufruf hat gefehlt, um auch den neuen Feed zu downloaden
+
     m_FeedSources.push_back(feed);
+    int idx = m_FeedSources.count()-1;
+    //qInfo() << "FEEDLIST.CPP::add() : count of feed src: " << m_FeedSources.count();
+    m_FeedSources[idx]->get();        // Der Aufruf hat gefehlt, um auch den neuen Feed zu downloaden
+//    int n=10000;
+//    while(n>0){
+//        n--;
+//    }
+    //debugFeedList();
     emit feedItemsChanged();
     emit feedSourcesChanged();
 }
 void FeedList::debugFeedList(){
-    qInfo() << "I'm here";
+    qInfo() << "----------  I'm here --------------";
     for( int i=0; i<m_FeedSources.count(); ++i ) {
         Feed* el = m_FeedSources[i];
-        el->get();
+        qInfo() << "FEEDLIST.CPP::debugFeedList() : FeedSource: " << i << ":" << el->name();
+        //el->get();
         qInfo() << "get ItemCount: " << el->getItemCount();
         QList<Item*> testItem = el->getFeedItems();
         qInfo() << testItem[10]->link();
@@ -55,6 +70,7 @@ void FeedList::debugFeedList(){
         qInfo() << testItem[10]->pubDate();
         qInfo() << testItem[10]->description();
     }
+    qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
 void FeedList::saveToDB(){
     for( int i=0; i<m_FeedSources.count(); ++i ) {

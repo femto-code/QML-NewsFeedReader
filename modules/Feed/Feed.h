@@ -23,14 +23,12 @@ class Feed : public QObject {
     Q_PROPERTY(QString url READ url WRITE setUrl NOTIFY urlChanged)
     Q_PROPERTY(int id READ id WRITE setId NOTIFY idChanged)
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
-    Q_PROPERTY(QQmlListProperty<Item> item READ items NOTIFY itemsChanged)
+    //Q_PROPERTY(QQmlListProperty<Item> item READ items NOTIFY itemsChanged)
 
 public:
     Feed(QObject* parent = NULL) : QObject(parent){
 
         m_nMgr = NetworkMgr::getInstance();
-
-        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
 
         m_active = false;
 
@@ -56,7 +54,7 @@ public:
 
     QString getItemValue(int, QString);
     QList<Item*> getFeedItems();
-    QQmlListProperty<Item> items();
+//    QQmlListProperty<Item> items();
     int getItemCount();
 
 public slots:
