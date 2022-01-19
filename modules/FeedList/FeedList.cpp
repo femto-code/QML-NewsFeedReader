@@ -12,6 +12,19 @@ QQmlListProperty<Feed> FeedList::feedSources()
     return QQmlListProperty<Feed>(this, &m_FeedSources);
 }
 
+void FeedList::deleteSrc(QString name)
+{
+    QList<Feed*>::iterator pos;
+
+    for( pos = m_FeedSources.begin(); pos<m_FeedSources.end(); ++pos ) {
+        if((*pos)->name() == name){
+            m_FeedSources.erase(pos);
+        }
+
+    }
+    emit feedSourcesChanged();
+}
+
 /*
  * Hier könnte der Fehler liegen, dass die feedItem Liste sich neu initialisiert, wenn man von der
  * Startseite wieder auf den feedView geht. Ich denke wir brauchen hier einfach eine Funktion die

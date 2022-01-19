@@ -23,10 +23,12 @@ public:
     QQmlListProperty<Item> feedItems();
     QQmlListProperty<Feed> feedSources();
 
+
 public slots:
     void add(QString url);
     void saveToDB();
     void debugFeedList();
+    void deleteSrc(QString name);
 
 signals:
     void feedItemsChanged();

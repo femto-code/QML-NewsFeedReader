@@ -33,7 +33,7 @@ Rectangle{
                     anchors.fill: parent
                     acceptedButtons: Qt.AllButtons
                     onClicked: {
-                        console.log("delete..");
+                        feedList.deleteSrc(modelData.name);
                     }
                     onEntered: {
                         deleteButton.opacity = 1.0
