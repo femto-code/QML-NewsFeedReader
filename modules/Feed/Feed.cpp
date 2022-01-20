@@ -28,7 +28,7 @@ void Feed::setUrl(QString newUrl)
     setActive(true);
 }
 
-const int Feed::id() const
+int Feed::id() const
 {
     return m_id;
 }
@@ -41,7 +41,7 @@ void Feed::setId(int newId)
     }
 }
 
-const bool Feed::active() const
+bool Feed::active() const
 {
     return m_active;
 }

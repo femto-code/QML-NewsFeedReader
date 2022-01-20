@@ -40,10 +40,10 @@ public:
     const QString url() const;
     void setUrl(QString);
 
-    const int id() const;
+    int id() const;
     void setId(int);
 
-    const bool active() const;
+    bool active() const;
     void setActive(bool);
 
     const QString link() const;
