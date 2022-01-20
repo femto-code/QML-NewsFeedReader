@@ -5,6 +5,9 @@
 #include <qstring.h>
 #include <QDate>
 
+#include "Feed.h"
+#include "FeedList.h"
+
 class QSqlDatabase;
 class QSqlQuery;
 class Patient;
@@ -15,18 +18,23 @@ class DataBase : public QObject {
 
     static QSqlDatabase _dB;
 
-    static void readPatient( QSqlQuery& q, Patient& p );
+    //static void readPatient( QSqlQuery& q, Patient& p );
 
     DataBase();
 public:
     static bool open( const QString& dbName, const QString& userName, const QString& passwd );
     static void close();
 
-    static bool createTablePatient();
-    static bool addPatient( const Patient& p );
-    static bool changePatient( const Patient& p );
-    static bool readPatient( int id, Patient& p );
-    static bool readAllPatient( QList<Patient*>& list );
+    void saveFeedList(const FeedSources& collection);
+
+    static bool createTableFeedSources();
+    static bool createTableFeedItems();
+    static bool addFeed( const Feed& f );
+    static bool addItem( const Item& m, int feedid );
+
+//    static bool changePatient( const Patient& p );
+//    static bool readPatient( int id, Patient& p );
+//    static bool readAllPatient( QList<Patient*>& list );
 };
 
 #endif // DATA_BASE_H
