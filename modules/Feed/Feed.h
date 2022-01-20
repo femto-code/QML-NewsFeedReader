@@ -34,19 +34,19 @@ public:
 
     };
 
-    QString name();
+    const QString name() const;
     void setName(QString);
 
-    QString url();
+    const QString url() const;
     void setUrl(QString);
 
-    int id();
+    const int id() const;
     void setId(int);
 
-    bool active();
+    const bool active() const;
     void setActive(bool);
 
-    QString link();
+    const QString link() const;
     void setLink(const QString &newLink);
 
     const QString &description() const;

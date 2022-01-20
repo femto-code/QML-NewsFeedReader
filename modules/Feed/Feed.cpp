@@ -1,7 +1,7 @@
 #include "Feed.h"
 #include "FeedList.h"
 
-QString Feed::name()
+const QString Feed::name() const
 {
     return m_name;
 }
@@ -14,7 +14,7 @@ void Feed::setName(QString newName)
     }
 }
 
-QString Feed::url()
+const QString Feed::url() const
 {
     return m_url;
 }
@@ -28,7 +28,7 @@ void Feed::setUrl(QString newUrl)
     setActive(true);
 }
 
-int Feed::id()
+const int Feed::id() const
 {
     return m_id;
 }
@@ -41,7 +41,7 @@ void Feed::setId(int newId)
     }
 }
 
-bool Feed::active()
+const bool Feed::active() const
 {
     return m_active;
 }
