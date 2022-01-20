@@ -18,14 +18,15 @@ class DataBase : public QObject {
 
     static QSqlDatabase _dB;
 
-    //static void readPatient( QSqlQuery& q, Patient& p );
+    static bool readFeed( QSqlQuery& q, Feed& f );
+    static void readItem( QSqlQuery& q, Item& m );
 
     DataBase();
 public:
     static bool open( const QString& dbName, const QString& userName, const QString& passwd );
     static void close();
 
-    void saveFeedList(const FeedSources& collection);
+    static void saveFeedList(const FeedList& collection);
 
     static bool createTableFeedSources();
     static bool createTableFeedItems();
@@ -34,7 +35,7 @@ public:
 
 //    static bool changePatient( const Patient& p );
 //    static bool readPatient( int id, Patient& p );
-//    static bool readAllPatient( QList<Patient*>& list );
+    static bool readAll( FeedList& collection );
 };
 
 #endif // DATA_BASE_H
