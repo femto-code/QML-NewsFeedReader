@@ -23,6 +23,8 @@ public:
     QQmlListProperty<Item> feedItems();
     QQmlListProperty<Feed> feedSources();
 
+    const FeedSources getFeedSources() const;
+    void setFeedSources(FeedSources l);
 
 public slots:
     void add(QString url);

@@ -13,6 +13,17 @@ QQmlListProperty<Feed> FeedList::feedSources()
     return QQmlListProperty<Feed>(this, &m_FeedSources);
 }
 
+const FeedSources FeedList::getFeedSources() const {
+    return m_FeedSources;
+}
+
+void FeedList::setFeedSources(FeedSources l)
+{
+    if(m_FeedSources == l)
+        return;
+    m_FeedSources = l;
+}
+
 void FeedList::deleteSrc(QString name)
 {
     QList<Feed*>::iterator pos;
@@ -87,5 +98,5 @@ void FeedList::debugFeedList(){
     qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
 void FeedList::saveToDB(){
-    //saveFeedList(this);
+    DataBase::saveFeedList(*this);
 }
