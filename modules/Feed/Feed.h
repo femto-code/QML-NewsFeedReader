@@ -52,6 +52,9 @@ public:
     const QString &description() const;
     void setDescription(const QString &newDescription);
 
+    const QList<Item*> FeedItems() const;
+    void setFeedItems(const QList<Item*> l);
+
     QString getItemValue(int, QString);
     QList<Item*> getFeedItems();
 //    QQmlListProperty<Item> items();
