@@ -69,7 +69,8 @@ void FeedList::add(QString url) {
     Feed* feed = new Feed();
     //qDebug() << "FEEDLIST.CPP::add() : address: " << feed;
     feed->setUrl(url);
-
+    feed->setId(n);
+    n++;
     m_FeedSources.push_back(feed);
     int idx = m_FeedSources.count()-1;
     //qInfo() << "FEEDLIST.CPP::add() : count of feed src: " << m_FeedSources.count();

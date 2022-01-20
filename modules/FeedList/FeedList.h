@@ -17,6 +17,7 @@ class FeedList : public QObject {
 
     FeedSources m_FeedSources;
     QList<Item*> merged;
+    int n=0;
 
 public:
     FeedList(QObject* parent = nullptr);
