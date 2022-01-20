@@ -1,5 +1,6 @@
 #include "FeedList.h"
 #include "Item.h"
+#include "DataBase.h"
 #include <QList>
 
 
@@ -86,8 +87,5 @@ void FeedList::debugFeedList(){
     qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
 void FeedList::saveToDB(){
-    for( int i=0; i<m_FeedSources.count(); ++i ) {
-        Feed* el = m_FeedSources[i];
-        // save
-    }
+    //saveFeedList(this);
 }
