@@ -30,8 +30,8 @@ public:
 
     static bool createTableFeedSources();
     static bool createTableFeedItems();
-    static bool addFeed( const Feed& f );
-    static bool addItem( const Item& m, int feedid );
+    static bool addFeed( const Feed*& f );
+    static bool addItem( const Item*& m, int feedid );
 
 //    static bool changePatient( const Patient& p );
 //    static bool readPatient( int id, Patient& p );

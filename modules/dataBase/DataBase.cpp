@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <QVariant>
 #include <QDebug>
+#include <QSqlError>
 
 QSqlDatabase DataBase::_dB;
 
@@ -28,46 +29,61 @@ void DataBase::close() {
 
 void DataBase::saveFeedList(const FeedList& collection)
 {
-    for( int i=0; i<collection.getFeedSources().count(); ++i ) {
-        Feed* el = collection.getFeedSources()[i];
+    QSqlQuery query(_dB);
+    bool result = query.exec("TRUNCATE TABLE feedsources");
+    if(!result){ qDebug() << query.lastError(); }
+    bool result2 = query.exec("TRUNCATE TABLE feeditems");
+    if(!result2){ qDebug() << query.lastError(); }
+    collection.debugFeedList();
+    const QList<Feed*>& feeds = collection.getFeedSources();
+    for( int i=0; i<feeds.count(); ++i ) {
+        const Feed* el = feeds[i];
         qInfo() << "Found Feed: " << el->id();
         qDebug() << addFeed(el);
-        QList<Item*> items = el->getFeedItems();
+        const QList<Item*>& items = el->FeedItems();
         for( int j=0; j<items.count(); ++j ) {
             qInfo() << "Found Item";
-            qDebug() << addItem(items[i],el->id());
+            const Item* it = items[j];
+            qDebug() << addItem(it,el->id());
         }
     }
 }
 
 bool DataBase::createTableFeedSources() {
+    if( !_dB.open() ) { qDebug() << _dB.lastError(); qFatal( "Failed to connect." ); }
     QSqlQuery query(_dB);
-    return query.exec("create table feedsources (id int primary key, url varchar(100), name varchar(30), description varchar(59), active varchar(10))");
+    bool result = query.exec("CREATE TABLE IF NOT EXISTS feedsources (id int primary key, url varchar(100), name varchar(30), description varchar(59), active varchar(10))");
+    if(!result){ qDebug() << query.lastError(); }
+    return result;
 }
 
 bool DataBase::createTableFeedItems() {
+    if( !_dB.open() ) { qDebug() << _dB.lastError(); qFatal( "Failed to connect." ); }
     QSqlQuery query(_dB);
-    return query.exec("create table feeditems (title varchar(100), link varchar(30), pubDate varchar(59), description varchar(200), feedid int(10))");
+    bool result = query.exec("CREATE TABLE IF NOT EXISTS feeditems (title varchar(100), link varchar(30), pubDate varchar(59), description varchar(200), feedid int(10))");
+    if(!result){ qDebug() << query.lastError(); }
+    return result;
 }
 
-bool DataBase::addFeed( const Feed& f ) {
+bool DataBase::addFeed( const Feed*& f ) {
     QSqlQuery query(_dB);
     query.prepare("INSERT INTO feedsources (id, url, name, description, active) VALUES (:id, :url, :name, :description, :active)");
-    query.bindValue( ":id", f.id() );
-    query.bindValue( ":url", f.link() );
-    query.bindValue( ":name", f.name() );
-    query.bindValue( ":description", f.description() );
-    query.bindValue( ":active", f.active() );
+    query.bindValue( ":id", f->id() );
+    query.bindValue( ":url", f->link() );
+    query.bindValue( ":name", f->name() );
+    query.bindValue( ":description", f->description() );
+    query.bindValue( ":active", f->active() );
+    qDebug() << f->id() << f->link() << f->name() << f->description() << f->active();
     return query.exec();
 }
 
-bool DataBase::addItem(const Item &m, int feedid) {
+bool DataBase::addItem( const Item*& m, int feedid) {
     QSqlQuery query(_dB);
     query.prepare("INSERT INTO feeditems (title, link, pubDate, description, feedid) VALUES (:title, :link, :pubDate, :description, :feedid)");
-    query.bindValue( ":title", m.title() );
-    query.bindValue( ":link", m.link() );
-    query.bindValue( ":pubDate", m.pubDate() );
-    query.bindValue( ":description", m.description() );
+    query.bindValue( ":title", m->title() );
+    query.bindValue( ":link", m->link() );
+    query.bindValue( ":pubDate", m->pubDate() );
+    query.bindValue( ":description", m->description() );
     query.bindValue( ":feedid", feedid );
     return query.exec();
 }
@@ -119,6 +135,7 @@ bool DataBase::readFeed( QSqlQuery& q, Feed& f ) {
         return false;
 
     do {
+        qInfo() << "Reading item from db";
         Item* m = new Item();
         readItem( query, *m );
         temp.push_back( m );
@@ -140,13 +157,17 @@ bool DataBase::readAll( FeedList& collection ) {
     if ( result == false )
         return false;
 
+    int c = 0;
     do {
+        qInfo() << "Reading feed from db";
         Feed* f = new Feed();
         readFeed( query, *f );
         list.push_back( f );
+        c++;
     } while( query.next() );
 
     collection.setFeedSources(list);
+    collection.setN(c);
 
     return result;
 }
