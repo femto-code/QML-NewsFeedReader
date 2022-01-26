@@ -25,16 +25,17 @@ int main(int argc, char* argv[]){
 
     QPointer<FeedList> feedList(new FeedList());
     engine->rootContext()->setContextProperty("feedList", feedList.data());
-    feedList->add("https://www.deskmodder.de/blog/feed/");
+
     //feedList->debugFeedList();
 
-    DataBase::open(":local:","TimoFlo","SET22");
+    DataBase::open("NFRdb","TimoFlo","SET22");
     bool result = DataBase::readAll(*feedList);
     qDebug() << "Database result: " << result;
 
     if(result == false){
-        DataBase::createTableFeedItems();
-        DataBase::createTableFeedSources();
+        qInfo() << "Creating 1st table..." << DataBase::createTableFeedItems();
+        qInfo() << "Creating 2nd table..." << DataBase::createTableFeedSources();
+        feedList->add("https://www.deskmodder.de/blog/feed/");
     }
 
     engine->addImportPath(":/");
