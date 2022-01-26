@@ -26,11 +26,12 @@ public:
 
     const FeedSources getFeedSources() const;
     void setFeedSources(FeedSources l);
+    void setN(int c);
 
 public slots:
     void add(QString url);
     void saveToDB();
-    void debugFeedList();
+    void debugFeedList() const;
     void deleteSrc(QString name);
 
 signals:

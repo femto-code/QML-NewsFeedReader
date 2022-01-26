@@ -24,6 +24,13 @@ void FeedList::setFeedSources(FeedSources l)
     m_FeedSources = l;
 }
 
+void FeedList::setN(int c)
+{
+    if(n == c)
+        return;
+    n = c;
+}
+
 void FeedList::deleteSrc(QString name)
 {
     QList<Feed*>::iterator pos;
@@ -83,18 +90,19 @@ void FeedList::add(QString url) {
     emit feedItemsChanged();
     emit feedSourcesChanged();
 }
-void FeedList::debugFeedList(){
+void FeedList::debugFeedList() const{
     qInfo() << "----------  I'm here --------------";
     for( int i=0; i<m_FeedSources.count(); ++i ) {
         Feed* el = m_FeedSources[i];
         qInfo() << "FEEDLIST.CPP::debugFeedList() : FeedSource: " << i << ":" << el->name();
         //el->get();
         qInfo() << "get ItemCount: " << el->getItemCount();
+        qInfo() << "ID: " << el->id();
         QList<Item*> testItem = el->getFeedItems();
-        qInfo() << testItem[10]->link();
-        qInfo() << testItem[10]->title();
-        qInfo() << testItem[10]->pubDate();
-        qInfo() << testItem[10]->description();
+        qInfo() << testItem[2]->link();
+        qInfo() << testItem[2]->title();
+        qInfo() << testItem[2]->pubDate();
+        qInfo() << testItem[2]->description();
     }
     qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
