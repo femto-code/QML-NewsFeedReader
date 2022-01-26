@@ -63,6 +63,12 @@ Item {
                 onClicked: feedList.debugFeedList();
                 anchors.top: popButton.bottom
             }
+            Button {
+                id: saveBtn
+                text: "Save"
+                onClicked: feedList.saveToDB();
+                anchors.top: debugBtn.bottom
+            }
         }
     }
 

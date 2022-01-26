@@ -1,7 +1,7 @@
 #include "Feed.h"
 #include "FeedList.h"
 
-QString Feed::name()
+const QString Feed::name() const
 {
     return m_name;
 }
@@ -14,7 +14,7 @@ void Feed::setName(QString newName)
     }
 }
 
-QString Feed::url()
+const QString Feed::url() const
 {
     return m_url;
 }
@@ -28,7 +28,7 @@ void Feed::setUrl(QString newUrl)
     setActive(true);
 }
 
-int Feed::id()
+int Feed::id() const
 {
     return m_id;
 }
@@ -41,7 +41,7 @@ void Feed::setId(int newId)
     }
 }
 
-bool Feed::active()
+bool Feed::active() const
 {
     return m_active;
 }
@@ -54,6 +54,16 @@ void Feed::setActive(bool newActive)
     }
 }
 
+void Feed::setLink(const QString &newLink) {
+    if (m_link == newLink)
+        return;
+    m_link = newLink;
+}
+
+const QString Feed::link() const {
+    return m_link;
+}
+
 const QString &Feed::description() const
 {
     return m_description;
@@ -64,6 +74,18 @@ void Feed::setDescription(const QString &newDescription)
     if (m_description == newDescription)
         return;
     m_description = newDescription;
+}
+
+const QList<Item *> Feed::FeedItems() const
+{
+    return m_FeedItems;
+}
+
+void Feed::setFeedItems(const QList<Item *> l)
+{
+    if (l == m_FeedItems)
+        return;
+    m_FeedItems = l;
 }
 
 QList<Item *> Feed::getFeedItems()
@@ -79,18 +101,6 @@ QList<Item *> Feed::getFeedItems()
 int Feed::getItemCount()
 {
     return m_itemCount;
-}
-
-void Feed::setLink(const QString &newLink)
-{
-    if (m_link == newLink)
-        return;
-    m_link = newLink;
-}
-
-QString Feed::link()
-{
-    return m_link;
 }
 
 void Feed::get()

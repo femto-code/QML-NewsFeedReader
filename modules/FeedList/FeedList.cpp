@@ -1,5 +1,6 @@
 #include "FeedList.h"
 #include "Item.h"
+#include "DataBase.h"
 #include <QList>
 
 
@@ -10,6 +11,24 @@ FeedList::FeedList(QObject *parent) : QObject(parent) {
 QQmlListProperty<Feed> FeedList::feedSources()
 {
     return QQmlListProperty<Feed>(this, &m_FeedSources);
+}
+
+const FeedSources FeedList::getFeedSources() const {
+    return m_FeedSources;
+}
+
+void FeedList::setFeedSources(FeedSources l)
+{
+    if(m_FeedSources == l)
+        return;
+    m_FeedSources = l;
+}
+
+void FeedList::setN(int c)
+{
+    if(n == c)
+        return;
+    n = c;
 }
 
 void FeedList::deleteSrc(QString name)
@@ -57,7 +76,8 @@ void FeedList::add(QString url) {
     Feed* feed = new Feed();
     //qDebug() << "FEEDLIST.CPP::add() : address: " << feed;
     feed->setUrl(url);
-
+    feed->setId(n);
+    n++;
     m_FeedSources.push_back(feed);
     int idx = m_FeedSources.count()-1;
     //qInfo() << "FEEDLIST.CPP::add() : count of feed src: " << m_FeedSources.count();
@@ -70,24 +90,22 @@ void FeedList::add(QString url) {
     emit feedItemsChanged();
     emit feedSourcesChanged();
 }
-void FeedList::debugFeedList(){
+void FeedList::debugFeedList() const{
     qInfo() << "----------  I'm here --------------";
     for( int i=0; i<m_FeedSources.count(); ++i ) {
         Feed* el = m_FeedSources[i];
         qInfo() << "FEEDLIST.CPP::debugFeedList() : FeedSource: " << i << ":" << el->name();
         //el->get();
         qInfo() << "get ItemCount: " << el->getItemCount();
+        qInfo() << "ID: " << el->id();
         QList<Item*> testItem = el->getFeedItems();
-        qInfo() << testItem[10]->link();
-        qInfo() << testItem[10]->title();
-        qInfo() << testItem[10]->pubDate();
-        qInfo() << testItem[10]->description();
+        qInfo() << testItem[2]->link();
+        qInfo() << testItem[2]->title();
+        qInfo() << testItem[2]->pubDate();
+        qInfo() << testItem[2]->description();
     }
     qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
 void FeedList::saveToDB(){
-    for( int i=0; i<m_FeedSources.count(); ++i ) {
-        Feed* el = m_FeedSources[i];
-        // save
-    }
+    DataBase::saveFeedList(*this);
 }

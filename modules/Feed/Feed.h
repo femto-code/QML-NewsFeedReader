@@ -34,23 +34,26 @@ public:
 
     };
 
-    QString name();
+    const QString name() const;
     void setName(QString);
 
-    QString url();
+    const QString url() const;
     void setUrl(QString);
 
-    int id();
+    int id() const;
     void setId(int);
 
-    bool active();
+    bool active() const;
     void setActive(bool);
 
-    QString link();
+    const QString link() const;
     void setLink(const QString &newLink);
 
     const QString &description() const;
     void setDescription(const QString &newDescription);
+
+    const QList<Item*> FeedItems() const;
+    void setFeedItems(const QList<Item*> l);
 
     QString getItemValue(int, QString);
     QList<Item*> getFeedItems();

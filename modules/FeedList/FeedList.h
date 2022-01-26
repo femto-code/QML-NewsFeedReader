@@ -17,17 +17,21 @@ class FeedList : public QObject {
 
     FeedSources m_FeedSources;
     QList<Item*> merged;
+    int n=0;
 
 public:
     FeedList(QObject* parent = nullptr);
     QQmlListProperty<Item> feedItems();
     QQmlListProperty<Feed> feedSources();
 
+    const FeedSources getFeedSources() const;
+    void setFeedSources(FeedSources l);
+    void setN(int c);
 
 public slots:
     void add(QString url);
     void saveToDB();
-    void debugFeedList();
+    void debugFeedList() const;
     void deleteSrc(QString name);
 
 signals:

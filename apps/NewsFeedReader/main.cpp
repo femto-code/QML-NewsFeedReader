@@ -11,6 +11,7 @@
 #include "Feed.h"
 #include "Item.h"
 #include "FeedList.h"
+#include "DataBase.h"
 
 int main(int argc, char* argv[]){
 
@@ -24,8 +25,18 @@ int main(int argc, char* argv[]){
 
     QPointer<FeedList> feedList(new FeedList());
     engine->rootContext()->setContextProperty("feedList", feedList.data());
-    feedList->add("https://www.deskmodder.de/blog/feed/");
+
     //feedList->debugFeedList();
+
+    DataBase::open("NFRdb","TimoFlo","SET22");
+    bool result = DataBase::readAll(*feedList);
+    qDebug() << "Database result: " << result;
+
+    if(result == false){
+        qInfo() << "Creating 1st table..." << DataBase::createTableFeedItems();
+        qInfo() << "Creating 2nd table..." << DataBase::createTableFeedSources();
+        feedList->add("https://www.deskmodder.de/blog/feed/");
+    }
 
     engine->addImportPath(":/");
     engine->load(QUrl("qrc:/main.qml"));
