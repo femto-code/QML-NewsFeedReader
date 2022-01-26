@@ -10,6 +10,8 @@
 #include <QPixmap>
 #include <iostream>
 #include <QDomDocument>
+#include <QList>
+#include <QQmlListProperty>
 #include "NetworkMgr.h"
 #include "Item.h"
 
@@ -21,32 +23,41 @@ class Feed : public QObject {
     Q_PROPERTY(QString url READ url WRITE setUrl NOTIFY urlChanged)
     Q_PROPERTY(int id READ id WRITE setId NOTIFY idChanged)
     Q_PROPERTY(bool active READ active WRITE setActive NOTIFY activeChanged)
+    //Q_PROPERTY(QQmlListProperty<Item> item READ items NOTIFY itemsChanged)
 
 public:
     Feed(QObject* parent = NULL) : QObject(parent){
 
         m_nMgr = NetworkMgr::getInstance();
 
-        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
-
         m_active = false;
 
     };
 
-    QString name();
+    const QString name() const;
     void setName(QString);
-    QString url();
+
+    const QString url() const;
     void setUrl(QString);
-    int id();
+
+    int id() const;
     void setId(int);
-    bool active();
+
+    bool active() const;
     void setActive(bool);
-    QString getItemValue(int, QString);
-    QString link();
+
+    const QString link() const;
     void setLink(const QString &newLink);
+
     const QString &description() const;
     void setDescription(const QString &newDescription);
-    std::unordered_map<int, Item*> getFeedItems();
+
+    const QList<Item*> FeedItems() const;
+    void setFeedItems(const QList<Item*> l);
+
+    QString getItemValue(int, QString);
+    QList<Item*> getFeedItems();
+//    QQmlListProperty<Item> items();
     int getItemCount();
 
 public slots:
@@ -58,7 +69,7 @@ private:
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
-    std::unordered_map<int, Item*> feedItems;
+    QList<Item*> m_FeedItems;
     QString m_link;
     QString m_description;
     int m_itemCount = 0;
@@ -71,6 +82,7 @@ signals:
     void urlChanged();
     void idChanged();
     void activeChanged();
+    void itemsChanged();
 };
 
 #endif

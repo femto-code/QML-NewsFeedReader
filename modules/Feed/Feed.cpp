@@ -1,6 +1,7 @@
 #include "Feed.h"
+#include "FeedList.h"
 
-QString Feed::name()
+const QString Feed::name() const
 {
     return m_name;
 }
@@ -13,7 +14,7 @@ void Feed::setName(QString newName)
     }
 }
 
-QString Feed::url()
+const QString Feed::url() const
 {
     return m_url;
 }
@@ -27,7 +28,7 @@ void Feed::setUrl(QString newUrl)
     setActive(true);
 }
 
-int Feed::id()
+int Feed::id() const
 {
     return m_id;
 }
@@ -40,7 +41,7 @@ void Feed::setId(int newId)
     }
 }
 
-bool Feed::active()
+bool Feed::active() const
 {
     return m_active;
 }
@@ -51,6 +52,16 @@ void Feed::setActive(bool newActive)
         m_active = newActive;
         //emit activeChanged();
     }
+}
+
+void Feed::setLink(const QString &newLink) {
+    if (m_link == newLink)
+        return;
+    m_link = newLink;
+}
+
+const QString Feed::link() const {
+    return m_link;
 }
 
 const QString &Feed::description() const
@@ -65,72 +76,83 @@ void Feed::setDescription(const QString &newDescription)
     m_description = newDescription;
 }
 
-std::unordered_map<int, Item *> Feed::getFeedItems()
+const QList<Item *> Feed::FeedItems() const
 {
-    return feedItems;
+    return m_FeedItems;
 }
+
+void Feed::setFeedItems(const QList<Item *> l)
+{
+    if (l == m_FeedItems)
+        return;
+    m_FeedItems = l;
+}
+
+QList<Item *> Feed::getFeedItems()
+{
+    return m_FeedItems;
+}
+
+//QQmlListProperty<Item> Feed::items()
+//{
+//    return QQmlListProperty<Item>(this, &m_FeedItems);
+//}
 
 int Feed::getItemCount()
 {
     return m_itemCount;
 }
 
-void Feed::setLink(const QString &newLink)
-{
-    if (m_link == newLink)
-        return;
-    m_link = newLink;
-}
-
-QString Feed::link()
-{
-    return m_link;
-}
-
 void Feed::get()
 {
+
     if(m_active){
+        connect(m_nMgr, SIGNAL(finished(QNetworkReply*)), this, SLOT(parse(QNetworkReply*)));
 
-        qInfo() << "Getting Feed from Server...";
+        qInfo() << "FEED.CPP::get() :: Getting Feed from Server...";
 
-        qDebug() << "Feed::get: " << m_nMgr;
+        qDebug() << "FEED.CPP::get() :: " << m_nMgr;
         QNetworkReply* reply = m_nMgr->get(QNetworkRequest(QUrl(m_url)));
 
+        qDebug() << "FEED.CPP::get() :: " << m_url;
+
         if(reply) {
-            qInfo() << "Next step...";
+            qInfo() << "FEED.CPP::get() :: Next step...";
         }
     }
     else{
         qDebug() << "No URL set..."; }
 
-    QTimer timer;
-    timer.setSingleShot(true);
-    QEventLoop loop;
-    connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
-    connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
-    timer.start(1000);
-    loop.exec();
+//    qDebug() << "FEED.CPP::get() :: Initializing Timer..";
+//    QTimer timer;
+//    timer.setSingleShot(true);
+//    QEventLoop loop;
+//    connect( m_nMgr, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit );
+//    connect( &timer, &QTimer::timeout, &loop, &QEventLoop::quit );
+//    qDebug() << "FEED.CPP::get() :: Starting Timer..";
+//    timer.start(1000);
+//    loop.exec();
 
-    qDebug() << "Timer finished..";
+//    qDebug() << "FEED.CPP::get() :: Timer finished..";
 
-    if(timer.isActive())
-        qDebug("Download finished...");
-    else
-        qDebug("timeout");
+//    if(timer.isActive())
+//        qDebug("FEED.CPP::get() :: Download finished...");
+//    else
+//        qDebug("FEED.CPP::get() :: timeout");
 }
 
 void Feed::parse(QNetworkReply* reply){
 
-    qInfo() << "Start of parse()...";
+    qInfo() << "FEED.CPP::parse() :: Start of parse()...";
 
     QDomDocument doc("testDoc");
 
-    qDebug() << "Setting doc...";
+    qDebug() << "FEED.CPP::parse() :: Setting doc...";
 
     if(doc.setContent(reply))
-        qInfo() << "Successfully parsed...";
+        qInfo() << "FEED.CPP::parse() :: Successfully parsed...";
     else
-        qDebug() << "What the fuck??";
+        qDebug() << "FEED.CPP::parse() :: What?? Parse fucked up...";
 
     QDomElement docElem = doc.documentElement();
 
@@ -139,6 +161,15 @@ void Feed::parse(QNetworkReply* reply){
     n = n.firstChild();
 
     while(!n.isNull()){
+
+        if(n.toElement().tagName() == "title"){
+            qInfo() << "!!!!!!: FEED.CPP::parse() :: Current m_name: " << m_name << ", tagNameTitle: "<<n.toElement().text();
+            if( (m_name != n.toElement().tagName()) && (m_name != "") ){
+                return;
+            }
+            m_name = n.toElement().text();
+
+        }
 
         if(n.toElement().tagName() == "link"){
             m_link = n.toElement().text();
@@ -149,7 +180,7 @@ void Feed::parse(QNetworkReply* reply){
 
         if(n.toElement().tagName() == "item"){
 
-            qInfo() << "Found an item node...";
+            //qInfo() << "Found an item node...";
             QDomNode n2 = n.firstChild();
 
             Item* newItem = new Item();
@@ -172,14 +203,17 @@ void Feed::parse(QNetworkReply* reply){
                 n2 = n2.nextSibling();
             }
 
-            feedItems.emplace(m_itemCount, newItem);
+            m_FeedItems.push_back(newItem);
             m_itemCount++;
-            qInfo() << m_itemCount;
+            //qInfo() << m_itemCount;
 
         }
         n = n.nextSibling();
     }
 
-    qInfo() << "Step out of creating elements...";
-}
+    qInfo() << "FEED.CPP::parse() :: itemCount:" << m_itemCount;
 
+    qInfo() << "FEED.CPP::parse() :: Step out of creating elements...";
+    disconnect(m_nMgr, nullptr, nullptr, nullptr);
+
+}
