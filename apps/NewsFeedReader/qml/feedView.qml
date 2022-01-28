@@ -25,7 +25,7 @@ Item {
         Rectangle{
             id: viewRect
             border.color: "lightsteelblue"
-            anchors.top: titleRect.bottom
+            //anchors.top: titleRect.bottom
             width: parent.width
             height: parent.height / 1.5
 
