@@ -29,14 +29,10 @@ Rectangle{
         leftPadding: 10
 //        rightPadding: 10
         topPadding: 10
-        //Text{ text: "  title"; font.pointSize: 12; color: "red" ; elide: Text.ElideRight; width: feedView.width}
-        //Text{ text: modelData.title; font.pointSize: 15 ; elide: Text.ElideRight; width: feedView.width}
         Text{ text: modelData.title; font.pointSize: 15 ; width: feedView.width; wrapMode: Text.WordWrap; rightPadding: 10}
-        //Text{ text: "  link"; font.pointSize: 12; color: "red" ; elide: Text.ElideRight; width: feedView.width}
         Text{
             text: "<a href=\""+modelData.link+"\">"+modelData.link+"</a>"
             font.pointSize: 9
-//            elide: Text.ElideRight
             width: feedView.width
             onLinkActivated: Qt.openUrlExternally(link)
 //            MouseArea {
@@ -45,8 +41,30 @@ Rectangle{
 //                cursorShape: Qt.PointingHandCursor
 //            }
         }
-        //Text{ text: "  pubDate"; font.pointSize: 12; color: "red" ; elide: Text.ElideRight; width: feedView.width}
         Text{ text: modelData.pubDate; font.pointSize: 10 ; elide: Text.ElideRight; width: feedView.width}
+
+        Button{
+            id: btnDescription
+            width: 50
+            height: 20
+            text: "Show more"
+            MouseArea{
+                anchors.fill: parent
+                onPressed:{
+                    feedView.height = 200
+                    switch (feedView.state){
+                    case "item":
+                        feedView.state = "description"
+                        break;
+                    case "description":
+                        feedView.state = "item"
+                        break;
+                    default:
+                        feedView.state = "item"
+                    }
+                }
+            }
+        }
     }
     Column{
         id: descriptionView
@@ -57,32 +75,36 @@ Rectangle{
             id: view
             width: parent.width
             height: parent.height
+                TextArea {
+                    id: descriptionText
+                    width: parent.width
+                    height: parent.height - 20
+                    text: modelData.description;
+                    wrapMode: Text.WordWrap
+                }
 
-            TextArea {
-                width: parent.width
-                height: parent.height
-                text: modelData.description;
-                wrapMode: Text.WordWrap
-            }
+                Button{
+                    id: btnDescription2
+                    width: 50
+                    height: 20
+                    text: "Show more"
+                    anchors.top: descriptionText.bottom
+                    MouseArea{
+                        anchors.fill: parent
+                        onPressed:{
+                            switch (feedView.state){
+                            case "item":
+                                feedView.state = "description"
+                                break;
+                            case "description":
+                                feedView.state = "item"
+                                break;
+                            default:
+                                feedView.state = "item"
+                            }
+                        }
+                    }
+                }
         }
-
     }
-
-    MouseArea{
-        anchors.fill: parent
-        onPressed:{
-            switch (feedView.state){
-            case "item":
-                feedView.state = "description"
-                break;
-            case "description":
-                feedView.state = "item"
-                break;
-            default:
-                feedView.state = "item"
-            }
-        }
-    }
-
-
 }

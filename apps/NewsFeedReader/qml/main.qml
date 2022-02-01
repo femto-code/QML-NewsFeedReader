@@ -3,22 +3,6 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Controls.Universal
 
-//ApplicationWindow {
-//    width: 1024
-//    height: 768
-
-//    property alias tst_mainStackView: mainStackView
-
-//    StackView {
-//        id: mainStackView
-//        anchors.fill: parent
-
-//        initialItem: Qt.resolvedUrl("ExampleStackPage.qml")
-//    }
-
-//    Component.onCompleted: show()
-//}
-
 ApplicationWindow {
     id: mainWindow
     title: qsTr("News Feed Reader")
@@ -40,7 +24,6 @@ ApplicationWindow {
         id: mainView
 
         Rectangle{
-            //anchors.fill: mainWindow // ! ERROR: Unable to assign ApplicationWindow_QMLTYPE_2 to QQuickItem
 
             Text {
                 id: test
