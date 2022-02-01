@@ -1,33 +1,40 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Controls.Universal
 
 Item {
     id: feed
+    width: mainWindow.width
 
-    Column{
+    ColumnLayout{
+        Layout.topMargin: 5
+        width: parent.width
+        spacing: 10
 
-        width: mainWindow.width
-        height: mainWindow.height
-
-        Rectangle {
-            id:titleRect
-            color: "lightsteelblue"
-            width: parent.width
-            height: parent.height / 10
+        Rectangle{
+            id: titleRect
+            color: Universal.color(Universal.Lime)
+            Layout.preferredWidth: mainWindow.width
+            Layout.preferredHeight: mainWindow.height / 10
             Text {
-                id: test
                 text: qsTr("Look at all my fancy Feeds")
                 anchors.centerIn: parent
+                font.pixelSize: 20
             }
         }
 
         Rectangle{
             id: viewRect
-            border.color: "lightsteelblue"
+            border.color: Universal.color(Universal.Lime)
             //anchors.top: titleRect.bottom
-            width: parent.width
-            height: parent.height / 1.5
+            Layout.preferredWidth: mainWindow.width
+            Layout.preferredHeight: mainWindow.height * 2 / 3
+
+            anchors {
+                leftMargin: 20
+                rightMargin: 20
+            }
 
             ListView{
                 id: view

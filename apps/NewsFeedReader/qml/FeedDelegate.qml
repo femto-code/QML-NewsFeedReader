@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Controls.Universal
 
 Rectangle{
     id: feedView

@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Controls.Universal
 
 //ApplicationWindow {
 //    width: 1024
@@ -24,6 +25,9 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
+
+    Universal.theme: Universal.Light
+    Universal.accent: Universal.Lime
 
     StackView {
         id: stack
