@@ -65,26 +65,22 @@ Item {
                     id: pushButton
                     text: "Push"
                     onClicked: stack.push("qrc:/feedAdd.qml")
-                    anchors.verticalCenter: parent
                 }
 
                 Button {
                     id: popButton
                     text: "Pop"
                     onClicked: stack.pop()
-                    anchors.verticalCenter: parent
                 }
                 Button {
                     id: debugBtn
                     text: "Debug"
                     onClicked: feedList.debugFeedList()
-                    anchors.verticalCenter: parent
                 }
                 Button {
                     id: saveBtn
                     text: "Save"
                     onClicked: feedList.saveToDB()
-                    anchors.verticalCenter: parent
                 }
 
             }
