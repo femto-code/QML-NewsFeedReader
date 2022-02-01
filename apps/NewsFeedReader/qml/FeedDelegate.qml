@@ -13,18 +13,19 @@ Rectangle{
     states: [
         State {
             name: "item"
-            PropertyChanges { target: itemView; opacity: 1 }
-            PropertyChanges { target: descriptionView; opacity: 0 }
+            PropertyChanges { target: itemView; visible: true }
+            PropertyChanges { target: descriptionView; visible: false }
         },
         State {
             name: "description"
-            PropertyChanges { target: itemView; opacity: 0 }
-            PropertyChanges { target: descriptionView; opacity: 1 }
+            PropertyChanges { target: itemView; visible: false }
+            PropertyChanges { target: descriptionView; visible: true }
         }
     ]
 
     Column{
         id: itemView
+        visible: true
         leftPadding: 10
 //        rightPadding: 10
         topPadding: 10
@@ -47,43 +48,41 @@ Rectangle{
         //Text{ text: "  pubDate"; font.pointSize: 12; color: "red" ; elide: Text.ElideRight; width: feedView.width}
         Text{ text: modelData.pubDate; font.pointSize: 10 ; elide: Text.ElideRight; width: feedView.width}
     }
-//    Column{
-//        id: descriptionView
-//        opacity: 0
-//        width: parent.width
-//        height: parent.height
-//        ScrollView {
-//            id: view
-//            width: parent.width
-//            height: parent.height
-//            ScrollBar.horizontal.interactive: false
-//            ScrollBar.vertical.interactive: true
+    Column{
+        id: descriptionView
+        visible: false
+        width: parent.width
+        height: parent.height
+        ScrollView {
+            id: view
+            width: parent.width
+            height: parent.height
 
-//            TextArea {
-//                width: parent.width
-//                height: parent.height
-//                text: modelData.description;
-//                wrapMode: Text.WordWrap
-//            }
-//        }
+            TextArea {
+                width: parent.width
+                height: parent.height
+                text: modelData.description;
+                wrapMode: Text.WordWrap
+            }
+        }
 
-//    }
+    }
 
-//    MouseArea{
-//        anchors.fill: parent
-//        onPressed:{
-//            switch (feedView.state){
-//            case "item":
-//                feedView.state = "description"
-//                break;
-//            case "description":
-//                feedView.state = "item"
-//                break;
-//            default:
-//                feedView.state = "item"
-//            }
-//        }
-//    }
+    MouseArea{
+        anchors.fill: parent
+        onPressed:{
+            switch (feedView.state){
+            case "item":
+                feedView.state = "description"
+                break;
+            case "description":
+                feedView.state = "item"
+                break;
+            default:
+                feedView.state = "item"
+            }
+        }
+    }
 
 
 }

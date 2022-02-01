@@ -40,7 +40,7 @@ ApplicationWindow {
         id: mainView
 
         Rectangle{
-            anchors.fill: mainWindow // ! ERROR: Unable to assign ApplicationWindow_QMLTYPE_2 to QQuickItem
+            //anchors.fill: mainWindow // ! ERROR: Unable to assign ApplicationWindow_QMLTYPE_2 to QQuickItem
 
             Text {
                 id: test
