@@ -7,6 +7,7 @@ Rectangle{
     width: mainWindow.width
     height: 130
     border.width: 2; border.color: "lightsteelblue"
+    clip: true
 
     states: [
         State {
