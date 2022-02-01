@@ -63,13 +63,13 @@ Item {
 
                 Button {
                     id: pushButton
-                    text: "Push"
+                    text: "Manage Sources"
                     onClicked: stack.push("qrc:/feedAdd.qml")
                 }
 
                 Button {
                     id: popButton
-                    text: "Pop"
+                    text: "Back"
                     onClicked: stack.pop()
                 }
                 Button {
