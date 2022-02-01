@@ -6,10 +6,12 @@ import QtQuick.Controls.Universal
 ApplicationWindow {
     id: mainWindow
     title: qsTr("News Feed Reader")
-    width: 640
-    height: 480
+    width: 500
+    height: 600
     visible: true
-    minimumHeight: 300
+    minimumWidth: 400
+    minimumHeight: 500
+
 
     Universal.theme: Universal.Light
     Universal.accent: Universal.Lime
