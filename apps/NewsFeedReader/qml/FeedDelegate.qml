@@ -6,20 +6,20 @@ import QtQuick.Controls.Universal
 Rectangle{
     id: feedView
     width: viewRect.width
-    height: 100
     border.width: 2; border.color: Universal.color(Universal.Lime)
     clip: true
+    height: itit.paintedHeight + 30 + 50
 
     states: [
         State {
-            name: "item"
-            PropertyChanges { target: itemView; visible: true }
-            PropertyChanges { target: descriptionView; visible: false }
+            name: "on"
+            PropertyChanges { target: feedView; height: itit.paintedHeight + 180 }
+            PropertyChanges { target: descexpand; visible: true }
         },
         State {
-            name: "description"
-            PropertyChanges { target: itemView; visible: false }
-            PropertyChanges { target: descriptionView; visible: true }
+            name: "off"
+            PropertyChanges { target: feedView; height: itit.paintedHeight + 30 + 50 }
+            PropertyChanges { target: descexpand; visible: false }
         }
     ]
 
@@ -29,12 +29,16 @@ Rectangle{
         leftPadding: 10
 //        rightPadding: 10
         topPadding: 10
-        Text{ text: modelData.title; font.pointSize: 15 ; width: feedView.width; wrapMode: Text.WordWrap; rightPadding: 10}
+        width: parent.width
+        height: parent.height
+        spacing: 3
+        Text{ id: itit; text: modelData.title; font.pointSize: 15 ; width: feedView.width; wrapMode: Text.WordWrap; rightPadding: 10}
         Text{
             text: "<a href=\""+modelData.link+"\">"+modelData.link+"</a>"
             font.pointSize: 9
             width: feedView.width
             onLinkActivated: Qt.openUrlExternally(link)
+            // QT6?? TODO!
 //            MouseArea {
 //                id: mouseArea
 //                anchors.fill: parent
@@ -43,38 +47,36 @@ Rectangle{
         }
         Text{ text: modelData.pubDate; font.pointSize: 10 ; elide: Text.ElideRight; width: feedView.width}
 
+
         Button{
             id: btnDescription
-            width: 50
+            width: 150
             height: 20
-            text: "Show more"
+            text: "Show / Hide"
             MouseArea{
                 anchors.fill: parent
                 onPressed:{
-                    feedView.height = 200
+
                     switch (feedView.state){
-                    case "item":
-                        feedView.state = "description"
+                    case "on":
+                        feedView.state = "off"
                         break;
-                    case "description":
-                        feedView.state = "item"
+                    case "off":
+                        feedView.state = "on"
                         break;
                     default:
-                        feedView.state = "item"
+                        feedView.state = "on"
                     }
                 }
             }
         }
-    }
-    Column{
-        id: descriptionView
-        visible: false
-        width: parent.width
-        height: parent.height
+
         ScrollView {
-            id: view
-            width: parent.width
-            height: parent.height
+
+            id: descexpand
+            visible: false
+            width: parent.width - 20
+            height: 100
                 TextArea {
                     id: descriptionText
                     width: parent.width
@@ -83,28 +85,8 @@ Rectangle{
                     wrapMode: Text.WordWrap
                 }
 
-                Button{
-                    id: btnDescription2
-                    width: 50
-                    height: 20
-                    text: "Show more"
-                    anchors.top: descriptionText.bottom
-                    MouseArea{
-                        anchors.fill: parent
-                        onPressed:{
-                            switch (feedView.state){
-                            case "item":
-                                feedView.state = "description"
-                                break;
-                            case "description":
-                                feedView.state = "item"
-                                break;
-                            default:
-                                feedView.state = "item"
-                            }
-                        }
-                    }
-                }
         }
+
     }
+
 }
