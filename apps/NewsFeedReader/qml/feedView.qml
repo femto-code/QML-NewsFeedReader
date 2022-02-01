@@ -16,7 +16,7 @@ Item {
             id: titleRect
             color: Universal.color(Universal.Lime)
             Layout.preferredWidth: mainWindow.width
-            Layout.preferredHeight: mainWindow.height / 10
+            Layout.preferredHeight: mainWindow.height / 6
             Text {
                 text: qsTr("Look at all my fancy Feeds")
                 anchors.centerIn: parent
@@ -28,13 +28,10 @@ Item {
             id: viewRect
             border.color: Universal.color(Universal.Lime)
             //anchors.top: titleRect.bottom
-            Layout.preferredWidth: mainWindow.width
-            Layout.preferredHeight: mainWindow.height * 2 / 3
-
-            anchors {
-                leftMargin: 20
-                rightMargin: 20
-            }
+            Layout.preferredWidth: mainWindow.width - 16
+            Layout.preferredHeight: mainWindow.height * 4 / 6
+            Layout.leftMargin: 8
+            Layout.rightMargin: 8
 
             ListView{
                 id: view
@@ -49,33 +46,50 @@ Item {
         }
 
         Rectangle{
-            anchors.top: viewRect.bottom
 
-            Button {
-                id: pushButton
-                text: "Push"
-                onClicked: stack.push("qrc:/feedAdd.qml")
-                //anchors.top: test.bottom
+            Layout.preferredWidth: mainWindow.width - 16
+            Layout.preferredHeight: mainWindow.height * 1 / 6 - 30
+
+            border.width: 2; border.color: Universal.color(Universal.Lime)
+
+            Layout.leftMargin: 8
+            Layout.rightMargin: 8
+            //Layout.topMargin: 8
+
+            RowLayout {
+                id: rowLayout
+                anchors.fill: parent
+
+
+                Button {
+                    id: pushButton
+                    text: "Push"
+                    onClicked: stack.push("qrc:/feedAdd.qml")
+                    anchors.verticalCenter: parent
+                }
+
+                Button {
+                    id: popButton
+                    text: "Pop"
+                    onClicked: stack.pop()
+                    anchors.verticalCenter: parent
+                }
+                Button {
+                    id: debugBtn
+                    text: "Debug"
+                    onClicked: feedList.debugFeedList()
+                    anchors.verticalCenter: parent
+                }
+                Button {
+                    id: saveBtn
+                    text: "Save"
+                    onClicked: feedList.saveToDB()
+                    anchors.verticalCenter: parent
+                }
+
             }
 
-            Button {
-                id: popButton
-                text: "Pop"
-                onClicked: stack.pop()
-                anchors.top: pushButton.bottom
-            }
-            Button {
-                id: debugBtn
-                text: "Debug"
-                onClicked: feedList.debugFeedList();
-                anchors.top: popButton.bottom
-            }
-            Button {
-                id: saveBtn
-                text: "Save"
-                onClicked: feedList.saveToDB();
-                anchors.top: debugBtn.bottom
-            }
+
         }
     }
 

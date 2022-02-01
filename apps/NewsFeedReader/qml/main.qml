@@ -25,6 +25,7 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
+    minimumHeight: 300
 
     Universal.theme: Universal.Light
     Universal.accent: Universal.Lime
