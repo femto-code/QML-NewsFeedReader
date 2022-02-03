@@ -5,7 +5,6 @@
 
 
 FeedList::FeedList(QObject *parent) : QObject(parent) {
-
 }
 
 QQmlListProperty<Feed> FeedList::feedSources()
@@ -42,6 +41,15 @@ void FeedList::deleteSrc(QString name)
 
     }
     emit feedSourcesChanged();
+}
+
+void FeedList::triggerUpdate()
+{
+    for( int i=0; i<m_FeedSources.count(); ++i ) {
+        Feed* el = m_FeedSources[i];
+        el->get();
+    }
+    saveToDB();
 }
 
 /*

@@ -16,9 +16,11 @@ INCLUDEPATH += $$PWD
 
 
 SOURCES += main.cpp  \
+    updateThread.cpp
 
 
-HEADERS +=
+HEADERS += \
+    updateThread.h
 
 
 RESOURCES += qml/qml.qrc

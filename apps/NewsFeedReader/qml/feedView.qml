@@ -68,6 +68,12 @@ Item {
                 }
 
                 Button {
+                    id: refreshBtn
+                    text: "Refresh"
+                    onClicked: view.forceLayout()
+                }
+
+                Button {
                     id: popButton
                     text: "Back"
                     onClicked: stack.pop()

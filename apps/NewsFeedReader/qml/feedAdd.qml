@@ -95,7 +95,7 @@ Rectangle{
     Connections {
         target: feedList
         function onFeedSourcesChanged()  {
-            stack.pop(null)
+//            stack.pop(null)
         }
     }
 }

@@ -33,6 +33,7 @@ public slots:
     void saveToDB();
     void debugFeedList() const;
     void deleteSrc(QString name);
+    void triggerUpdate();
 
 signals:
     void feedItemsChanged();
