@@ -19,7 +19,10 @@ bool DataBase::open( const QString& dbName, const QString& userName, const QStri
     _dB.setDatabaseName( dbName );
     _dB.setUserName( userName );
     _dB.setPassword( passwd );
-    return _dB.open();
+    bool state = _dB.open();
+    _dB.exec("PRAGMA synchronous = OFF");
+    _dB.exec("PRAGMA journal_mode = MEMORY");
+    return state;
 }
 
 void DataBase::close() {
@@ -29,6 +32,7 @@ void DataBase::close() {
 
 void DataBase::saveFeedList(const FeedList& collection)
 {
+    qDebug()<<"can start a transaction PrgQuery:"<<QSqlDatabase::database().transaction();
     QSqlQuery query(_dB);
     bool result = query.exec("DELTE FROM TABLE feedsources");
     if(!result){ qDebug() << query.lastError(); }
@@ -47,6 +51,7 @@ void DataBase::saveFeedList(const FeedList& collection)
             qDebug() << addItem(it,el->id());
         }
     }
+    qDebug()<<"end transaction Step Query:"<<QSqlDatabase::database().commit();
 }
 
 bool DataBase::createTableFeedSources() {
