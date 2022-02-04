@@ -30,9 +30,9 @@ void DataBase::close() {
 void DataBase::saveFeedList(const FeedList& collection)
 {
     QSqlQuery query(_dB);
-    bool result = query.exec("TRUNCATE TABLE feedsources");
+    bool result = query.exec("DELTE FROM TABLE feedsources");
     if(!result){ qDebug() << query.lastError(); }
-    bool result2 = query.exec("TRUNCATE TABLE feeditems");
+    bool result2 = query.exec("DELTE FROM TABLE feeditems");
     if(!result2){ qDebug() << query.lastError(); }
     collection.debugFeedList();
     const QList<Feed*>& feeds = collection.getFeedSources();
