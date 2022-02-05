@@ -107,6 +107,10 @@ void Feed::get()
         qInfo() << "FEED.CPP::get() :: Getting Feed from Server...";
         qDebug() << "FEED.CPP::get() :: " << m_nMgr;
         QNetworkReply* reply = m_nMgr->get(QNetworkRequest(m_url));
+        QEventLoop loop;
+        connect(reply, SIGNAL(finished()), &loop, SLOT(quit()));
+        loop.exec();
+        parse(reply);
         qDebug() << "FEED.CPP::get() :: " << m_url;
         if(reply) {
             qInfo() << "FEED.CPP::get() :: Next step...";
@@ -170,7 +174,7 @@ void Feed::parse(QNetworkReply* reply){
     }
 
     qInfo() << "FEED.CPP::parse() :: itemCount:" << m_itemCount;
-
     qInfo() << "FEED.CPP::parse() :: Step out of creating elements...";
+
     disconnect(m_nMgr, nullptr, nullptr, nullptr);
 }

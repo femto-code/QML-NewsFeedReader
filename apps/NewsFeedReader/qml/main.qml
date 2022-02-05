@@ -12,9 +12,10 @@ ApplicationWindow {
     minimumWidth: 400
     minimumHeight: 500
 
-
     Universal.theme: Universal.Light
     Universal.accent: Universal.Lime
+
+    property bool indiState : true
 
     StackView {
         id: stack
@@ -26,7 +27,7 @@ ApplicationWindow {
         id: mainView
 
         Rectangle{
-
+            id: mainRect
             anchors.fill: mainWindow
             Text {
                 id: test
@@ -38,12 +39,11 @@ ApplicationWindow {
             Rectangle {
                 id: gobtn
                 width: parent.width
-                height: parent.height * 1/3
+                height: parent.height * 1/4
                 anchors.top: test.bottom
 
                 Button {
                     onClicked: stack.push("qrc:/feedView.qml")
-
                     anchors.centerIn: parent
                     height: 30
                     width: 100
@@ -51,7 +51,32 @@ ApplicationWindow {
                 }
 
             }
+            Rectangle {
+                id: busyRect
+                width: parent.width
+                height: 30
+                anchors.top: gobtn.bottom
 
+                BusyIndicator {
+                    id: bIndi
+                    anchors.centerIn: parent
+                    anchors.top: mainRect.buttom
+                    running: indiState
+                }
+            }
+        }
+    }
+
+    Connections{
+        target: feedList
+        function onFeedAdded(){
+            indiState = true
+            console.log("Visible true")
+        }
+
+        function onAddFinished(){
+            indiState = false
+            console.log("Visible false")
         }
     }
 }

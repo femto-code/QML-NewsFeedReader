@@ -81,6 +81,7 @@ signals:
     void idChanged();
     void activeChanged();
     void itemsChanged();
+    void addFinished();
 };
 
 #endif

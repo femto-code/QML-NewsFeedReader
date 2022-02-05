@@ -37,6 +37,8 @@ public slots:
 signals:
     void feedItemsChanged();
     void feedSourcesChanged();
+    void feedAdded();
+    void addFinished();
 };
 
 #endif

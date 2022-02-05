@@ -44,18 +44,11 @@ void FeedList::deleteSrc(QString name)
     emit feedSourcesChanged();
 }
 
-/*
- * Hier könnte der Fehler liegen, dass die feedItem Liste sich neu initialisiert, wenn man von der
- * Startseite wieder auf den feedView geht. Ich denke wir brauchen hier einfach eine Funktion die
- * die feedItems zurück gibt, wie bei feedSources. So bekommen wir die gleichen Items mehrfach angezeigt
- *
- */
 QQmlListProperty<Item> FeedList::feedItems()
 {
     merged.clear();
     qInfo() << "BEGIN ___ FEEDLIST.CPP::feedItems() : FeedSources.count() : " << m_FeedSources.count();
     for( int i=0; i<m_FeedSources.count(); ++i ) {
-        //qInfo() << "Found Feed";
 
         Feed* el = m_FeedSources[i];
         QList<Item*> items = el->getFeedItems();
@@ -70,26 +63,25 @@ QQmlListProperty<Item> FeedList::feedItems()
 }
 
 void FeedList::add(QString url) {
+    emit feedAdded();
     if(url==""){
         return;
     }
     Feed* feed = new Feed();
-    //qDebug() << "FEEDLIST.CPP::add() : address: " << feed;
     feed->setUrl(url);
     feed->setId(n);
     n++;
     m_FeedSources.push_back(feed);
     int idx = m_FeedSources.count()-1;
-    //qInfo() << "FEEDLIST.CPP::add() : count of feed src: " << m_FeedSources.count();
+    qDebug() << "FEEDLIST.CPP::add() : Before get()";
     m_FeedSources[idx]->get();        // Der Aufruf hat gefehlt, um auch den neuen Feed zu downloaden
-//    int n=10000;
-//    while(n>0){
-//        n--;
-//    }
-    //debugFeedList();
+    qDebug() << "FEEDLIST.CPP::add() : After get()";
+
+    emit addFinished();
     emit feedItemsChanged();
     emit feedSourcesChanged();
 }
+
 void FeedList::debugFeedList() const{
     qInfo() << "----------  I'm here --------------";
     for( int i=0; i<m_FeedSources.count(); ++i ) {
@@ -106,6 +98,7 @@ void FeedList::debugFeedList() const{
     }
     qInfo() << "----------  END DEBUG FEEDLIST --------------";
 }
+
 void FeedList::saveToDB(){
     DataBase::saveFeedList(*this);
 }
