@@ -21,7 +21,7 @@ const QString Feed::url() const
 void Feed::setUrl(QString newUrl)
 {
     if(m_url.toString() != newUrl){
-        QUrl test(newUrl);
+        QUrl test = QUrl::fromUserInput(newUrl);
         if(test.isValid()){
             m_url = test;
             qInfo() << "Valid Url";
