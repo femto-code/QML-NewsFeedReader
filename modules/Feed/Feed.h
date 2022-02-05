@@ -65,7 +65,7 @@ public slots:
 
 private:
     QString m_name;
-    QString m_url;
+    QUrl m_url;
     int m_id;
     bool m_active;
     QNetworkAccessManager* m_nMgr;
