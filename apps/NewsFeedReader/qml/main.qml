@@ -15,7 +15,7 @@ ApplicationWindow {
     Universal.theme: Universal.Light
     Universal.accent: Universal.Lime
 
-    property bool indiState : true
+    property bool indiState : false
 
     StackView {
         id: stack
