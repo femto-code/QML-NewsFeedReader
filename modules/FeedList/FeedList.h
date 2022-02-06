@@ -40,6 +40,7 @@ signals:
     void feedSourcesChanged();
     void feedAdded();
     void addFinished();
+    void offlineCheck();
 };
 
 #endif

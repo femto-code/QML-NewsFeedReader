@@ -110,6 +110,9 @@ Rectangle{
         function onFeedSourcesChanged()  {
             stack.pop(null)
         }
+        function onOfflineCheck() {
+            feedUrl.placeholderText = "You are currently offline.."
+        }
     }
 }
 

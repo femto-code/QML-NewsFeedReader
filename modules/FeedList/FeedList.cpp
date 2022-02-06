@@ -2,6 +2,7 @@
 #include "Item.h"
 #include "DataBase.h"
 #include <QList>
+#include <QTcpSocket>
 
 
 FeedList::FeedList(QObject *parent) : QObject(parent) {
@@ -64,6 +65,19 @@ QQmlListProperty<Item> FeedList::feedItems()
 }
 
 void FeedList::add(QString url) {
+
+    QTcpSocket* sock = new QTcpSocket(this);
+    sock->connectToHost("www.hs-mannheim.de", 80);
+    bool connected = sock->waitForConnected(3000);//ms
+
+    if (!connected)
+    {
+        sock->abort();
+        emit offlineCheck();
+        return;
+    }
+    sock->close();
+
     emit feedAdded();
     if(url==""){
         return;
