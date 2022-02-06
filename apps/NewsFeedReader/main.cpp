@@ -1,10 +1,6 @@
 #include <QGuiApplication>
 #include <QtQuick>
 
-#include <iostream>
-#include <string>
-#include <vector>
-
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 
@@ -12,6 +8,7 @@
 #include "Item.h"
 #include "FeedList.h"
 #include "DataBase.h"
+
 
 int main(int argc, char* argv[]){
 
@@ -37,6 +34,11 @@ int main(int argc, char* argv[]){
         qInfo() << "Creating 2nd table..." << DataBase::createTableFeedSources();
         feedList->add("https://www.deskmodder.de/blog/feed/");
     }
+
+    QTimer timer;
+    QObject::connect(&timer, &QTimer::timeout, feedList, &FeedList::triggerUpdate);
+
+    timer.start(600000);
 
     engine->addImportPath(":/");
     engine->load(QUrl("qrc:/main.qml"));
