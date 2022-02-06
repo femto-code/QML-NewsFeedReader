@@ -14,4 +14,5 @@ Qt 6 based News Feed Reader using RSS/XML online distributions with offline data
 - https://stackoverflow.com/questions/70414272/issue-with-qnetworkaccessmanager-singleton-injection
 - https://stackoverflow.com/questions/50691136/how-to-have-one-instance-of-qnetworkaccessmanager?noredirect=1&lq=1
 - https://stackoverflow.com/questions/31197144/why-is-my-sqlite-query-so-slow-in-qt5/50603491
+- https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
 - https://forum.qt.io/topic/74166/using-qtimer-in-main-not-in-a-class/2
