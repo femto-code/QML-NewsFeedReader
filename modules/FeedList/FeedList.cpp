@@ -41,6 +41,7 @@ void FeedList::deleteSrc(QString name)
         }
 
     }
+    saveToDB();
     emit feedSourcesChanged();
 }
 
@@ -77,6 +78,7 @@ void FeedList::add(QString url) {
     m_FeedSources[idx]->get();        // Der Aufruf hat gefehlt, um auch den neuen Feed zu downloaden
     qDebug() << "FEEDLIST.CPP::add() : After get()";
 
+    saveToDB();
     emit addFinished();
     emit feedItemsChanged();
     emit feedSourcesChanged();
@@ -101,4 +103,13 @@ void FeedList::debugFeedList() const{
 
 void FeedList::saveToDB(){
     DataBase::saveFeedList(*this);
+}
+
+void FeedList::triggerUpdate()
+{
+    for( int i=0; i<m_FeedSources.count(); ++i ) {
+        Feed* el = m_FeedSources[i];
+        el->get();
+    }
+    saveToDB();
 }

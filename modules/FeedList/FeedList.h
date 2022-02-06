@@ -27,6 +27,7 @@ public:
     const FeedSources getFeedSources() const;
     void setFeedSources(FeedSources l);
     void setN(int c);
+    void triggerUpdate();
 
 public slots:
     void add(QString url);

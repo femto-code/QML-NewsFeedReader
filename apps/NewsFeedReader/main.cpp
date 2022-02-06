@@ -33,6 +33,8 @@ int main(int argc, char* argv[]){
         qInfo() << "Creating 1st table..." << DataBase::createTableFeedItems();
         qInfo() << "Creating 2nd table..." << DataBase::createTableFeedSources();
         feedList->add("https://www.deskmodder.de/blog/feed/");
+    } else {
+        feedList->triggerUpdate();
     }
 
     QTimer timer;
