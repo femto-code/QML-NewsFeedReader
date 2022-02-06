@@ -34,21 +34,21 @@ void DataBase::saveFeedList(const FeedList& collection)
 {
     qDebug()<<"can start a transaction PrgQuery:"<<QSqlDatabase::database().transaction();
     QSqlQuery query(_dB);
-    bool result = query.exec("DELTE FROM TABLE feedsources");
+    bool result = query.exec("DELETE FROM feedsources");
     if(!result){ qDebug() << query.lastError(); }
-    bool result2 = query.exec("DELTE FROM TABLE feeditems");
+    bool result2 = query.exec("DELETE FROM feeditems");
     if(!result2){ qDebug() << query.lastError(); }
     collection.debugFeedList();
     const QList<Feed*>& feeds = collection.getFeedSources();
     for( int i=0; i<feeds.count(); ++i ) {
         const Feed* el = feeds[i];
-        qInfo() << "Found Feed: " << el->id();
+        //qInfo() << "Found Feed: " << el->id();
         qDebug() << addFeed(el);
         const QList<Item*>& items = el->FeedItems();
         for( int j=0; j<items.count(); ++j ) {
-            qInfo() << "Found Item";
+            //qInfo() << "Found Item";
             const Item* it = items[j];
-            qDebug() << addItem(it,el->id());
+            addItem(it,el->id());
         }
     }
     qDebug()<<"end transaction Step Query:"<<QSqlDatabase::database().commit();
@@ -92,27 +92,6 @@ bool DataBase::addItem( const Item*& m, int feedid) {
     query.bindValue( ":feedid", feedid );
     return query.exec();
 }
-
-//bool DataBase::changePatient( const Patient& p ) {
-
-//    QSqlQuery query(_dB);
-//    query.prepare("UPDATE patient SET forename = :forename, familyName = :familyName WHERE id = :id");
-//    query.bindValue( ":id", p.id() );
-//    query.bindValue( ":forename", p.forename() );
-//    query.bindValue( ":familyName", p.familyName() );
-//    return query.exec();
-//}
-
-//bool DataBase::readPatient( int id, Patient& p ) {
-
-//    QSqlQuery query(_dB);
-//    query.prepare("SELECT id, forename, familyName FROM patient WHERE id = :id");
-//    query.bindValue( ":id", id );
-//    bool ok = query.exec();
-//    ok = ok && query.first();
-//    readPatient( query, p );
-//    return ok;
-//}
 
 void DataBase::readItem( QSqlQuery& q, Item& m ) {
     m.setTitle( q.value( 0 ).toString() );
