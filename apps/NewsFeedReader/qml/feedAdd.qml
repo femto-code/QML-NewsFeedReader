@@ -76,7 +76,7 @@ Rectangle{
         Rectangle {
             id: urlListView
             Layout.preferredWidth: mainWindow.width
-            Layout.preferredHeight: mainWindow.height * 1 / 4
+            Layout.preferredHeight: mainWindow.height * 1 / 2
             ListView {
                 id: view
                 anchors {fill: parent; margins: 2; leftMargin: 20; rightMargin: 20}

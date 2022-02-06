@@ -28,7 +28,6 @@ ApplicationWindow {
 
         Rectangle{
             id: mainRect
-            anchors.fill: mainWindow
             Text {
                 id: test
                 text: qsTr("Welcome to our NewsFeedReader")

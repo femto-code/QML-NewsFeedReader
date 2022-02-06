@@ -54,38 +54,41 @@ Item {
 
             Layout.leftMargin: 8
             Layout.rightMargin: 8
-            //Layout.topMargin: 8
 
             RowLayout {
                 id: rowLayout
                 anchors.fill: parent
-
+                anchors.centerIn: parent
 
                 Button {
                     id: pushButton
+                    Layout.preferredWidth: mainWindow.width / 4
                     text: "Manage Sources"
                     onClicked: stack.push("qrc:/feedAdd.qml")
+                    Layout.alignment: Qt.AlignRight
+                    Layout.minimumWidth: 130
                 }
 
                 Button {
                     id: popButton
+                    Layout.preferredWidth: mainWindow.width / 4
                     text: "Back"
                     onClicked: stack.pop()
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.minimumWidth: 130
                 }
-                Button {
-                    id: debugBtn
-                    text: "Debug"
-                    onClicked: feedList.debugFeedList()
-                }
-                Button {
-                    id: saveBtn
-                    text: "Save"
-                    onClicked: feedList.saveToDB()
-                }
+//                Button {
+//                    id: debugBtn
+//                    text: "Debug"
+//                    onClicked: feedList.debugFeedList()
+//                }
+//                Button {
+//                    id: saveBtn
+//                    text: "Save"
+//                    onClicked: feedList.saveToDB()
+//                }
 
             }
-
-
         }
     }
 
